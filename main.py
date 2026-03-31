@@ -5,35 +5,30 @@ Relie le Scraper (Fetcher), l'IA (Analyzer) et la Base de Données locale.
 import asyncio
 import json
 import urllib.parse
-import argparse # NOUVEAU : Pour capturer les arguments de la ligne de commande
-import sys # NOUVEAU : Utile pour la gestion des chemins
+import argparse
+import sys
 from pathlib import Path
-from datetime import date, timedelta # AJOUT: timedelta pour calculer les dates de rétention
+from datetime import date, timedelta
 from loguru import logger
 
 from core.logger import setup_logger
 from services.fetcher import BIMFetcher
 from services.analyzer import BIMAnalyzer
-from services.reporter import ReporterService # NOUVEAU: On importe notre service complet
+from services.reporter import ReporterService
 
 # Définition du chemin de nos bases de données locales
 DB_FILE = Path("data/articles_db.json")
 EMBEDDINGS_FILE = Path("data/embeddings_db.json")
 
 # 🎯 LA BASE INCOMPRESSIBLE DE L'AGENCE
-# Ce sont les thèmes vitaux que tu veux TOUJOURS surveiller, 
-# même si aucun collègue ne les a explicitement demandés dans l'annuaire.
 MOTS_CLES_STRATEGIQUES_BASE = [
-    # --- Veille BIM & Construction ---
     "BIM",
     "Intelligence Artificielle Construction",
     "Revit"
-    
-    # --- Veille IA & Dev Pure (NOUVEAU) ---
-    "Large Language Models Open Source",
-    "Agentic AI Frameworks",
-    "Python Data Engineering"
 ]
+
+# Durée de conservation des articles dans la base de données
+MAX_RETENTION_DAYS = 30
 
 async def run_pipeline(theme_cible: str = None):
     logger.info("🚀 Démarrage du Pipeline de Veille Agentique...")
@@ -43,103 +38,104 @@ async def run_pipeline(theme_cible: str = None):
     
     # --- INJECTION DYNAMIQUE DES RADARS GOOGLE NEWS ---
     if theme_cible:
-        # Cas 1 : Lancé à la main depuis Streamlit sur un thème précis
         mots_a_chercher = [theme_cible]
     else:
-        # Cas 2 : Lancement automatique quotidien
-        # 💡 LA MAGIE EST ICI : On fusionne la base de l'agence avec les intérêts des collègues
         interets_collegues = ReporterService.get_tous_les_mots_cles()
-        
-        # Le set() fusionne les deux listes et supprime les doublons éventuels
         mots_a_chercher = list(set(MOTS_CLES_STRATEGIQUES_BASE + interets_collegues))
-        
-        logger.info(f"📡 Radars synchronisés avec l'annuaire ! {len(mots_a_chercher)} cibles : {mots_a_chercher}")
+        logger.info(f"📡 Radars synchronisés avec l'annuaire ! {len(mots_a_chercher)} cibles.")
     
     for mot in mots_a_chercher:
         url_safe_mot = urllib.parse.quote(mot)
         radar_url = f"https://news.google.com/rss/search?q={url_safe_mot}&hl=fr&gl=FR&ceid=FR:fr"
-        source_name = f"Google News 🕵️ ({mot})"
-        fetcher.rss_sources[source_name] = radar_url
-        logger.debug(f"📡 Radar déployé : '{source_name}'")
+        fetcher.rss_sources[f"Google News 🕵️ ({mot})"] = radar_url
+
+    # --- 1. COLLECTE ---
+    all_articles = await fetcher.fetch_all()
     
-    existing_articles = []
-    seen_urls = set()
-    
+    # --- 2. DÉDUPLICATION (Basée sur l'URL) ---
+    known_urls = set()
     if DB_FILE.exists():
-        with open(DB_FILE, "r", encoding="utf-8") as f:
-            try:
+        try:
+            with open(DB_FILE, "r", encoding="utf-8") as f:
                 existing_articles = json.load(f)
-                seen_urls = {art["url"] for art in existing_articles}
-                logger.info(f"📂 Base de données chargée : {len(existing_articles)} articles connus.")
-            except json.JSONDecodeError:
-                logger.warning("⚠️ Fichier DB corrompu ou vide. Création d'une nouvelle base.")
+                known_urls = {art["url"] for art in existing_articles}
+                all_articles.extend(existing_articles)
+            logger.info(f"📂 Base de données chargée : {len(known_urls)} articles connus.")
+        except json.JSONDecodeError:
+            logger.warning("⚠️ Fichier DB corrompu ou vide. Création d'une nouvelle base.")
 
-    raw_articles = await fetcher.fetch_all()
+    # On isole les vrais nouveaux articles
+    new_articles_to_process = [art for art in all_articles if art.url not in known_urls]
     
-    new_articles = [art for art in raw_articles if art.url not in seen_urls]
-    logger.info(f"🔍 {len(new_articles)} NOUVEAUX articles détectés sur {len(raw_articles)} trouvés.")
+    # Pour la déduplication de la liste complète (anciens + nouveaux non traités)
+    unique_articles_dict = {}
+    for art in all_articles:
+        url = art.url if hasattr(art, 'url') else art.get("url")
+        if url not in unique_articles_dict:
+            unique_articles_dict[url] = art
+            
+    all_articles = list(unique_articles_dict.values())
     
-    if not new_articles:
-        logger.info("😴 Aucun nouvel article à traiter. Fin du programme.")
-        return
+    logger.info(f"🔍 {len(new_articles_to_process)} NOUVEAUX articles détectés sur {len(all_articles)} trouvés.")
 
-    # 🚀 CORRECTION MAJEURE : On ouvre les vannes !
-    # Groq permet environ 30 requêtes par minute en version gratuite.
-    # On passe la limite de 10 à 30 pour avoir un vrai panel d'articles chaque jour.
-    MAX_TO_PROCESS = 30
-    articles_to_process = new_articles[:MAX_TO_PROCESS]
-    
+    # --- 3. TRAITEMENT IA (Seulement pour les nouveaux) ---
     processed_articles = []
-    logger.info(f"🧠 Envoi de {len(articles_to_process)} articles à l'IA hybride...")
-    
-    for art in articles_to_process:
-        logger.debug(f"Traitement IA : {art.title[:40]}...")
-        enriched_article = await analyzer.process_article(art.model_dump())
-        enriched_article["date_added"] = date.today().isoformat()
-        processed_articles.append(enriched_article)
+    if new_articles_to_process:
+        logger.info(f"🧠 Envoi de {len(new_articles_to_process)} articles à l'IA hybride...")
         
-        # On garde 1.5 seconde de pause, ce qui fera un traitement total de ~45 secondes. Très raisonnable.
-        await asyncio.sleep(1.5) 
-        
-    all_articles = existing_articles + processed_articles
-    
-    # --- 🧹 SÉPARATION ET POLITIQUE DE RÉTENTION (DATA PRUNING) ---
+        for raw_art in new_articles_to_process:
+            art_dict = raw_art.model_dump() if hasattr(raw_art, 'model_dump') else raw_art
+            enriched_art = await analyzer.process_article(art_dict)
+            enriched_art["date_added"] = date.today().isoformat()
+            processed_articles.append(enriched_art)
+
+    # Mise à jour de la grande liste avec les articles enrichis
+    for enriched_art in processed_articles:
+        for i, art in enumerate(all_articles):
+            url = art.url if hasattr(art, 'url') else art.get("url")
+            if url == enriched_art["url"]:
+                all_articles[i] = enriched_art
+                break
+
+    # --- 4. NETTOYAGE (PRUNING) ET SÉPARATION DES EMBEDDINGS ---
+    cutoff_date = date.today() - timedelta(days=MAX_RETENTION_DAYS)
     clean_articles = []
     embeddings_dict = {}
     
-    MAX_RETENTION_DAYS = 60 # On garde l'historique de 2 mois
-    cutoff_date = date.today() - timedelta(days=MAX_RETENTION_DAYS)
-    
-    # On charge les favoris pour s'assurer de ne jamais les supprimer
-    fav_file = Path("data/favorites.json")
-    favorites = set()
-    if fav_file.exists():
-        with open(fav_file, "r", encoding="utf-8") as f:
-            favorites = set(json.load(f))
-            
-    articles_kept = 0
+    if EMBEDDINGS_FILE.exists():
+        try:
+            with open(EMBEDDINGS_FILE, "r", encoding="utf-8") as f:
+                embeddings_dict = json.load(f)
+        except json.JSONDecodeError:
+            pass
+
     articles_pruned = 0
     
+    # 🎓 C'est ICI que l'on a retiré la logique des Favoris !
     for art in all_articles:
-        # Vérification de l'âge de l'article
+        # Si c'est un objet Pydantic, on le convertit en dict
+        if hasattr(art, 'model_dump'):
+            art = art.model_dump()
+            
         art_date_str = art.get("date_added", date.today().isoformat())
         try:
             art_date = date.fromisoformat(art_date_str)
         except ValueError:
             art_date = date.today()
             
-        is_favorite = art["url"] in favorites
         is_recent = art_date >= cutoff_date
         
-        # Le Gardien : On garde si c'est récent OU si c'est un favori
-        if is_recent or is_favorite:
+        # Le Gardien simplifié : On garde uniquement si c'est récent
+        if is_recent:
             art_copy = art.copy()
             if "embedding" in art_copy:
                 embeddings_dict[art_copy["url"]] = art_copy.pop("embedding")
             clean_articles.append(art_copy)
-            articles_kept += 1
         else:
             articles_pruned += 1
+            # Nettoyage de l'embedding associé s'il existait
+            if art["url"] in embeddings_dict:
+                del embeddings_dict[art["url"]]
             
     if articles_pruned > 0:
         logger.info(f"🧹 Nettoyage : {articles_pruned} anciens articles purgés (Rétention: {MAX_RETENTION_DAYS}j).")
@@ -152,20 +148,15 @@ async def run_pipeline(theme_cible: str = None):
     with open(EMBEDDINGS_FILE, "w", encoding="utf-8") as f:
         json.dump(embeddings_dict, f, ensure_ascii=False)
         
-    logger.success(f"💾 {len(processed_articles)} nouveaux articles sauvegardés proprement.")
+    logger.success("💾 Base mise à jour proprement.")
 
-    # 🎓 NOUVEAU : 📧 DISTRIBUTION DES EMAILS (LE MOTEUR DE ROUTAGE)
-    # On déclenche ton ReporterService uniquement sur les NOUVEAUX articles fraîchement analysés.
+    # --- 5. DISTRIBUTION DES EMAILS ---
     if processed_articles:
         logger.info("📮 Lancement du ReporterService pour distribuer la veille aux collègues...")
-        # ⚠️ ATTENTION : Une fois déployé sur Streamlit Cloud, remplace cette URL par la tienne.
-        STREAMLIT_PUBLIC_URL = "https://vieille-techno-ebim.streamlit.app/" 
+        STREAMLIT_PUBLIC_URL = "https://vieille-techno-ebim.streamlit.app" 
         ReporterService.distribuer_veille(processed_articles, base_url=STREAMLIT_PUBLIC_URL)
 
 if __name__ == "__main__":
-    # 🎓 NOUVEAU : L'analyseur d'arguments (CLI).
-    # Cela permet à Streamlit (qui est un autre script) de commander main.py en lui disant :
-    # "Hé, lance une veille juste pour 'Impression 3D' !" -> python main.py --theme "Impression 3D"
     parser = argparse.ArgumentParser(description="Orchestrateur de Veille")
     parser.add_argument("--theme", type=str, help="Forcer la recherche sur un thème précis", default=None)
     args = parser.parse_args()

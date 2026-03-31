@@ -42,9 +42,6 @@ def clean_category(raw_cat):
 # ---------------------------------------------------------
 # 2. GESTION DU CACHE ET DE L'ÉTAT (MIS À JOUR)
 # ---------------------------------------------------------
-# 🎓 LE CACHE BUSTER : On passe 'last_update_time' en paramètre.
-# Si ce paramètre change (le fichier a été modifié par GitHub Actions), 
-# Streamlit détruit son cache automatiquement et relit le disque !
 @st.cache_data
 def load_data(last_update_time):
     db_path = Path("data/articles_db.json")
@@ -70,17 +67,6 @@ def load_data(last_update_time):
         art["ai_category_clean"] = clean_category(art.get("ai_category", ""))
             
     return articles
-
-def load_favorites():
-    fav_path = Path("data/favorites.json")
-    if fav_path.exists():
-        with open(fav_path, "r", encoding="utf-8") as f:
-            return set(json.load(f))
-    return set()
-
-def save_favorites(favorites_set):
-    with open("data/favorites.json", "w", encoding="utf-8") as f:
-        json.dump(list(favorites_set), f)
 
 @st.cache_resource
 def load_local_ai():
@@ -123,9 +109,6 @@ def hybrid_search(query: str, articles: list, encoder: SentenceTransformer, thre
 def main():
     st.title("🏗️ Tour de Contrôle : Veille BIM & IA")
     st.markdown("Interface 100% Autonome avec Recherche Hybride et Rapports à la demande.")
-    
-    if "favorites" not in st.session_state:
-        st.session_state.favorites = load_favorites()
         
     # 🎓 LECTURE INTELLIGENTE DE LA BASE DE DONNÉES
     db_path = Path("data/articles_db.json")
@@ -186,83 +169,68 @@ def main():
     def render_article_card(art, context_id="", force_open=False):
         score = art.get('ai_score', 0)
         score_color = "🟢" if score >= 8 else ("🟡" if score >= 5 else "🔴")
-        is_fav = art['url'] in st.session_state.favorites
-        
-        fav_icon = "⭐ Retirer favori" if is_fav else "☆ Ajouter favori"
         cat = art.get("ai_category_clean", "Veille Globale 🌐")
         
         display_title = art.get("ai_french_title", art["title"])
         
-        btn_fav_key = f"fav_{context_id}_{art['url']}"
         btn_deep_key = f"deep_{context_id}_{art['url']}"
         dl_key = f"dl_{context_id}_{art['url']}"
         report_state_key = f"report_{art['url']}"
         
         with st.expander(f"[{score}/10] {score_color} {display_title} ({art['source_name']})", expanded=force_open):
-            col1, col2 = st.columns([5, 1])
-            with col1:
-                if "match_type" in art:
-                    st.caption(f"🎯 Trouvé par : {art['match_type']} (Pertinence: {art['similarity']:.2%})")
+            if "match_type" in art:
+                st.caption(f"🎯 Trouvé par : {art['match_type']} (Pertinence: {art['similarity']:.2%})")
                     
-                st.markdown(f"**Catégorie IA :** {cat}")
+            st.markdown(f"**Catégorie IA :** {cat}")
+            
+            if "ai_french_title" in art and art["ai_french_title"] != art["title"]:
+                st.caption(f"Titre original : *{art['title']}*")
                 
-                if "ai_french_title" in art and art["ai_french_title"] != art["title"]:
-                    st.caption(f"Titre original : *{art['title']}*")
-                    
-                st.markdown(f"**Résumé :** {art.get('ai_summary', 'Non disponible')}")
-                tags = art.get('ai_tags', [])
-                if tags:
-                    st.markdown("**Mots-clés :** " + " • ".join([f"`{tag}`" for tag in tags]))
-                st.markdown(f"[Lire l'article complet]({art['url']})")
+            st.markdown(f"**Résumé :** {art.get('ai_summary', 'Non disponible')}")
+            tags = art.get('ai_tags', [])
+            if tags:
+                st.markdown("**Mots-clés :** " + " • ".join([f"`{tag}`" for tag in tags]))
+            st.markdown(f"[Lire l'article complet]({art['url']})")
+            
+            # --- GESTION DU RAPPORT DÉTAILLÉ ---
+            if report_state_key in st.session_state:
+                st.markdown("---")
+                st.markdown("### 📑 Rapport Détaillé")
+                st.markdown(st.session_state[report_state_key])
                 
-                # --- GESTION DU RAPPORT DÉTAILLÉ ---
-                if report_state_key in st.session_state:
-                    st.markdown("---")
-                    st.markdown("### 📑 Rapport Détaillé")
-                    st.markdown(st.session_state[report_state_key])
-                    
-                    safe_title = "".join([c for c in display_title if c.isalpha() or c.isdigit() or c==' ']).rstrip()
-                    st.download_button(
-                        label="📥 Télécharger le rapport (.md)",
-                        data=st.session_state[report_state_key],
-                        file_name=f"Rapport_BIM_{safe_title[:30]}.md",
-                        mime="text/markdown",
-                        key=dl_key
-                    )
-                else:
-                    if st.button("🧠 Générer un rapport détaillé", key=btn_deep_key):
-                        with st.spinner("Llama-3.1 rédige le rapport détaillé (environ 5-10 sec)..."):
-                            try:
-                                client = Groq(api_key=settings.groq_api_key)
-                                prompt = f"""
-                                Tu es un expert analyste. Rédige une synthèse détaillée (temps de lecture estimé : 4 minutes) 
-                                de cet article en FRANÇAIS.
-                                Titre : {display_title}
-                                Texte brut : {art.get('ai_summary', '')}
-                                
-                                Instructions de formatage :
-                                - Utilise le format Markdown.
-                                - Surligne/mets en gras les termes techniques très importants.
-                                - Structure en 3 parties : 1. Le Contexte, 2. L'Innovation clé, 3. L'Impact sur l'industrie.
-                                """
-                                response = client.chat.completions.create(
-                                    messages=[{"role": "user", "content": prompt}],
-                                    model="llama-3.1-8b-instant",
-                                    temperature=0.3
-                                )
-                                st.session_state[report_state_key] = response.choices[0].message.content
-                                st.rerun()
-                            except Exception as e:
-                                st.error(f"Erreur lors de la communication avec l'IA : {e}")
-
-            with col2:
-                if st.button(fav_icon, key=btn_fav_key):
-                    if is_fav:
-                        st.session_state.favorites.remove(art['url'])
-                    else:
-                        st.session_state.favorites.add(art['url'])
-                    save_favorites(st.session_state.favorites)
-                    st.rerun()
+                safe_title = "".join([c for c in display_title if c.isalpha() or c.isdigit() or c==' ']).rstrip()
+                st.download_button(
+                    label="📥 Télécharger le rapport (.md)",
+                    data=st.session_state[report_state_key],
+                    file_name=f"Rapport_BIM_{safe_title[:30]}.md",
+                    mime="text/markdown",
+                    key=dl_key
+                )
+            else:
+                if st.button("🧠 Générer un rapport détaillé", key=btn_deep_key):
+                    with st.spinner("Llama-3.1 rédige le rapport détaillé (environ 5-10 sec)..."):
+                        try:
+                            client = Groq(api_key=settings.groq_api_key)
+                            prompt = f"""
+                            Tu es un expert analyste. Rédige une synthèse détaillée (temps de lecture estimé : 4 minutes) 
+                            de cet article en FRANÇAIS.
+                            Titre : {display_title}
+                            Texte brut : {art.get('ai_summary', '')}
+                            
+                            Instructions de formatage :
+                            - Utilise le format Markdown.
+                            - Surligne/mets en gras les termes techniques très importants.
+                            - Structure en 3 parties : 1. Le Contexte, 2. L'Innovation clé, 3. L'Impact sur l'industrie.
+                            """
+                            response = client.chat.completions.create(
+                                messages=[{"role": "user", "content": prompt}],
+                                model="llama-3.1-8b-instant",
+                                temperature=0.3
+                            )
+                            st.session_state[report_state_key] = response.choices[0].message.content
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"Erreur lors de la communication avec l'IA : {e}")
 
     # =========================================================================
     # 🎓 LA SECTION VIP (Gestion du Deep Link par e-mail)
@@ -299,7 +267,7 @@ def main():
 
     # --- ORGANISATION TEMPORELLE ET ONGLETS PRINCIPAUX ---
     today_str = date.today().isoformat()
-    tab_today, tab_archives, tab_favs = st.tabs(["📅 Aujourd'hui", "🗄️ Archives", "⭐ Favoris"])
+    tab_today, tab_archives = st.tabs(["📅 Aujourd'hui", "🗄️ Archives"])
 
     # 1. ONGLET : AUJOURD'HUI
     with tab_today:
@@ -331,16 +299,6 @@ def main():
                     day_arts = [a for a in arch_arts if a.get("date_added") == d]
                     for art in day_arts:
                         render_article_card(art, context_id=f"arch_{d}")
-
-    # 3. ONGLET : FAVORIS
-    with tab_favs:
-        st.subheader("Tes articles sauvegardés")
-        fav_arts = [a for a in articles if a['url'] in st.session_state.favorites]
-        if not fav_arts:
-            st.info("Tu n'as pas encore de favoris. Clique sur ☆ Ajouter favori pour en ajouter !")
-        else:
-            for art in fav_arts:
-                render_article_card(art, context_id="fav")
 
 if __name__ == "__main__":
     main()
