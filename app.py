@@ -5,8 +5,8 @@ Architecture dynamique, Recherche Hybride, et Rapports On-Demand avec Sauvegarde
 import json
 from pathlib import Path
 from datetime import date
-import subprocess # NOUVEAU : Pour exécuter main.py en tant que processus externe
-import sys # NOUVEAU : Pour connaître le chemin de l'exécutable Python courant
+import subprocess # Pour exécuter main.py en tant que processus externe
+import sys # Pour connaître le chemin de l'exécutable Python courant
 import streamlit as st
 import torch
 import torch.nn.functional as F
@@ -120,9 +120,7 @@ def main():
     st.title("🏗️ Tour de Contrôle : Veille BIM & IA")
     st.markdown("Interface 100% Autonome avec Recherche Hybride et Rapports à la demande.")
     
-    # 🎓 NOUVEAU : INTERCEPTION DU DEEP LINK
-    # Ton code reporter.py génère des liens type : https://ton-app.com/?article_url=https://...
-    # On capture ce paramètre ici pour l'utiliser plus bas !
+    # --- INTERCEPTION DU DEEP LINK ---
     query_params = st.query_params
     deep_link_url = query_params.get("article_url", None)
     
@@ -132,16 +130,15 @@ def main():
     if "favorites" not in st.session_state:
         st.session_state.favorites = load_favorites()
         
+    # On charge les données en mémoire
     articles = load_data()
     encoder = load_local_ai()
     
-    if not articles:
-        st.warning("⚠️ La base de données est vide. Lance d'abord l'orchestrateur via le terminal : `uv run main.py`")
-        st.stop()
-
-    categories_existantes = sorted(list(set(art["ai_category_clean"] for art in articles)))
-
-    # --- BARRE LATÉRALE ---
+    # =========================================================================
+    # 🎓 CORRECTION ARCHITECTURALE : LE MENU EST DESSINÉ EN PREMIER
+    # En dessinant la barre latérale AVANT le st.stop(), le bouton reste 
+    # toujours accessible, même au premier démarrage quand la base est vide !
+    # =========================================================================
     with st.sidebar:
         st.header("🎛️ Filtres Intelligents")
         
@@ -157,27 +154,24 @@ def main():
             placeholder="ex: BIM, Rénovation, IFC..."
         )
         
-        # 🎓 EXPLICATION : On explicite que cette barre cherche dans le passé.
         st.caption("💡 Cherche instantanément parmi **tous les anciens articles** stockés, en croisant le texte et le sens mathématique (IA vectorielle).")
         
         st.markdown("---")
        
-        # 🎓 NOUVEAU : LANCEMENT DE RECHERCHE À LA VOLÉE
+        # LE BOUTON DE DÉMARRAGE / SCAN MANUEL
         st.subheader("🚀 Scanner un nouveau thème")
-        st.markdown("Un besoin urgent ? Lance les radars immédiatement.")
+        st.markdown("Un besoin urgent ou un premier démarrage ? Lance les radars.")
         theme_manuel = st.text_input("Thème (ex: Robotique Boston Dynamics)", placeholder="Scanner le web...")
 
         if st.button("Lancer l'Orchestrateur ⚙️"):
             if theme_manuel:
-                # Explication architecturale : Streamlit gère mal l'asyncio natif dans ses boutons.
-                # On utilise donc un sous-processus isolé. Cela garde l'UI réactive (spinner) sans crasher.
                 with st.spinner(f"Scraping et Analyse Llama-3.1 en cours pour '{theme_manuel}' (≈ 30 à 60 sec)..."):
                     try:
-                        # sys.executable garantit qu'on utilise bien le Python de notre environnement `uv`
+                        # Exécution de l'usine (main.py) en arrière-plan
                         subprocess.run([sys.executable, "main.py", "--theme", theme_manuel], check=True)
                         st.success(f"✅ Veille sur '{theme_manuel}' terminée et mails envoyés !")
-                        st.cache_data.clear() # On vide le cache mémoire de Streamlit
-                        st.rerun() # On force le rafraîchissement visuel pour afficher le nouvel article
+                        st.cache_data.clear() # On vide la mémoire pour que Streamlit lise les nouveaux fichiers
+                        st.rerun() # Rafraîchissement total de l'interface
                     except subprocess.CalledProcessError as e:
                         st.error("❌ Échec de la recherche : L'orchestrateur a renvoyé une erreur.")
             else:
@@ -185,6 +179,19 @@ def main():
 
         st.markdown("---")
         st.metric("Total des articles en base", len(articles))
+
+    # =========================================================================
+    # 🛡️ LE GARDE-FOU (Le point de blocage est désormais APRES le menu)
+    # =========================================================================
+    if not articles:
+        # Si c'est vide, on affiche l'alerte, et on "tue" l'affichage du reste
+        # de la page (les onglets, les articles) car on ne peut rien afficher.
+        # Mais le menu sur le côté est déjà dessiné, donc l'utilisateur n'est pas bloqué !
+        st.warning("⚠️ La base de données est vide. Utilise le menu de gauche pour lancer ton premier scan !")
+        st.stop() 
+
+    # --- SI ON ARRIVE ICI, C'EST QUE LA BASE CONTIENT DES ARTICLES ---
+    categories_existantes = sorted(list(set(art.get("ai_category_clean", "Veille Globale 🌐") for art in articles)))
         
     # --- APPLICATION DES FILTRES ---
     filtered_articles = [art for art in articles if art.get("ai_score", 0) >= min_score]
@@ -200,9 +207,8 @@ def main():
         is_fav = art['url'] in st.session_state.favorites
         
         fav_icon = "⭐ Retirer favori" if is_fav else "☆ Ajouter favori"
-        cat = art["ai_category_clean"]
+        cat = art.get("ai_category_clean", "Veille Globale 🌐")
         
-        # --- NOUVEAU : Récupération intelligente du titre (Français si dispo, sinon Original) ---
         display_title = art.get("ai_french_title", art["title"])
         
         btn_fav_key = f"fav_{context_id}_{art['url']}"
@@ -210,8 +216,6 @@ def main():
         dl_key = f"dl_{context_id}_{art['url']}"
         report_state_key = f"report_{art['url']}"
         
-        # 🎓 NOUVEAU : Logique visuelle du Deep Link
-        # Si l'URL de l'article actuel est celle cliquée dans l'e-mail, on déplie l'accordéon par défaut !
         force_expand = (deep_link_url == art['url'])
         
         with st.expander(f"[{score}/10] {score_color} {display_title} ({art['source_name']})", expanded=force_expand):
@@ -222,7 +226,6 @@ def main():
                     
                 st.markdown(f"**Catégorie IA :** {cat}")
                 
-                # Petit ajout d'UX : On montre le titre original en petit si on a traduit le titre
                 if "ai_french_title" in art and art["ai_french_title"] != art["title"]:
                     st.caption(f"Titre original : *{art['title']}*")
                     
@@ -296,7 +299,7 @@ def main():
             cat_tabs = st.tabs(categories_existantes)
             for i, cat in enumerate(categories_existantes):
                 with cat_tabs[i]:
-                    cat_arts = [a for a in today_arts if a["ai_category_clean"] == cat]
+                    cat_arts = [a for a in today_arts if a.get("ai_category_clean", "Veille Globale 🌐") == cat]
                     if not cat_arts:
                         st.write("Aucun article dans cette catégorie aujourd'hui.")
                     for art in cat_arts:
