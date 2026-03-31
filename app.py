@@ -3,7 +3,7 @@ Interface Utilisateur Streamlit pour la Veille BIM & IA.
 Architecture dynamique, Recherche Hybride, et Rapports On-Demand avec Sauvegarde.
 """
 import json
-import urllib.parse # NOUVEAU : Indispensable pour nettoyer proprement l'URL de l'e-mail
+import urllib.parse
 from pathlib import Path
 from datetime import date
 import subprocess
@@ -40,10 +40,13 @@ def clean_category(raw_cat):
     return "Veille Globale 🌐"
 
 # ---------------------------------------------------------
-# 2. GESTION DU CACHE ET DE L'ÉTAT
+# 2. GESTION DU CACHE ET DE L'ÉTAT (MIS À JOUR)
 # ---------------------------------------------------------
+# 🎓 LE CACHE BUSTER : On passe 'last_update_time' en paramètre.
+# Si ce paramètre change (le fichier a été modifié par GitHub Actions), 
+# Streamlit détruit son cache automatiquement et relit le disque !
 @st.cache_data
-def load_data():
+def load_data(last_update_time):
     db_path = Path("data/articles_db.json")
     emb_path = Path("data/embeddings_db.json")
     
@@ -124,7 +127,13 @@ def main():
     if "favorites" not in st.session_state:
         st.session_state.favorites = load_favorites()
         
-    articles = load_data()
+    # 🎓 LECTURE INTELLIGENTE DE LA BASE DE DONNÉES
+    db_path = Path("data/articles_db.json")
+    # On récupère l'heure exacte de la dernière modification du fichier
+    mtime = db_path.stat().st_mtime if db_path.exists() else 0
+    # On passe cette heure au cache. Si l'heure change, le cache se met à jour !
+    articles = load_data(mtime)
+    
     encoder = load_local_ai()
     
     # =========================================================================
@@ -159,7 +168,7 @@ def main():
                     try:
                         subprocess.run([sys.executable, "main.py", "--theme", theme_manuel], check=True)
                         st.success(f"✅ Veille sur '{theme_manuel}' terminée et mails envoyés !")
-                        st.cache_data.clear()
+                        st.cache_data.clear() # On force quand même le vidage manuel ici
                         st.rerun()
                     except subprocess.CalledProcessError as e:
                         st.error("❌ Échec de la recherche : L'orchestrateur a renvoyé une erreur.")
@@ -174,7 +183,6 @@ def main():
         st.stop() 
 
     # --- FONCTION DE RENDU D'UNE CARTE ---
-    # 🎓 MODIFIÉ : Ajout du paramètre 'force_open' pour le Deep Link
     def render_article_card(art, context_id="", force_open=False):
         score = art.get('ai_score', 0)
         score_color = "🟢" if score >= 8 else ("🟡" if score >= 5 else "🔴")
@@ -258,26 +266,28 @@ def main():
 
     # =========================================================================
     # 🎓 LA SECTION VIP (Gestion du Deep Link par e-mail)
-    # Placée tout en haut, avant même les onglets !
     # =========================================================================
     query_params = st.query_params
     deep_link_url = query_params.get("article_url", None)
     
     if deep_link_url:
-        # On décode l'URL proprement pour corriger les + et %2F générés par l'e-mail
         decoded_url = urllib.parse.unquote_plus(deep_link_url)
         
-        # On cherche l'article dans la base (On teste la version encodée ET décodée)
+        # 1. Recherche stricte
         target_article = next((a for a in articles if a['url'] == deep_link_url or a['url'] == decoded_url), None)
+        
+        # 2. Recherche souple (NOUVEAU) : Si la boîte mail (Outlook etc.) a modifié le lien
+        if not target_article:
+            # On cherche si l'URL décodée est "contenue" dans l'URL de la base, ou inversement
+            target_article = next((a for a in articles if decoded_url.strip('/') in a['url'] or a['url'].strip('/') in decoded_url), None)
         
         if target_article:
             st.success("📩 Vous venez depuis un e-mail ! Voici l'article que vous avez demandé :")
             st.markdown("### 🎯 Article à la loupe")
-            # force_open=True permet d'ouvrir l'accordéon directement sans clic
             render_article_card(target_article, context_id="vip_deeplink", force_open=True)
             st.markdown("---")
         else:
-            st.error("❌ L'article demandé est introuvable. Il a peut-être été purgé de la base de données car il est trop ancien.")
+            st.error("❌ L'article demandé est introuvable. (Assurez-vous que l'application a bien fini de se mettre à jour).")
 
     # --- APPLICATION DES FILTRES POUR LE RESTE DE LA PAGE ---
     categories_existantes = sorted(list(set(art.get("ai_category_clean", "Veille Globale 🌐") for art in articles)))
