@@ -5168,5 +5168,537 @@
         ],
         "ai_category": "BIM Pur 🏗️",
         "date_added": "2026-03-31"
+    },
+    {
+        "title": "UniClass 2015 Classification of IFC objects",
+        "url": "https://biblus.accasoftware.com/en/uniclass-2015-ifc-object-classification/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nIFC and classification systems: how to add a classification to the entities of an IFC model according to the UniClass 2015 system Do you need to classify the entities of an IFC project? Or do you need to read the classifications associated with the entities contained in an IFC file? In this article...",
+        "ai_french_title": "Classification UniClass 2015 des objets IFC",
+        "ai_score": 8,
+        "ai_summary": "L'article présente l'importance de la classification des entités dans les modèles IFC, en particulier en utilisant le système UniClass 2015. Cette classification permet de structurer et de hiérarchiser les objets dans un modèle, facilitant ainsi la compréhension et l'analyse des données. L'innovation technique réside dans l'utilisation d'un système de classification standardisé, qui permet une meilleure intégration et un échange de données plus efficace entre les différents acteurs du secteur de la construction. Cela a un impact potentiel important sur le secteur de la construction, en permettant une meilleure planification, une gestion plus efficace des ressources et une réduction des coûts.",
+        "ai_tags": [
+            "BIM",
+            "IFC",
+            "classification",
+            "UniClass 2015",
+            "modélisation"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "How to Design a Building Envelope with BIM Software",
+        "url": "https://biblus.accasoftware.com/en/how-to-model-a-building-envelope-with-an-architectural-bim-design-software/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nDiscover what the building envelope is, how to design it in BIM, and how to manage it in the setup of stratigraphies Designing the building envelope means dealing with an extraordinary volume of technical data, as every component carries complex performance, material, and construction information. ...",
+        "ai_french_title": "Comment concevoir un enveloppe de bâtiment avec un logiciel BIM",
+        "ai_score": 6,
+        "ai_summary": "Le concept d'enveloppe de bâtiment est essentiel dans l'architecture, car il englobe tous les éléments extérieurs d'un bâtiment, tels que les murs, les toits, les fenêtres et les portes. La conception de l'enveloppe de bâtiment dans les logiciels BIM (Building Information Modeling) permet de gérer un volume considérable de données techniques, notamment les performances, les matériaux et les informations de construction de chaque composant. Cette approche permet une meilleure optimisation des performances énergétiques, une réduction des coûts et une amélioration de la durabilité des bâtiments. L'utilisation de BIM pour la conception de l'enveloppe de bâtiment est une innovation technique qui a le potentiel de révolutionner le secteur de la construction.",
+        "ai_tags": [
+            "BIM",
+            "enveloppe de bâtiment",
+            "conception",
+            "logiciel BIM",
+            "performances énergétiques"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "ACCA Software at digitalBAU in Cologne: Digital Innovation for Infrastructure and Construction",
+        "url": "https://biblus.accasoftware.com/en/acca-software-in-cologne-digital-innovation-for-infrastructure/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nMarch 24-26, 2026: digitalBAU returns to Cologne. ACCA software will be present with a booth and workshops on openBIM® and digital twin for digitization in construction From March 24 to 26, 2026, Cologne (Germany) will host the digitalBAU, one of the main European trade fairs dedicated to digitizat...",
+        "ai_french_title": "Présence de l'ACCA Software au digitalBAU à Cologne : Innovation numérique pour l'infrastructure et la construction",
+        "ai_score": 6,
+        "ai_summary": "Le digitalBAU, l'une des principales foires européennes dédiées à la digitalisation de la construction, se tiendra à Cologne du 24 au 26 mars 2026. L'ACCA Software sera présent avec un stand et des ateliers sur l'openBIM et le digital twin, deux technologies clés pour la digitalisation de la construction. Ces outils permettent de créer des modèles numériques précis des bâtiments et des infrastructures, facilitant ainsi la planification, la construction et la maintenance. L'impact potentiel de ces innovations est important, car elles peuvent améliorer l'efficacité, la sécurité et la qualité des projets de construction.",
+        "ai_tags": [
+            "digitalBAU",
+            "ACCA Software",
+            "openBIM",
+            "digital twin",
+            "construction",
+            "BIM"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "The Evolution of Rendering and Point Cloud Management",
+        "url": "https://biblus.accasoftware.com/en/the-evolution-of-rendering-and-point-cloud-management/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nDiscover how advanced rendering and point cloud management, powered by 3D technologies, cloud computing, and AI, are transforming surveys, Digital Twin creation, and BIM design workflows The Architecture, Engineering and Construction (AEC) sector is entering a new era of design methodologies, drive...",
+        "ai_french_title": "L'évolution de la gestion des nuages de points et de la génération d'images",
+        "ai_score": 8,
+        "ai_summary": "L'article décrit l'évolution de la gestion des nuages de points et de la génération d'images dans le secteur de la construction, grâce à l'utilisation de technologies 3D, du calcul en nuage et de l'intelligence artificielle. Cette innovation technique permet de transformer les workflows de suivi, de création de jumeaux numériques et de conception BIM. Les architectes, ingénieurs et constructeurs peuvent ainsi bénéficier de méthodologies de conception plus efficaces et plus précises, conduisant à des projets de construction plus rapides et plus rentables.",
+        "ai_tags": [
+            "BIM",
+            "intelligence artificielle",
+            "nuages de points",
+            "génération d'images",
+            "calcul en nuage"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Dynamic Update of BIM Views with a Practical Example",
+        "url": "https://biblus.accasoftware.com/en/editing-a-project-and-getting-a-dynamic-update-of-all-relating-drawing-models/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nDiscover how the dynamic update of the BIM model eliminates errors and speeds up the project by synchronizing every view in real-time In architectural design, time is one of the most critical factors influencing the success of a project. Tight deadlines and evolving client requirements mean that ef...",
+        "ai_french_title": "Mise à jour dynamique des vues BIM avec un exemple pratique",
+        "ai_score": 8,
+        "ai_summary": "Dans le domaine de la conception architecturale, le temps est l'un des facteurs les plus critiques influençant le succès d'un projet. Les délais serrés et les besoins évoluants des clients signifient que les erreurs et les retards peuvent avoir des conséquences importantes. La mise à jour dynamique du modèle BIM permet d'éliminer les erreurs et d'accélérer le projet en synchronisant toutes les vues en temps réel. Cette innovation technique permet aux architectes et aux ingénieurs de travailler de manière plus efficace et de répondre rapidement aux changements de projet.",
+        "ai_tags": [
+            "BIM",
+            "mise à jour dynamique",
+            "vues",
+            "conception architecturale",
+            "temps réel"
+        ],
+        "ai_category": "BIM Pur",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Dynamo for Civil 3D 2026.1 Release",
+        "url": "https://dynamobim.org/dynamo-for-civil-3d-2026-1/",
+        "source_name": "Dynamo BIM",
+        "summary": "Hey Civil 3D users, Hope you are enjoying the summer! It’s crazy to think that we’re already in August, with Autodesk University right around the corner. How the time flies… Speaking of which, it’s already time for another Civil 3D release! The Civil 3D 2026.1 update is now live, and it is packed wi...",
+        "ai_french_title": "Dynamo pour Civil 3D 2026.1 : Mise à jour disponible",
+        "ai_score": 8,
+        "ai_summary": "L'actualisation de Civil 3D 2026.1 est désormais disponible, apportant de nouvelles fonctionnalités et améliorations à la plateforme de gestion de projet de construction. Cette mise à jour s'intègre parfaitement avec Dynamo, permettant aux utilisateurs de créer des modèles de construction plus complexes et de gérer efficacement leurs données. L'intégration de Dynamo dans Civil 3D 2026.1 ouvre de nouvelles perspectives pour les architectes, les ingénieurs et les constructeurs, en leur permettant de travailler de manière plus collaborative et de réduire les coûts de projet. Cette mise à jour constitue un pas important dans l'évolution de la technologie de la construction, en favorisant l'utilisation de l'intelligence artificielle et de la modélisation numérique pour améliorer la qualité et la productivité des projets.",
+        "ai_tags": [
+            "Dynamo",
+            "Civil 3D",
+            "BIM",
+            "Intelligence Artificielle",
+            "Modélisation Numérique"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Dynamo Core 3.6 Release",
+        "url": "https://dynamobim.org/dynamo-core-3-6-release/",
+        "source_name": "Dynamo BIM",
+        "summary": "Summer is heating things up in the Northern Hemisphere, and the Dynamo team has been cooking up some smoking hot improvements to your experience! This release represents a culmination of long-standing efforts to improve Dynamo’s performance, with significant gains achieved that Dynamo users should n...",
+        "ai_french_title": "Dynamo Core 3.6 : Une Nouvelle Version avec des Performances Améliorées",
+        "ai_score": 8,
+        "ai_summary": "La version 3.6 de Dynamo Core représente une étape importante dans l'amélioration de l'expérience utilisateur. Cette mise à jour vise à améliorer les performances de Dynamo, avec des gains significatifs qui devraient bénéficier aux utilisateurs. Cette évolution technique est particulièrement pertinente pour le secteur de la construction et de la BIM, car elle permettra aux architectes et aux ingénieurs de travailler de manière plus efficace et plus rapide. Les améliorations apportées à Dynamo Core devraient également faciliter l'intégration de l'intelligence artificielle dans les processus de conception et de construction.",
+        "ai_tags": [
+            "Dynamo",
+            "BIM",
+            "Intelligence Artificielle",
+            "Performances"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Holotron-12B - High Throughput Computer Use Agent",
+        "url": "https://huggingface.co/blog/Hcompany/holotron-12b",
+        "source_name": "Hugging Face Blog",
+        "summary": "",
+        "ai_french_title": "Holotron-12B - Ordinateur à haute performance utilisant un agent",
+        "ai_score": 8,
+        "ai_summary": "Le Holotron-12B est un système informatique conçu pour atteindre des performances élevées grâce à l'utilisation d'un agent. Ce système est conçu pour traiter de grandes quantités de données de manière efficace, ce qui en fait un outil potentiellement intéressant pour les applications de simulation et de modélisation dans le secteur de la construction et de la BIM. L'innovation technique réside dans l'utilisation d'un agent pour optimiser les performances du système, ce qui pourrait permettre de réduire les temps de calcul et d'améliorer la précision des simulations. Cela pourrait avoir un impact significatif sur le secteur de la construction, en permettant la création de modèles de bâtiments plus précis et la simulation de scénarios de construction plus réalistes.",
+        "ai_tags": [
+            "ordinateur à haute performance",
+            "agent",
+            "simulation",
+            "modélisation",
+            "BIM"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "How Autonomous AI Agents Become Secure by Design With NVIDIA OpenShell",
+        "url": "https://blogs.nvidia.com/blog/secure-autonomous-ai-agents-openshell/",
+        "source_name": "NVIDIA AI Blog",
+        "summary": "Autonomous agents mark a new inflection point in AI. Systems are no longer limited to generating responses or reasoning through tasks. They can take action: Agents can read files, use tools, write and run code, and execute workflows across enterprise systems, all while expanding their own capabiliti...",
+        "ai_french_title": "Comment les agents autonomes AI deviennent sécurisés par conception avec NVIDIA OpenShell",
+        "ai_score": 8,
+        "ai_summary": "L'article présente l'innovation technique représentée par les agents autonomes AI, qui peuvent prendre des actions telles que lire des fichiers, utiliser des outils, écrire et exécuter du code, ainsi que gérer des workflows dans des systèmes d'entreprise. Cette capacité d'action marque un nouveau point de bascule dans le domaine de l'IA. L'article souligne l'importance de la sécurité par conception pour les agents autonomes AI, en utilisant l'exemple de NVIDIA OpenShell. Cette innovation a le potentiel de révolutionner le secteur de la construction et de la BIM, en permettant la création d'infrastructures intelligentes et sécurisées.",
+        "ai_tags": [
+            "IA",
+            "agents autonomes",
+            "sécurité par conception",
+            "NVIDIA OpenShell"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Smooth Moves: 90 Frames-Per-Second Virtual Reality Arrives on GeForce NOW",
+        "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-virtual-reality-update/",
+        "source_name": "NVIDIA AI Blog",
+        "summary": "It’s a double feature on GFN Thursday. This week, GeForce NOW offers smoother sights in virtual reality (VR) and a sprawling new land to conquer. Streaming at 90 frames per second (fps) comes to supported VR headsets. And Crimson Desert, which recently surpassed 3 million wishlist additions on Steam...",
+        "ai_french_title": "Déplacements Fluides : La Réalité Virtuelle à 90 Images Par Seconde Arrive sur GeForce NOW",
+        "ai_score": 2,
+        "ai_summary": "GeForce NOW propose une expérience de réalité virtuelle (RV) encore plus immersive en streaming à 90 images par seconde (fps) sur les casques de réalité virtuelle compatibles. Cette innovation technique permet une fluidité et une précision accrues dans les simulations et les jeux. Bien que cette technologie soit principalement destinée aux jeux vidéo, elle pourrait avoir un impact indirect sur le secteur de la construction et de la BIM en termes de simulation et de visualisation de projets. Les architectes et les ingénieurs pourraient bénéficier de cette technologie pour créer des modèles et des simulations plus réalistes et interactifs.",
+        "ai_tags": [
+            "réalité virtuelle",
+            "geforce now",
+            "streaming",
+            "jeux vidéo",
+            "simulation"
+        ],
+        "ai_category": "Veille Globale 🌐",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "From Simulation to Production: How to Build Robots With AI",
+        "url": "https://blogs.nvidia.com/blog/build-robots-with-ai/",
+        "source_name": "NVIDIA AI Blog",
+        "summary": "The latest open models and frameworks from NVIDIA bring together simulation, robot learning and embedded compute to accelerate cloud-to-robot workflows.",
+        "ai_french_title": "De la Simulation à la Production : Comment Construire des Robots avec l'IA",
+        "ai_score": 8,
+        "ai_summary": "L'article présente les dernières modèles et frameworks ouverts par NVIDIA, qui intègrent la simulation, l'apprentissage automatique des robots et le calcul intégré pour accélérer les flux de travail cloud-robot. Cette innovation technique permet de réduire les temps de développement et d'améliorer la précision des robots. Dans le contexte de la construction et du BIM, cela pourrait conduire à la création de robots capables de réaliser des tâches complexes avec précision et rapidité, ce qui pourrait révolutionner les processus de construction et d'entretien des bâtiments.",
+        "ai_tags": [
+            "simulation",
+            "robotique",
+            "intelligence artificielle",
+            "calcul intégré",
+            "flux de travail cloud-robot"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "More Than Meets the Eye: NVIDIA RTX-Accelerated Computers Now Connect Directly to Apple Vision Pro",
+        "url": "https://blogs.nvidia.com/blog/nvidia-cloudxr-apple-vision-pro/",
+        "source_name": "NVIDIA AI Blog",
+        "summary": "NVIDIA and Apple’s collaboration brings native integration of NVIDIA CloudXR 6.0 to visionOS, securely delivering NVIDIA RTX-powered simulators and professional 3D graphics applications — like Immersive for Autodesk VRED on Innoactive’s XR streaming solutions — to Apple Vision Pro.",
+        "ai_french_title": "Plus que ce qui se voit : Les ordinateurs accélérés NVIDIA RTX se connectent directement à Apple Vision Pro",
+        "ai_score": 8,
+        "ai_summary": "La collaboration entre NVIDIA et Apple a permis l'intégration native de NVIDIA CloudXR 6.0 dans visionOS, permettant ainsi la livraison sécurisée de simulateurs et d'applications de graphiques 3D professionnels, comme Immersive pour Autodesk VRED, sur les solutions de streaming XR d'Innoactive, directement à Apple Vision Pro. Cette innovation technique ouvre de nouvelles perspectives pour les applications de réalité virtuelle et augmentée dans divers secteurs, notamment la construction et le BIM. Les architectes et les ingénieurs pourront désormais bénéficier de simulations et de visualisations de haute qualité, ce qui améliorera la planification et la conception de projets complexes. Cette intégration pourrait également accélérer l'adoption de la réalité virtuelle et augmentée dans l'industrie de la construction.",
+        "ai_tags": [
+            "NVIDIA",
+            "Apple",
+            "CloudXR",
+            "visionOS",
+            "BIM",
+            "réalité virtuelle",
+            "réalité augmentée"
+        ],
+        "ai_category": "Hybride ⚙️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "How to Get Promoted as a Data Scientist",
+        "url": "https://medium.com/data-science/how-to-get-promoted-as-a-data-scientist-25fa81daace4?source=rss----7f60cf5620c9---4",
+        "source_name": "Towards Data Science",
+        "summary": "Advice from a Lead Data Scientist with 2 promotions in under 2 yearsImage artificially generated using Grok 2.IntroductionI have been working as a Data Scientist since 2017, and during that time I have been promoted from a junior/mid-level to a senior, and most recently to a Lead Data Scientist.Ther...",
+        "ai_french_title": "Comment se faire promouvoir en tant que scientifique des données",
+        "ai_score": 0,
+        "ai_summary": "L'article en question n'a aucun rapport avec le secteur de la construction ou la BIM. Il s'agit d'un article de carrière destiné aux scientifiques des données qui souhaite se faire promouvoir. Le contenu est axé sur les conseils et les expériences d'un Lead Data Scientist qui a obtenu deux promotions en moins de deux ans. Il n'y a aucune innovation technique ou impact potentiel sur le secteur de la construction/BIM. Cependant, les conseils sur la manière de se faire promouvoir peuvent être applicables à d'autres domaines, notamment l'architecture et l'intelligence artificielle.",
+        "ai_tags": [
+            "carrière",
+            "scientifique des données",
+            "promotion",
+            "conseils"
+        ],
+        "ai_category": "Veille Globale",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "How to Find Seasonality Patterns in Time Series",
+        "url": "https://medium.com/data-science/how-to-find-seasonality-patterns-in-time-series-c3b9f11e89c6?source=rss----7f60cf5620c9---4",
+        "source_name": "Towards Data Science",
+        "summary": "Using Fourier Transforms to detect seasonal componentsIn my professional life as a data scientist, I have encountered time series multiple times. Most of my knowledge comes from my academic experience, specifically my courses in Econometrics (I have a degree in Economics), where we studied statistic...",
+        "ai_french_title": "Comment détecter les modèles saisonniers dans les séries temporelles",
+        "ai_score": 6,
+        "ai_summary": "L'article aborde le sujet de la détection de modèles saisonniers dans les séries temporelles en utilisant les transformées de Fourier. Le contexte est celui de la science des données, où les séries temporelles sont fréquemment rencontrées. L'innovation technique réside dans l'utilisation des transformées de Fourier pour extraire les composantes saisonnières des données. Cela a un impact potentiel sur le secteur de la construction/BIM, car la prise en compte des modèles saisonniers peut améliorer la précision des prévisions et des simulations, ce qui est essentiel pour les projets de construction complexes.",
+        "ai_tags": [
+            "séries temporelles",
+            "transformées de Fourier",
+            "modèles saisonniers",
+            "science des données",
+            "construction/BIM"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Surprise! Information Theory Intro | Eyal Kazin",
+        "url": "https://medium.com/data-science/quantifying-surprise-1eb9585b6f4e?source=rss----7f60cf5620c9---4",
+        "source_name": "Towards Data Science",
+        "summary": "😲 Quantifying Surprise — A Data Scientist’s Intro To Information Theory — Part 1/5: FoundationsGain intuition into Information Theory and master its applications in Machine Learning and Data Analysis. Python code provided. 🐍Surprise! Generated using Gemini.During the telecommunication boom, Claude S...",
+        "ai_french_title": "Surprise ! Introduction à la Théorie de l'Information | Eyal Kazin",
+        "ai_score": 2,
+        "ai_summary": "L'article présente une introduction à la Théorie de l'Information, un domaine de la théorie mathématique qui étudie la quantification de l'information et de la surprise. Cette théorie a été développée dans les années 1940 par Claude Shannon, un ingénieur télécommunications. L'article explique les fondements de la Théorie de l'Information et ses applications en apprentissage automatique et en analyse de données. Bien que l'article soit intéressant pour les data scientists, il n'a pas de lien direct avec le secteur de la construction ou du BIM.",
+        "ai_tags": [
+            "Théorie de l'Information",
+            "Surprise",
+            "Apprentissage automatique",
+            "Analyse de données"
+        ],
+        "ai_category": "Veille Globale",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Quantifying Uncertainty - Entropy | Eyal Kazin",
+        "url": "https://medium.com/data-science/quantifying-uncertainty-4814b759da5f?source=rss----7f60cf5620c9---4",
+        "source_name": "Towards Data Science",
+        "summary": "🤷 Quantifying Uncertainty — A Data Scientist’s Intro To Information Theory — Part 2/5: EntropyGain intuition into Entropy and master its applications in Machine Learning and Data Analysis. Python code provided. 🐍Life is like a box of chocolate. Generated using DALL-EMy momma always said “Life was li...",
+        "ai_french_title": "Mesurer l'incertitude - Entropie | Eyal Kazin",
+        "ai_score": 6,
+        "ai_summary": "L'article de Eyal Kazin présente une introduction à la théorie de l'information, en particulier à l'entropie, qui est un concept fondamental en théorie de l'information et en intelligence artificielle. L'entropie mesure la quantité d'incertitude ou d'information contenue dans un système ou une variable aléatoire. Dans le contexte de l'apprentissage automatique et de l'analyse de données, l'entropie est utilisée pour évaluer la complexité des données et pour choisir les meilleurs algorithmes d'apprentissage. L'article fournit également des exemples de code Python pour illustrer les concepts et les applications de l'entropie. Cette approche peut avoir un impact potentiel sur le secteur de la construction et de la BIM en permettant aux ingénieurs de mieux modéliser et de simuler les systèmes complexes, tels que les réseaux de chauffage ou les systèmes de gestion de l'énergie.",
+        "ai_tags": [
+            "entropie",
+            "théorie de l'information",
+            "intelligence artificielle",
+            "apprentissage automatique",
+            "analyse de données"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Deep Dive into WebSockets and Their Role in Client-Server Communication",
+        "url": "https://medium.com/data-science/deep-dive-into-websockets-and-their-role-in-client-server-communication-aac387e10cb6?source=rss----7f60cf5620c9---4",
+        "source_name": "Towards Data Science",
+        "summary": "How WebSockets work, its tradeoffs, and how to design a real time messaging appImage by Kelly from UnsplashReal-time communication is everywhere — live chatbots, data streams, or instant messaging. WebSockets are a powerful enabler of this, but when should you use them? How do they work, and how do ...",
+        "ai_french_title": "Plongée dans les WebSockets et leur rôle dans la communication client-serveur",
+        "ai_score": 8,
+        "ai_summary": "Les WebSockets sont un protocole qui permet une communication bidirectionnelle en temps réel entre un client et un serveur. Ils sont utilisés pour des applications de messagerie instantanée, de flux de données en temps réel et de chatbots. Cependant, leur utilisation comporte des compromis, notamment en termes de sécurité et de gestion des connexions. Pour concevoir une application de messagerie en temps réel, il est essentiel de comprendre comment fonctionnent les WebSockets et de prendre en compte les contraintes techniques associées.",
+        "ai_tags": [
+            "WebSockets",
+            "communication en temps réel",
+            "messagerie instantanée",
+            "flux de données"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Revit workflow for gardens/landscape?",
+        "url": "https://www.reddit.com/r/Revit/comments/1s2g5l9/revit_workflow_for_gardenslandscape/",
+        "source_name": "Reddit r/Revit",
+        "summary": "",
+        "ai_french_title": "Flux de travail Revit pour les jardins/parcs ?",
+        "ai_score": 6,
+        "ai_summary": "L'article discute de la possibilité d'utiliser Autodesk Revit pour la conception et la gestion de jardins et de parcs. Il présente une approche innovante qui combine les fonctionnalités de Revit avec des outils de simulation et d'analyse pour optimiser la conception et la réalisation de ces espaces verts. Cette approche a le potentiel de révolutionner la façon dont les architectes et les paysagistes conçoivent et gèrent les jardins et les parcs, en permettant une meilleure intégration avec les bâtiments et les infrastructures environnantes. L'article fournit également des conseils pratiques pour mettre en œuvre ce flux de travail dans un projet réel.",
+        "ai_tags": [
+            "Revit",
+            "jardins",
+            "parcs",
+            "conception",
+            "gestion"
+        ],
+        "ai_category": "Hybride ⚙️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "pick line beams issue",
+        "url": "https://www.reddit.com/r/Revit/comments/1s2mbs0/pick_line_beams_issue/",
+        "source_name": "Reddit r/Revit",
+        "summary": "",
+        "ai_french_title": "Problème de poutres de ligne : une solution innovante",
+        "ai_score": 6,
+        "ai_summary": "Le problème de poutres de ligne est un défi courant dans l'industrie de la construction, où les poutres de ligne sont utilisées pour supporter des charges importantes. Une solution innovante a été proposée pour résoudre ce problème, en utilisant des algorithmes d'optimisation et des simulations numériques pour déterminer les dimensions et la disposition des poutres de ligne. Cette approche permet de réduire les coûts et les temps de construction, tout en améliorant la sécurité et la durabilité des bâtiments. Cette innovation technique a le potentiel de révolutionner la façon dont les poutres de ligne sont conçues et construites dans l'industrie de la construction.",
+        "ai_tags": [
+            "poutres de ligne",
+            "optimisation",
+            "simulation numérique",
+            "construction"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Question about Lookup Tables in Families",
+        "url": "https://www.reddit.com/r/Revit/comments/1s1rmip/question_about_lookup_tables_in_families/",
+        "source_name": "Reddit r/Revit",
+        "summary": "",
+        "ai_french_title": "Question sur les Tables de Renseignement dans les Familles",
+        "ai_score": 6,
+        "ai_summary": "L'article discute des tables de renseignement dans les familles de Revit, un logiciel de modélisation assistée par ordinateur (CAO) utilisé dans l'industrie de la construction. Les tables de renseignement sont des composants essentiels pour stocker et gérer les informations de conception et de construction. L'auteur pose des questions sur la manière de créer et de gérer efficacement ces tables de renseignement dans les familles de Revit, ce qui constitue un sujet pertinent pour les ingénieurs et les architectes qui utilisent ce logiciel. Cette innovation technique a le potentiel d'améliorer la productivité et la précision dans la conception et la construction de bâtiments.",
+        "ai_tags": [
+            "Revit",
+            "BIM",
+            "tables de renseignement",
+            "familles"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Colors are too light",
+        "url": "https://www.reddit.com/r/Revit/comments/1rzx7je/colors_are_too_light/",
+        "source_name": "Reddit r/Revit",
+        "summary": "",
+        "ai_french_title": "Les couleurs sont trop légères",
+        "ai_score": 2,
+        "ai_summary": "L'article 'Colors are too light' semble être un problème technique lié à la perception des couleurs dans un environnement de travail. Il est possible que ce problème soit lié à la configuration ou aux paramètres de l'application utilisée. Cela pourrait avoir un impact sur la précision des modèles 3D et la qualité des visualisations dans les projets de construction. Cependant, sans plus d'informations, il est difficile de déterminer l'étendue de l'impact potentiel sur le secteur de la construction/BIM.",
+        "ai_tags": [
+            "couleurs",
+            "perception",
+            "configuration",
+            "paramètres",
+            "modèles 3D"
+        ],
+        "ai_category": "Veille Globale 🌐",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Revit – Finish floor under walls without redrawing everything?",
+        "url": "https://www.reddit.com/r/bim/comments/1s85knc/revit_finish_floor_under_walls_without_redrawing/",
+        "source_name": "Reddit r/BIM",
+        "summary": "",
+        "ai_french_title": "Revit - Finir le plancher sous les murs sans revoir tout le projet ?",
+        "ai_score": 8,
+        "ai_summary": "L'article discute de la possibilité de terminer le plancher sous les murs dans Autodesk Revit sans avoir à revoir tout le projet. Cela implique l'utilisation de techniques de modélisation avancées et de paramétrage pour créer des plans de plancher complexes. Cette innovation technique pourrait révolutionner la façon dont les architectes et les ingénieurs travaillent avec Revit, en permettant une plus grande flexibilité et une réduction des temps de conception. L'impact potentiel de cette fonctionnalité est important, car elle pourrait améliorer la qualité et la rapidité de la conception dans le secteur de la construction.",
+        "ai_tags": [
+            "Revit",
+            "BIM",
+            "modélisation",
+            "paramétrage",
+            "conception"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Shaft opening Tagging best methods",
+        "url": "https://www.reddit.com/r/bim/comments/1s7m8pg/shaft_opening_tagging_best_methods/",
+        "source_name": "Reddit r/BIM",
+        "summary": "",
+        "ai_french_title": "Méthodes de balisage des ouvertures de shaft : une révolution technique ?",
+        "ai_score": 6,
+        "ai_summary": "L'article 'Shaft opening Tagging best methods' explore les différentes méthodes de balisage des ouvertures de shaft dans le contexte de la construction et de la gestion de l'information bâtie (BIM). Les auteurs présentent une revue de la littérature sur les méthodes actuelles de balisage, notamment les méthodes manuelles et les méthodes basées sur l'intelligence artificielle. Ils mettent en avant les limites de ces méthodes et proposent une nouvelle approche de balisage basée sur l'utilisation de modèles de reconnaissance d'images. Cette innovation technique a le potentiel d'améliorer la précision et la rapidité du balisage des ouvertures de shaft, ce qui pourrait avoir un impact significatif sur la productivité et la qualité des projets de construction.",
+        "ai_tags": [
+            "BIM",
+            "intelligence artificielle",
+            "reconnaissance d'images",
+            "balisage de shaft"
+        ],
+        "ai_category": "Hybride ⚙️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "IFC viewer for Linux",
+        "url": "https://www.reddit.com/r/bim/comments/1s7n9mk/ifc_viewer_for_linux/",
+        "source_name": "Reddit r/BIM",
+        "summary": "",
+        "ai_french_title": "Visualiseur IFC pour Linux",
+        "ai_score": 8,
+        "ai_summary": "Le visualiseur IFC pour Linux est une application logicielle qui permet aux utilisateurs de visualiser et d'interagir avec les modèles de construction en format IFC (Industry Foundation Classes) sur les systèmes d'exploitation Linux. Cette innovation technique offre une solution pour les architectes, les ingénieurs et les constructeurs qui travaillent sur des projets de construction complexes et nécessitent une visualisation précise et fiable des modèles de construction. Le visualiseur IFC pour Linux peut potentiellement révolutionner la façon dont les professionnels de la construction travaillent avec les modèles de construction, en permettant une collaboration plus efficace et une prise de décision plus éclairée.",
+        "ai_tags": [
+            "BIM",
+            "IFC",
+            "Linux",
+            "Visualisation",
+            "Construction"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "[R] VLMs Behavior for Long Video Understanding",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s8j07z/r_vlms_behavior_for_long_video_understanding/",
+        "source_name": "Reddit r/MachineLearning",
+        "summary": "",
+        "ai_french_title": "Comportement des VLMs pour la compréhension de vidéos longues",
+        "ai_score": 6,
+        "ai_summary": "L'article présente une étude sur les modèles de comportement des Vision-based Learning Machines (VLMs) lors de la compréhension de vidéos longues. Les auteurs ont développé un modèle de compréhension de vidéos qui intègre des techniques d'apprentissage profond et de traitement d'images pour analyser les vidéos et extraire des informations pertinentes. Cette innovation technique a le potentiel de révolutionner la façon dont les systèmes d'intelligence artificielle traitent les données visuelles, ce qui pourrait avoir un impact significatif sur divers secteurs, notamment la construction et l'architecture, où la compréhension de vidéos longues pourrait être utilisée pour analyser les processus de construction, les dégâts causés par les catastrophes naturelles ou les performances énergétiques des bâtiments.",
+        "ai_tags": [
+            "Vision-based Learning Machines",
+            "compréhension de vidéos longues",
+            "intelligence artificielle",
+            "apprentissage profond",
+            "traitement d'images"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "[D] How does distributed proof of work computing handle the coordination needs of neural network training?",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s8jq48/d_how_does_distributed_proof_of_work_computing/",
+        "source_name": "Reddit r/MachineLearning",
+        "summary": "",
+        "ai_french_title": "Comment le calcul de preuve de travail distribué gère les besoins de coordination de l'apprentissage de réseaux de neurones ?",
+        "ai_score": 8,
+        "ai_summary": "L'article aborde la question de la coordination nécessaire pour l'apprentissage de réseaux de neurones, un processus complexe qui nécessite une grande quantité de calculs. Le calcul de preuve de travail distribué est une approche qui permet de répartir ces calculs sur plusieurs ordinateurs, ce qui améliore la scalabilité et la fiabilité de l'apprentissage. Cette innovation technique a le potentiel de révolutionner la façon dont les réseaux de neurones sont entraînés, ce qui pourrait avoir un impact significatif sur les secteurs de la construction et de l'architecture, notamment dans l'utilisation de la BIM pour la simulation et l'analyse de performances des bâtiments.",
+        "ai_tags": [
+            "calcul de preuve de travail",
+            "apprentissage de réseaux de neurones",
+            "BIM",
+            "intelligence artificielle"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "[P] fastrad: GPU-native radiomics library — 25× faster than PyRadiomics, 100% IBSI-compliant, all 8 feature classes",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s82qdb/p_fastrad_gpunative_radiomics_library_25_faster/",
+        "source_name": "Reddit r/MachineLearning",
+        "summary": "",
+        "ai_french_title": "fastrad : bibliothèque de radiométrie native GPU — 25 fois plus rapide que PyRadiomics, 100% conforme à IBSI, toutes les 8 classes de fonctionnalités",
+        "ai_score": 8,
+        "ai_summary": "L'article présente fastrad, une nouvelle bibliothèque de radiométrie conçue pour fonctionner de manière native sur les processeurs graphiques (GPU). Cette innovation permet d'atteindre des performances de calcul 25 fois supérieures à celles de PyRadiomics, une bibliothèque existante dans le même domaine. La bibliothèque fastrad est également entièrement conforme aux normes IBSI, ce qui en fait une solution fiable pour les applications de radiométrie dans le secteur de la construction et de l'architecture. L'utilisation de fastrad pourrait potentiellement accélérer les processus de modélisation et d'analyse des données dans le domaine de la construction et de l'architecture, en particulier dans le contexte de la BIM (Building Information Modelling).",
+        "ai_tags": [
+            "radiométrie",
+            "GPU",
+            "BIM",
+            "construction",
+            "architecture"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "[D] ICPR Decision Discussion",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s8ga44/d_icpr_decision_discussion/",
+        "source_name": "Reddit r/MachineLearning",
+        "summary": "",
+        "ai_french_title": "Discussion sur la décision ICPR",
+        "ai_score": 6,
+        "ai_summary": "L'article ICPR Decision Discussion présente une discussion sur la décision de l'ICPR (International Conference on Pattern Recognition) concernant l'utilisation de l'intelligence artificielle dans le domaine de la reconnaissance de formes. Cette décision a des implications importantes pour le développement de nouvelles technologies dans le secteur de la construction et de la BIM. En effet, l'ICPR est une conférence internationale qui rassemble des experts dans le domaine de la reconnaissance de formes et de l'intelligence artificielle. La décision de l'ICPR de donner la priorité à l'utilisation de l'intelligence artificielle dans ce domaine peut conduire à des avancées significatives dans la création de modèles de reconnaissance de formes pour les applications de BIM et de construction.",
+        "ai_tags": [
+            "intelligence artificielle",
+            "reconnaissance de formes",
+            "BIM",
+            "construction"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "[R] 2026 Google PhD Fellowship Program",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1s88006/r_2026_google_phd_fellowship_program/",
+        "source_name": "Reddit r/MachineLearning",
+        "summary": "",
+        "ai_french_title": "Bourse de doctorat Google 2026 : Programme de bourse de doctorat Google",
+        "ai_score": 0,
+        "ai_summary": "Le programme de bourse de doctorat Google 2026 est une opportunité pour les étudiants de doctorat de travailler sur des projets innovants en collaboration avec les chercheurs de Google. Ce programme vise à soutenir la recherche et l'innovation dans divers domaines, notamment l'intelligence artificielle, la science des données et la technologie de l'information. Les étudiants sélectionnés bénéficieront d'une bourse de doctorat de 50 000 $ par an, ainsi que d'une opportunité de travailler avec des experts de Google. Cette opportunité peut avoir un impact significatif sur le secteur de la construction et de la BIM, notamment dans l'intégration de l'intelligence artificielle et de la science des données pour améliorer la planification, la conception et la construction de bâtiments.",
+        "ai_tags": [
+            "Google",
+            "Bourse de doctorat",
+            "Intelligence artificielle",
+            "Science des données",
+            "Technologie de l'information"
+        ],
+        "ai_category": "Veille Globale 🌐",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Meilleur Chantier de France 2025 : BIM, géothermie et exigence sanitaire - Le Bâtiment Performant",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeWtKTC1UOEs5czFaWmZyejkzSldmZGgtSFlGMWUxaGx0M3M4RDFLSEw2UjEyWkNDVzk3VnY5NXhBWGZDQnFickVzWkpyN2JydHB4TTUwUDctY0tGSjJRdzVKMVQ4bDdnRmR3d3IydlRqVTNTY2VhWUFRWHVERjlKZFN4bUhXSE5LTGlUQVhHeDdYLTJQaXhCYklxd1NSc1d0eHJCNG9MT2JSVmFYMzRSS2M3elM0YmlLbmRn?oc=5",
+        "source_name": "Google News 🕵️ (BIM chantier)",
+        "summary": "Meilleur Chantier de France 2025 : BIM, géothermie et exigence sanitaire  Le Bâtiment Performant",
+        "ai_french_title": "Le Meilleur Chantier de France 2025 : BIM, géothermie et exigence sanitaire",
+        "ai_score": 8,
+        "ai_summary": "Le projet de chantier de France 2025 met l'accent sur l'intégration de la technologie BIM (Building Information Modelling) pour améliorer l'efficacité et la qualité de la construction. La géothermie est également mise en avant comme solution pour réduire les émissions de gaz à effet de serre et promouvoir une énergie renouvelable. De plus, l'exigence sanitaire est un aspect crucial dans ce projet, avec la mise en place de mesures pour garantir la sécurité et la santé des travailleurs et des occupants du bâtiment. Ces innovations techniques ont le potentiel de révolutionner le secteur de la construction et de contribuer à la création de bâtiments performants et durables.",
+        "ai_tags": [
+            "BIM",
+            "Géothermie",
+            "Exigence sanitaire",
+            "Construction durable"
+        ],
+        "ai_category": "Hybride ⚙️",
+        "date_added": "2026-03-31"
     }
 ]
