@@ -30,9 +30,9 @@ from core.config import settings
 class AIAnalysisResult(BaseModel):
     """Ce modèle définit exactement ce qu'on attend du LLM (Garde-fou)."""
     french_title: str = Field(..., description="Le titre de l'article traduit en français")
-    score: int = Field(..., description="Note d'intérêt de l'article de 1 à 10")
-    summary: str = Field(..., description="Résumé en français de 2-3 phrases max")
-    tags: List[str] = Field(..., description="Liste de 3 à 5 mots-clés techniques")
+    score: int = Field(..., description="Note d'intérêt de l'article de 1 à 10 pour un professionnel du BIM")
+    summary: str = Field(..., description="Résumé très détaillé en français (minimum 3 à 4 phrases complètes, soit environ 3 lignes denses).")
+    tags: List[str] = Field(..., description="3 à 5 mots-clés spécifiques (ex: Revit, API, LLM, Jumeau Numérique)")
     category: str = Field(..., description="Catégorie stricte parmi : 'BIM Pur 🏗️', 'Dev & IA 💻', 'Hybride ⚙️', 'Veille Globale 🌐'")
 
 # ---------------------------------------------------------
@@ -58,16 +58,18 @@ class BIMAnalyzer:
         Envoie le titre et le contenu brut à Groq pour obtenir une analyse structurée
         en forçant le mode JSON (JSON Mode).
         """
+         # 🎓 NOUVEAU : Le Prompt a été durci pour forcer des résumés longs et argumentés.
         prompt = f"""
-        Tu es un expert en veille technologique spécialisé dans le BIM, la Construction et l'IA.
-        Analyse l'article suivant :
-        Titre : {title}
-        Contenu : {summary}
+        Tu es un Ingénieur Expert en BIM, Architecture et Intelligence Artificielle.
+        Voici un article fraîchement récupéré sur le web :
         
-        Ta tâche :
-        1. Traduis le titre en FRANÇAIS.
-        2. Donne un score d'intérêt sur 10 (10 = innovation majeure, 1 = peu pertinent).
-        3. Rédige un court résumé technique EN FRANÇAIS.
+        Titre original : {title}
+        Texte brut/extrait : {summary}
+
+        TA MISSION :
+        1. Donne un 'score' sur 10 (10 = révolution technique majeure, 0 = hors sujet/spam). Sois très critique, donne 7 ou plus uniquement aux articles avec une vraie valeur technique.
+        2. Rédige un 'summary' EXHAUSTIF en français. Interdiction formelle de faire une seule phrase. Tu DOIS rédiger un paragraphe consistant de 3 ou 4 phrases bien construites (environ 3 à 4 lignes). Explique le contexte, l'innovation technique, et l'impact potentiel sur le secteur de la construction/BIM.
+        3. Traduis le 'french_title' proprement.
         4. Extrais 3 à 5 mots-clés pertinents.
         5. Classe l'article dans UNE SEULE de ces catégories exactes : 'BIM Pur 🏗️', 'Dev & IA 💻', 'Hybride ⚙️' ou 'Veille Globale 🌐'.
         

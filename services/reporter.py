@@ -1,6 +1,6 @@
 """
 Service dédié à la communication externe et aux rapports.
-Gère le filtrage par collègue, le formatage et l'envoi des newsletters.
+Gère le filtrage par collègue, le formatage par thème et l'envoi des newsletters.
 """
 from typing import List, Dict
 import urllib.parse
@@ -10,24 +10,19 @@ from email.mime.multipart import MIMEMultipart
 from loguru import logger
 import os
 
-# 🎓 NOUVEAU : L'ANNUAIRE DE TES COLLÈGUES
-# C'est ICI que tu définis qui reçoit quoi. 
-# La clé est l'adresse mail, la valeur est une liste de mots-clés (centres d'intérêt).
+# 🎓 L'ANNUAIRE DE L'AGENCE
 ANNUAIRE_COLLEGUES = {
-    "jean.architecte@ton-agence.fr": ["Revit", "IFC", "OpenBIM", "Maquette"],
-    "marie.dev@ton-agence.fr": ["IA", "Python", "API", "Automatisation"],
-    "boss@ton-agence.fr": ["Jumeau Numérique", "Start-up", "Marché", "Innovation"]
+    "mdeboeuf@ebim-ing.fr": ["Revit", "format IFC", "IDS", "Powerbi & Autodesk", "Logiciels architecture/Batiment"],
+    "aplassard@ebim-ing.fr": ["format IFC", "Jumeau Numérique", "projets d'Hypervision pour les aéroports", "Coût du BIM", "nouveautés QUALIOPI"],
+    "crottiers@ebim-ing.fr": ["IDS", "Revit", "ArchiCAD", "DOE numérique", "BIM chantier"]
 }
 
 class ReporterService:
 
     @staticmethod
     def get_tous_les_mots_cles() -> List[str]:
-        """
-        [NOUVEAU] - Compile une liste unique de tous les centres d'intérêt de l'agence.
-        Sert de 'carburant' dynamique pour l'orchestrateur (main.py).
-        """
-        tous_les_mots = set() # L'utilisation d'un 'set' garantit l'absence de doublons
+        """Compile une liste unique de tous les centres d'intérêt de l'agence."""
+        tous_les_mots = set()
         for interets in ANNUAIRE_COLLEGUES.values():
             tous_les_mots.update(interets)
         return list(tous_les_mots)
@@ -35,84 +30,105 @@ class ReporterService:
     @staticmethod
     def distribuer_veille(nouveaux_articles: List[Dict], base_url: str):
         """
-        Le "Facteur" intelligent. Il prend tous les nouveaux articles du jour,
-        regarde les intérêts de chaque collègue, et crée un mail sur mesure.
+        Le "Facteur" intelligent v2.0. 
+        Filtre par score (>=7), limite à 3 par thème, et structure l'e-mail.
         """
-        logger.info("📮 Début du tri du courrier pour les collègues...")
+        logger.info("📮 Début du tri du courrier Haute Qualité (Score >= 7) pour les collègues...")
         
         for email_collegue, interets in ANNUAIRE_COLLEGUES.items():
-            articles_pertinents = []
+            articles_par_theme = {} # Un dictionnaire pour ranger les articles par tiroir (thème)
+            articles_deja_selectionnes = set() # Pour éviter qu'un même article n'apparaisse dans 2 thèmes différents
             
-            # On vérifie chaque article pour voir s'il correspond aux intérêts de ce collègue
-            for art in nouveaux_articles:
-                # On regroupe le titre et le résumé pour chercher nos mots-clés dedans
-                texte_a_fouiller = (art.get('title', '') + " " + art.get('summary', '')).lower()
+            for mot_cle in interets:
+                candidats_pour_ce_theme = []
                 
-                # Si au moins UN des mots-clés du collègue est dans le texte, on garde l'article !
-                if any(mot_cle.lower() in texte_a_fouiller for mot_cle in interets):
-                    articles_pertinents.append(art)
+                for art in nouveaux_articles:
+                    # 1. Anti-doublon
+                    if art['url'] in articles_deja_selectionnes:
+                        continue
+                        
+                    # 2. Le filtre de Qualité Sévère (La note du LLM)
+                    score = art.get('ai_score', 0)
+                    if score < 7:
+                        continue
+                        
+                    # 3. Vérification de la pertinence textuelle
+                    texte_a_fouiller = (art.get('title', '') + " " + art.get('ai_summary', '') + " " + art.get('summary', '')).lower()
+                    if mot_cle.lower() in texte_a_fouiller:
+                        candidats_pour_ce_theme.append(art)
+                
+                # 4. On trie les candidats du meilleur score au moins bon
+                candidats_pour_ce_theme.sort(key=lambda x: x.get('ai_score', 0), reverse=True)
+                
+                # 5. On ne garde que le TOP 3
+                top_3 = candidats_pour_ce_theme[:3]
+                
+                if top_3:
+                    articles_par_theme[mot_cle] = top_3
+                    for a in top_3:
+                        articles_deja_selectionnes.add(a['url']) # On marque ces articles comme "déjà utilisés"
             
-            # Si on a trouvé des articles pour lui, on génère et on envoie son mail
-            if articles_pertinents:
-                logger.info(f"📧 Préparation de {len(articles_pertinents)} articles pour {email_collegue}...")
-                corps_mail = ReporterService.generer_corps_email(articles_pertinents, base_url, interets)
+            # Si on a trouvé au moins un article qualitatif pour ce collègue
+            if articles_par_theme:
+                total_articles = sum(len(arts) for arts in articles_par_theme.values())
+                logger.info(f"📧 Préparation d'un e-mail premium ({total_articles} articles) pour {email_collegue}...")
+                corps_mail = ReporterService.generer_corps_email_par_theme(articles_par_theme, base_url, interets)
                 ReporterService.envoyer_email(email_collegue, corps_mail)
             else:
-                logger.debug(f"📭 Rien de pertinent pour {email_collegue} aujourd'hui.")
+                logger.debug(f"📭 Rien d'assez qualitatif aujourd'hui pour {email_collegue}.")
 
     @staticmethod
-    def generer_corps_email(articles: List[Dict], base_url: str, interets_collegue: List[str]) -> str:
-        """Génère le texte de l'e-mail avec les Deep Links vers Streamlit."""
-        
-        # On formate les intérêts pour les afficher dans l'intro du mail
-        interets_str = ", ".join(interets_collegue)
+    def generer_corps_email_par_theme(articles_par_theme: Dict[str, List[Dict]], base_url: str, interets_collegue: List[str]) -> str:
+        """Génère un e-mail HTML ultra structuré et lisible, classé par thématique."""
         
         lignes = []
-        lignes.append("<h2>🤖 Ta Veille Technologique Sur-Mesure</h2>")
-        lignes.append(f"<p>Bonjour ! L'IA a trouvé ces articles spécifiquement basés sur tes centres d'intérêt (<strong>{interets_str}</strong>) :</p><hr>")
+        lignes.append("<div style='font-family: Arial, sans-serif; color: #333;'>")
+        lignes.append("<h2 style='color: #2c3e50;'>🤖 Ta Veille Haute Qualité du Jour</h2>")
+        lignes.append("<p>Bonjour ! L'IA a scruté le web et n'a retenu <strong>que les articles notés 7/10 ou plus</strong> correspondant à tes thématiques.</p>")
+        lignes.append("<hr style='border: 1px solid #eee;'>")
         
-        for art in articles:
-            titre = art.get('ai_french_title', art.get('title', 'Titre inconnu'))
-            resume = art.get('summary', 'Pas de résumé disponible.')
-            url_source = art.get('url', '')
-            score = art.get('ai_score', 'N/A')
+        for theme, articles in articles_par_theme.items():
+            # En-tête de la thématique
+            lignes.append(f"<h3 style='color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 5px; margin-top: 30px;'>🎯 Thème : {theme.upper()}</h3>")
             
-            lignes.append(f"<h3>📌 [{score}/10] {titre}</h3>")
-            lignes.append(f"<blockquote>{resume}</blockquote>")
-            
-            # --- LE DEEP LINK ---
-            safe_url = urllib.parse.quote_plus(url_source)
-            lien_vers_app = f"{base_url}/?article_url={safe_url}"
-            
-            lignes.append(f"<p>👉 <strong><a href='{lien_vers_app}'>Ouvrir le Grand Résumé IA dans l'application</a></strong></p>")
-            lignes.append(f"<p>🔗 <em><a href='{url_source}'>Voir l'article source original</a></em></p><br>")
-            
+            for art in articles:
+                titre = art.get('ai_french_title', art.get('title', 'Titre inconnu'))
+                resume = art.get('ai_summary', art.get('summary', 'Pas de résumé disponible.'))
+                url_source = art.get('url', '')
+                score = art.get('ai_score', 'N/A')
+                
+                lignes.append(f"<h4 style='margin-bottom: 5px; color: #2980b9;'>[{score}/10] {titre}</h4>")
+                # On met le résumé en italique et on gère les sauts de ligne correctement en HTML
+                resume_html = resume.replace('\n', '<br>')
+                lignes.append(f"<p style='font-size: 14px; line-height: 1.5; color: #555; background-color: #f9f9f9; padding: 10px; border-left: 4px solid #bdc3c7;'><i>{resume_html}</i></p>")
+                
+                safe_url = urllib.parse.quote_plus(url_source)
+                lien_vers_app = f"{base_url}/?article_url={safe_url}"
+                
+                lignes.append(f"<p style='font-size: 13px;'>👉 <a href='{lien_vers_app}' style='color: #27ae60; font-weight: bold; text-decoration: none;'>Ouvrir l'analyse détaillée</a> | 🔗 <a href='{url_source}' style='color: #7f8c8d; text-decoration: none;'>Article original</a></p>")
+                
+        lignes.append("<br><hr style='border: 1px solid #eee;'><p style='font-size: 12px; color: #999;'>🤖 Généré automatiquement par l'Orchestrateur Llama-3.1 de l'agence.</p>")
+        lignes.append("</div>")
         return "".join(lignes)
 
     @staticmethod
     def envoyer_email(destinataire: str, contenu_html: str):
-        """
-        Envoi réel du mail via SMTP.
-        Nécessite SMTP_EMAIL et SMTP_PASSWORD dans les variables d'environnement.
-        """
+        """Envoi SMTP."""
         expediteur = os.environ.get("SMTP_EMAIL", "ton.email@gmail.com")
         mot_de_passe = os.environ.get("SMTP_PASSWORD", "")
         
         if not mot_de_passe:
-            logger.warning(f"⚠️ Simulation d'envoi à {destinataire} (SMTP_PASSWORD non configuré).")
+            logger.warning(f"⚠️ Simulation d'envoi à {destinataire} (Mot de passe absent).")
             return
 
         try:
-            # Création du message
             msg = MIMEMultipart()
             msg['From'] = expediteur
             msg['To'] = destinataire
-            msg['Subject'] = "🏗️ Ton rapport de veille personnalisé"
+            msg['Subject'] = "🏗️ Sélection Premium: Ta veille BIM du jour"
             
             msg.attach(MIMEText(contenu_html, 'html'))
             
-            # Connexion au serveur SMTP (Exemple ici avec Gmail)
-            # Si tu utilises Outlook : smtp.office365.com (port 587)
             serveur = smtplib.SMTP('smtp.gmail.com', 587)
             serveur.starttls()
             serveur.login(expediteur, mot_de_passe)
@@ -120,6 +136,5 @@ class ReporterService:
             serveur.quit()
             
             logger.success(f"✅ E-mail envoyé avec succès à {destinataire} !")
-            
         except Exception as e:
-            logger.error(f"❌ Erreur lors de l'envoi de l'e-mail à {destinataire} : {e}")
+            logger.error(f"❌ Erreur SMTP pour {destinataire} : {e}")

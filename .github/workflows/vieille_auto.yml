@@ -10,6 +10,11 @@ on:
   # Ce bouton permet de lancer le script manuellement depuis l'interface GitHub si besoin
   workflow_dispatch:
 
+# 🛡️ NOUVEAU : LE BADGE DE SÉCURITÉ
+# On donne explicitement au robot le droit de "commit" et "push" sur ce dépôt.
+permissions:
+  contents: write
+
 # Que doit faire le robot ?
 jobs:
   execution_veille:

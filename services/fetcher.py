@@ -26,20 +26,40 @@ class BIMFetcher:
         # Liste des sources STATIQUES de haute qualité (BIM, IA, et Développement)
         # Note : L'orchestrateur (main.py) viendra injecter dynamiquement les radars Google News ici.
         self.rss_sources = {
+            # --- LES FONDATIONS BIM & OPENBIM (IFC, IDS) ---
+            "BuildingSMART (Officiel)": "https://www.buildingsmart.org/feed/", # Pour les standards IFC et IDS
             "AEC Business": "https://aec-business.com/feed/",
+            "AEC Magazine": "https://aecmag.com/feed/", 
             "BIM 42": "https://bim42.com/feed/",
+            "Speckle (OpenBIM)": "https://speckle.systems/rss/",
             "BibLus (ACCA)": "https://biblus.accasoftware.com/en/feed/",
-            "Reddit r/Revit": "https://www.reddit.com/r/Revit/.rss",
-            "Reddit r/BIM": "https://www.reddit.com/r/BIM/.rss",
+            
+            # --- EXPERTISE REVIT, AUTODESK & POWERBI ---
+            "The Building Coder": "https://thebuildingcoder.typepad.com/blog/atom.xml", # LA bible API Revit (pour Mdeboeuf)
+            "Revit Pure": "https://revitpure.com/blog?format=rss", # Excellents tutos Revit
+            "Autodesk Platform Services": "https://aps.autodesk.com/blog/rss", # Pour les intégrations cloud/PowerBI
+            "Dynamo BIM": "https://dynamobim.org/feed/", 
+            
+            # --- EXPERTISE ARCHICAD & CONCURRENTS ---
+            "Graphisoft Insights": "https://graphisoft.com/feed", # Pour ArchiCAD (Crottiers)
+            
+            # --- VEILLE FRANCOPHONE (Chantier, DOE, Normes) ---
+            "Hexabim": "https://www.hexabim.com/feed", # La plus grosse commu FR
+            "Construction21": "https://www.construction21.org/france/rss.xml", # Marché FR et smart building
+            "BIM&CO Blog": "https://www.bimandco.com/blog/fr/feed/",
+            
+            # --- JUMEAU NUMÉRIQUE & SMART BUILDING ---
+            "Smart Buildings Magazine": "https://smartbuildingsmagazine.com/feed.xml", # Pour l'hypervision (Apassard)
+            
+            # --- INTELLIGENCE ARTIFICIELLE & DATA ---
             "Hugging Face Blog": "https://huggingface.co/blog/feed.xml",
             "NVIDIA AI Blog": "https://blogs.nvidia.com/feed/",
             "Towards Data Science": "https://medium.com/feed/towards-data-science",
-            "Reddit r/MachineLearning": "https://www.reddit.com/r/MachineLearning/.rss",
-            "Reddit r/developpeurs": "https://www.reddit.com/r/developpeurs/.rss",
-            "AEC Magazine": "https://aecmag.com/feed/", 
-            "Dynamo BIM": "https://dynamobim.org/feed/", 
-            "BIM&CO Blog": "https://www.bimandco.com/blog/fr/feed/",
-            "Speckle (OpenBIM)": "https://speckle.systems/rss/"
+            
+            # --- VEILLE COMMUNAUTAIRE ---
+            "Reddit r/Revit": "https://www.reddit.com/r/Revit/.rss",
+            "Reddit r/BIM": "https://www.reddit.com/r/BIM/.rss",
+            "Reddit r/MachineLearning": "https://www.reddit.com/r/MachineLearning/.rss"
         }
         
         # En-têtes HTTP avancés (Camouflage "Anti-Bot")
