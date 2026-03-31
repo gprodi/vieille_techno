@@ -536,5 +536,541 @@
         ],
         "ai_category": "Hybride ⚙️",
         "date_added": "2026-03-31"
+    },
+    {
+        "title": "ACCA software at BSI Summit Porto 2026",
+        "url": "https://biblus.accasoftware.com/en/acca-software-at-bsi-summit-porto-2026/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nAt the buildingSMART International Summit in Porto, ACCA Software reaffirmed its leading role in advancing IFC-certified BIM and championing the global adoption of openBIM® The buildingSMART International Summit, held this year in Porto (Portugal), represents one of the key events for the world of ...",
+        "ai_french_title": "L'ACCA Software à la sommité du BSI Summit à Porto 2026",
+        "ai_score": 6,
+        "ai_summary": "L'ACCA Software a confirmé son leadership dans l'avancement de la BIM certifiée IFC et a promu l'adoption mondiale de l'openBIM. Cette événement clé pour le monde de la construction a réuni des professionnels du secteur à Porto, au Portugal. Le BSI Summit représente une opportunité pour les acteurs de la construction de partager leurs connaissances et leurs expériences dans le domaine de la BIM et de l'intelligence artificielle.",
+        "ai_tags": [
+            "BIM",
+            "IFC",
+            "openBIM",
+            "construction",
+            "intelligence artificielle"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Revolutionizing project efficiency with visual management in construction",
+        "url": "https://biblus.accasoftware.com/en/revolutionizing-project-efficiency-with-visual-management-in-construction/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nThe most effective way to improve project management and its lifecycle is visual management in construction. Find out why! In the construction industry, innovating is becoming increasingly difficult, due to the level of maturity reached over time. Corporate governance is looking for innovations tha...",
+        "ai_french_title": "Révolutionner l'efficacité des projets avec la gestion visuelle en construction",
+        "ai_score": 6,
+        "ai_summary": "Dans l'industrie de la construction, l'innovation devient de plus en plus difficile en raison du niveau de maturité atteint au fil du temps. La gouvernance d'entreprise cherche à innover pour améliorer la gestion de projet et son cycle de vie. La gestion visuelle en construction est considérée comme la méthode la plus efficace pour atteindre cet objectif. Cette approche permet de visualiser les processus et les données pour améliorer la communication, la collaboration et la prise de décision.",
+        "ai_tags": [
+            "gestion visuelle",
+            "construction",
+            "innovation",
+            "efficacité des projets"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Managing IDS Files in Revit: A Practical Guide",
+        "url": "https://biblus.accasoftware.com/en/managing-an-ids-file-in-revit-a-guide/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nDiscover how to manage IDS files in Revit and optimize BIM workflows with usBIM.revolution for automatic synchronization and validation of IFC models In Building Information Modeling (BIM), maintaining consistent, high-quality project information is critical to successful delivery. As projects grow...",
+        "ai_french_title": "Gestion des fichiers IDS dans Revit : Guide pratique",
+        "ai_score": 6,
+        "ai_summary": "Dans le contexte du Building Information Modeling (BIM), la gestion de l'information projet est cruciale pour une livraison réussie. Les projets de construction nécessitent une grande quantité de données, qui doivent être synchronisées et validées pour garantir leur cohérence et leur qualité. L'article présente une solution pour gérer les fichiers IDS dans Revit, en utilisant l'outil usBIM.revolution, qui permet une synchronisation et une validation automatiques des modèles IFC. Cette innovation technique peut potentiellement améliorer les workflows BIM en réduisant les erreurs et les incohérences, ce qui peut conduire à des projets de construction plus efficaces et plus rentables.",
+        "ai_tags": [
+            "BIM",
+            "Revit",
+            "IDS",
+            "usBIM.revolution",
+            "IFC"
+        ],
+        "ai_category": "BIM Pur",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "What are Working Drawings and how to obtain them",
+        "url": "https://biblus.accasoftware.com/en/working-drawings/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nWorking drawings are a part of the executive project documentation and serve as a guide for the construction phase of a project. Here are the main types and how they work Working drawings are part of the construction documentation process and  the key to transforming a project on paper into a well-...",
+        "ai_french_title": "Qu'est-ce que les dessins de travail et comment les obtenir ?",
+        "ai_score": 2,
+        "ai_summary": "Les dessins de travail constituent une partie intégrante de la documentation du projet exécutif et servent de guide pour la phase de construction d'un projet. Ils sont essentiels au processus de documentation de la construction et permettent de transformer un projet sur papier en un projet bien exécuté. Dans cet article, nous allons explorer les différents types de dessins de travail et comment les obtenir. Les dessins de travail sont une étape cruciale dans la préparation d'un projet de construction, car ils fournissent aux constructeurs les informations nécessaires pour réaliser le projet de manière précise et efficace.",
+        "ai_tags": [
+            "dessins de travail",
+            "documentation de construction",
+            "projet de construction"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Photovoltaic Cells: What They Are and How They Work",
+        "url": "https://biblus.accasoftware.com/en/photovoltaic-cells-what-are-they-and-how-do-they-work/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nPhotovoltaic cells are the basic element for the production of electricity. Discover what their characteristics are and how they work Photovoltaic cells, semiconductor devices capable of transforming sunlight into electrical energy thanks to the photovoltaic effect, represent the fundamental unit o...",
+        "ai_french_title": "Les cellules photovoltaïques : ce qu'elles sont et comment elles fonctionnent",
+        "ai_score": 6,
+        "ai_summary": "Les cellules photovoltaïques sont les éléments de base pour la production d'électricité. Elles sont des dispositifs semi-conducteurs capables de transformer la lumière du soleil en énergie électrique grâce à l'effet photovoltaïque. Cette technologie représente l'unité fondamentale de la production d'énergie solaire, qui connaît un essor croissant dans le secteur de la construction et de l'architecture. L'intégration de cellules photovoltaïques dans les bâtiments peut réduire considérablement les émissions de gaz à effet de serre et contribuer à une plus grande autonomie énergétique.",
+        "ai_tags": [
+            "énergie solaire",
+            "photovoltaïque",
+            "technologie",
+            "construction",
+            "BIM"
+        ],
+        "ai_category": "Hybride ⚙️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "UniClass 2015 Classification of IFC objects",
+        "url": "https://biblus.accasoftware.com/en/uniclass-2015-ifc-object-classification/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nIFC and classification systems: how to add a classification to the entities of an IFC model according to the UniClass 2015 system Do you need to classify the entities of an IFC project? Or do you need to read the classifications associated with the entities contained in an IFC file? In this article...",
+        "ai_french_title": "Classification UniClass 2015 des objets IFC : comment ajouter une classification aux entités d'un modèle IFC",
+        "ai_score": 8,
+        "ai_summary": "L'article discute de la classification des entités d'un modèle IFC en utilisant le système UniClass 2015. Il s'agit d'un système de classification qui permet de catégoriser les objets d'un bâtiment en fonction de leurs caractéristiques. Cette classification est essentielle pour les projets de construction qui nécessitent une gestion précise des informations. L'article explique comment ajouter une classification aux entités d'un modèle IFC en utilisant le système UniClass 2015, ce qui permet de faciliter la gestion et l'analyse des données. Cette innovation technique a un impact potentiel important sur le secteur de la construction, car elle permet une meilleure gestion des informations et une amélioration de la collaboration entre les acteurs du projet.",
+        "ai_tags": [
+            "BIM",
+            "classification",
+            "UniClass 2015",
+            "IFC",
+            "modèle de construction"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "How to Design a Building Envelope with BIM Software",
+        "url": "https://biblus.accasoftware.com/en/how-to-model-a-building-envelope-with-an-architectural-bim-design-software/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nDiscover what the building envelope is, how to design it in BIM, and how to manage it in the setup of stratigraphies Designing the building envelope means dealing with an extraordinary volume of technical data, as every component carries complex performance, material, and construction information. ...",
+        "ai_french_title": "Comment concevoir un enveloppe de bâtiment avec des logiciels BIM",
+        "ai_score": 6,
+        "ai_summary": "Le concept d'enveloppe de bâtiment est essentiel dans la conception architecturale, car il englobe l'ensemble des éléments qui contribuent à la performance énergétique et à la durabilité d'un édifice. La conception de l'enveloppe de bâtiment en utilisant les logiciels BIM (Building Information Modeling) permet de gérer efficacement un volume important de données techniques, y compris les performances, les matériaux et les informations de construction. Cette approche innovante permet aux architectes et aux ingénieurs de prendre des décisions éclairées et de réduire les coûts de construction. L'utilisation de BIM pour la conception de l'enveloppe de bâtiment peut également améliorer la collaboration entre les différents acteurs du projet et accélérer la phase de conception.",
+        "ai_tags": [
+            "BIM",
+            "enveloppe de bâtiment",
+            "conception architecturale",
+            "performance énergétique",
+            "durabilité"
+        ],
+        "ai_category": "BIM Pur",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "ACCA Software at digitalBAU in Cologne: Digital Innovation for Infrastructure and Construction",
+        "url": "https://biblus.accasoftware.com/en/acca-software-in-cologne-digital-innovation-for-infrastructure/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nMarch 24-26, 2026: digitalBAU returns to Cologne. ACCA software will be present with a booth and workshops on openBIM® and digital twin for digitization in construction From March 24 to 26, 2026, Cologne (Germany) will host the digitalBAU, one of the main European trade fairs dedicated to digitizat...",
+        "ai_french_title": "Présence de l'ACCA Software au digitalBAU à Cologne : Innovation numérique pour l'infrastructure et la construction",
+        "ai_score": 6,
+        "ai_summary": "Le digitalBAU, une des principales foires européennes consacrées à la digitalisation de la construction, se tiendra du 24 au 26 mars 2026 à Cologne en Allemagne. L'ACCA Software sera présent avec un stand et des ateliers sur l'openBIM et le digital twin, deux concepts clés pour la digitalisation de la construction. Ces technologies permettent de créer des modèles numériques précis des bâtiments et des infrastructures, facilitant ainsi la planification, la construction et l'entretien. L'impact potentiel de ces innovations est important, car elles pourraient améliorer l'efficacité, la sécurité et la durabilité des projets de construction.",
+        "ai_tags": [
+            "digitalBAU",
+            "ACCA Software",
+            "openBIM",
+            "digital twin",
+            "construction",
+            "BIM"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "The Evolution of Rendering and Point Cloud Management",
+        "url": "https://biblus.accasoftware.com/en/the-evolution-of-rendering-and-point-cloud-management/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nDiscover how advanced rendering and point cloud management, powered by 3D technologies, cloud computing, and AI, are transforming surveys, Digital Twin creation, and BIM design workflows The Architecture, Engineering and Construction (AEC) sector is entering a new era of design methodologies, drive...",
+        "ai_french_title": "L'évolution de la gestion des rendus et des nuages de points : une révolution technique dans le secteur de la construction",
+        "ai_score": 8,
+        "ai_summary": "Le secteur de la construction est en train de passer à une nouvelle ère de méthodologies de conception, impulsée par les technologies 3D, l'informatique cloud et l'intelligence artificielle. Les rendus avancés et la gestion des nuages de points, alimentés par ces technologies, transforment les flux de travail de la conception, de la création de Digital Twin et de la conception BIM. Cette évolution permet une collaboration plus efficace, une prise de décision plus rapide et une amélioration de la qualité des projets.",
+        "ai_tags": [
+            "BIM",
+            "Intelligence Artificielle",
+            "Nuages de points",
+            "Rendus",
+            "Construction"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Dynamic Update of BIM Views with a Practical Example",
+        "url": "https://biblus.accasoftware.com/en/editing-a-project-and-getting-a-dynamic-update-of-all-relating-drawing-models/",
+        "source_name": "BibLus (ACCA)",
+        "summary": "\nDiscover how the dynamic update of the BIM model eliminates errors and speeds up the project by synchronizing every view in real-time In architectural design, time is one of the most critical factors influencing the success of a project. Tight deadlines and evolving client requirements mean that ef...",
+        "ai_french_title": "Mise à jour dynamique des vues BIM : un exemple pratique",
+        "ai_score": 8,
+        "ai_summary": "Dans le domaine de la conception architecturale, le temps est un facteur critique influençant le succès d'un projet. Les délais serrés et les besoins évoluant des clients signifient que les erreurs et les retards peuvent avoir des conséquences importantes. La mise à jour dynamique du modèle BIM permet d'éliminer ces erreurs et d'accélérer le projet en synchronisant toutes les vues en temps réel. Cela permet aux architectes et aux ingénieurs de travailler de manière plus efficace et de répondre rapidement aux changements de projet.",
+        "ai_tags": [
+            "BIM",
+            "mise à jour dynamique",
+            "vues",
+            "conception architecturale",
+            "temps réel"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Visiting Slantis in Uruguay & Argentina | BIM Pure On Site",
+        "url": "https://www.bimpure.com/blog/visiting-slantis-in-uruguay-argentina-bim-pure-on-site",
+        "source_name": "Revit Pure",
+        "summary": "I travelled to Uruguay and Argentina to meet Slantis, and uncover the mystery of this BIM and architecture powerhouse.\nWhy do they refuse to call themselves an architecture firm?Why are they trying to conjure the spirit of the lost city of Atlantis?How did they grow from 2 co-founders to more than 1...",
+        "ai_french_title": "Visite de Slantis en Uruguay & Argentine | BIM Pure On Site",
+        "ai_score": 6,
+        "ai_summary": "L'article décrit la visite d'une équipe dans Slantis, une entreprise spécialisée dans le BIM et l'architecture, basée en Uruguay et en Argentine. Cette entreprise refuse d'être qualifiée d'agence d'architecture, car elle cherche à se démarquer de la traditionnelle approche architecturale. L'entreprise cherche également à recréer l'esprit de la cité perdue d'Atlantis, ce qui est lié à son approche innovante de la conception et de la construction. Cette approche pourrait avoir un impact significatif sur le secteur de la construction et du BIM, en particulier en termes de collaboration et de gestion de projet.",
+        "ai_tags": [
+            "BIM",
+            "Architecture",
+            "Innovation",
+            "Uruguay",
+            "Argentine"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "28 Features of BIM Pure's Revit Casework Collection",
+        "url": "https://www.bimpure.com/blog/revit-casework-collection",
+        "source_name": "Revit Pure",
+        "summary": "Our brand new Revit casework collection has just been released.\nClick here to download\nThis post explores all the features of the collection.\n \n \n1- Handle Types\nThe collection includes two types of handle: finger pull with a 45-degree bevel, and rectangular handles. The families are separated based...",
+        "ai_french_title": "28 Caractéristiques de la Collection de Casier de Revit de BIM Pure",
+        "ai_score": 2,
+        "ai_summary": "L'article présente une collection de casier de Revit développée par BIM Pure, qui comprend deux types de poignées : une poignée à pouce avec un angle de 45 degrés et des poignées rectangulaires. Cette collection est destinée à faciliter la création de meubles de cuisine et de salle de bain dans les projets de construction. Bien que cette collection puisse être utile pour les architectes et les ingénieurs, elle ne présente pas d'innovation technique majeure et son impact potentiel sur le secteur de la construction/BIM est limité.",
+        "ai_tags": [
+            "BIM",
+            "Revit",
+            "casier",
+            "meubles de cuisine",
+            "salle de bain"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Revit Kitchen Week - Casework Modeling & Annotation Tips",
+        "url": "https://www.bimpure.com/blog/revit-kitchen-week",
+        "source_name": "Revit Pure",
+        "summary": "Welcome to Revit Kitchen Week. Every day, we share a new video about Revit casework, including modeling, annotation, family strategies, and scheduling.\nMake sure to check out our brand new Revit casework collection. Learn more\n\n \nEpisode 1 - Casework Modeling Strategies\nIn the first episode of the s...",
+        "ai_french_title": "Semaine de la Cuisine Revit - Conseils de Modélisation et d'Annotation de Casework",
+        "ai_score": 6,
+        "ai_summary": "La Semaine de la Cuisine Revit est une série de vidéos qui partagent des connaissances et des stratégies pour la modélisation, l'annotation et la gestion de familles de casework dans Revit. Cette série vise à aider les utilisateurs à améliorer leurs compétences en matière de modélisation de casework et à les aider à créer des modèles de cuisine précis et efficaces. Les vidéos couvrent des sujets tels que les stratégies de modélisation, l'annotation et la gestion de familles, et offrent des conseils pratiques pour les utilisateurs de Revit. Cette initiative a le potentiel d'améliorer la qualité et la précision des modèles de construction, ce qui peut conduire à des économies de temps et à une réduction des coûts.",
+        "ai_tags": [
+            "Revit",
+            "Casework",
+            "Modélisation",
+            "Annotation",
+            "BIM"
+        ],
+        "ai_category": "BIM Pur",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Revit Family Tutorial - Window with Metal Panel Inserts",
+        "url": "https://www.bimpure.com/blog/revit-family-tutorial-window-with-metal-panel-inserts",
+        "source_name": "Revit Pure",
+        "summary": "This tutorial explains how to create a Revit window family with embedded metal panel inserts. This allows users to avoid manually modeling the metal insert conditions in the project and instead leverage the power of families.This is a nested family that can be reused in any of your existing window f...",
+        "ai_french_title": "Tutoriel de Famille Revit - Fenêtre avec Inserts de Panneaux Métalliques",
+        "ai_score": 8,
+        "ai_summary": "Ce tutoriel explique comment créer une famille de fenêtre Revit avec des inserts de panneaux métalliques intégrés. Cette approche permet aux utilisateurs d'éviter de modéliser manuellement les conditions d'insertion de métal dans le projet et de profiter de la puissance des familles. Cette famille imbriquée peut être réutilisée dans n'importe quel projet existant de fenêtres, ce qui facilite la gestion des détails architecturaux et améliore l'efficacité du processus de conception. Cette innovation technique a le potentiel de révolutionner la façon dont les architectes et les ingénieurs travaillent avec les familles de fenêtres dans Revit.",
+        "ai_tags": [
+            "Revit",
+            "BIM",
+            "Famille de fenêtre",
+            "Insert de panneau métallique",
+            "Conception architecturale"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Environment x BIM Pure - New Landscape & Site Modeling Course",
+        "url": "https://www.bimpure.com/blog/environment",
+        "source_name": "Revit Pure",
+        "summary": "We've just added a new course to the BIM Pure membership, in partnership with our friends at Environment.\nEnvironment is a Revit addin for anything outside of the building, including landscape and modelling, site collaboration, site surveys and more.\nEver struggled to model complex sites and landsca...",
+        "ai_french_title": "Un Nouveau Cadre pour le Modélisation de Sites et Paysages avec BIM Pure et Environment",
+        "ai_score": 8,
+        "ai_summary": "L'ajout d'un nouveau cours dans la membership de BIM Pure, en partenariat avec Environment, constitue une étape importante dans l'amélioration de la modélisation de sites et de paysages dans les logiciels de BIM. En effet, Environment est un add-in Revit qui permet de modéliser facilement les éléments extérieurs des bâtiments, tels que les paysages, les sites de collaboration, les relevés de terrain et bien plus encore. Cette innovation technique permettra aux architectes et aux ingénieurs de créer des modèles de sites complexes avec plus de précision et de rapidité, ce qui aura un impact significatif sur la qualité et la productivité des projets de construction.",
+        "ai_tags": [
+            "BIM",
+            "modélisation de site",
+            "paysage",
+            "Revit",
+            "Environment"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "New Revit Curtain Wall Doors",
+        "url": "https://www.bimpure.com/blog/new-revit-curtain-wall-doors",
+        "source_name": "Revit Pure",
+        "summary": "We've just released 12 new door families for our Revit door collection. Features:\n- Subframe option\n- Glazed, framed glass, and shared nested panel options.\n- Plan swing symbol controls: existing straight lines and angle controls.\nWatch the video to see the doors in action:\n \n \nAs with all doors in ...",
+        "ai_french_title": "Nouvelles Portes de Façade en Revit",
+        "ai_score": 7,
+        "ai_summary": "L'article présente la mise à jour de la collection de portes Revit avec 12 nouvelles familles de portes. Ces nouvelles portes offrent des options de sous-structure, de vitrage, de panneaux partagés et de symboles de rotation de plan. Cette mise à jour permettra aux utilisateurs de Revit de créer des modèles de façade plus précis et personnalisés, ce qui peut avoir un impact significatif sur la conception et la construction de bâtiments. Cette innovation technique peut également faciliter la collaboration entre les architectes, les ingénieurs et les constructeurs.",
+        "ai_tags": [
+            "Revit",
+            "portes",
+            "façade",
+            "BIM",
+            "construction"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Winter of BIM 2026 ❄️",
+        "url": "https://www.bimpure.com/blog/winter-of-bim-2026",
+        "source_name": "Revit Pure",
+        "summary": "Today, we're announcing new content that will be added to the BIM Pure membership in the coming weeks & months.\nThis is all included in the BIM Pure Membership. Click here to enroll\nThis is the Winter of BIM 2026.\n\n \n \nMastering Keynotes & Tagging\n🗓️ Live dates: Feburary 11 + 18\nBrian Mackey is prob...",
+        "ai_french_title": "L'Hiver de BIM 2026",
+        "ai_score": 2,
+        "ai_summary": "L'article annonce l'ajout de nouveaux contenus à la membership BIM Pure dans les prochaines semaines et mois. Il s'agit notamment de cours en ligne sur la maîtrise des keynotes et de la tagging, animés par Brian Mackey. Cette initiative vise à renforcer les compétences des utilisateurs de BIM et à leur offrir de nouvelles connaissances techniques. Cependant, l'article ne présente pas d'innovation technique majeure et ne semble pas avoir d'impact direct sur le secteur de la construction/BIM.",
+        "ai_tags": [
+            "BIM",
+            "Pure Membership",
+            "Keynotes",
+            "Tagging",
+            "Formation"
+        ],
+        "ai_category": "BIM Pur",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Revit + Claude AI Connector with NonicaTab",
+        "url": "https://www.bimpure.com/blog/revit-claude-ai-connector-with-nonicatab",
+        "source_name": "Revit Pure",
+        "summary": " \n \nNonicaTab is a Revit add-in that includes an AI connector to Claude Desktop. This allows you to use ClaudeAI to \"talk\" with your Revit model. The free version of NonicaTab allows you to create reports and a dashboard. The paid version allows you to interact and accomplish tasks in the Revit mode...",
+        "ai_french_title": "Revit + Claude AI Connector avec NonicaTab",
+        "ai_score": 7,
+        "ai_summary": "NonicaTab est un add-in Revit qui intègre un connecteur AI pour Claude Desktop, permettant ainsi l'utilisation de ClaudeAI pour interagir avec le modèle Revit. La version gratuite de NonicaTab permet la création de rapports et d'un tableau de bord, tandis que la version payante permet l'interaction et l'exécution de tâches dans le mode Revit. Cette innovation technique a le potentiel de révolutionner la manière dont les architectes et les ingénieurs travaillent avec les modèles de construction, en permettant une analyse et une optimisation plus efficaces grâce à l'intelligence artificielle.",
+        "ai_tags": [
+            "Revit",
+            "ClaudeAI",
+            "NonicaTab",
+            "BIM",
+            "Intelligence Artificielle"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "BIM Pure Live - Winter 2026 Season - Full Episodes List & Links",
+        "url": "https://www.bimpure.com/blog/bim-pure-live-winter-2026",
+        "source_name": "Revit Pure",
+        "summary": "BIM Pure Live is back for the Winter 2026 season. Here is the complete list of episodes, along with the calendar links.\n \n\n🎙️ Episode 103: Evolving from BIM to AI\n👤 Guest: Victoria Ikede\n📢 Description: Victoria is the innovation lead at Architecture49.\n📅 Date: January 14th, 11 AM EST\n🔗 Add to Calend...",
+        "ai_french_title": "BIM Pure Live - Saison d'Hiver 2026 - Liste complète des épisodes & Liens",
+        "ai_score": 6,
+        "ai_summary": "L'émission BIM Pure Live revient pour la saison d'hiver 2026, proposant une liste complète d'épisodes. L'un des épisodes, intitulé 'Évolution de BIM vers l'IA', présente Victoria Ikede, lead de l'innovation chez Architecture49, qui discute de l'intégration de l'intelligence artificielle dans la conception architecturale. Cette évolution technique a le potentiel de révolutionner la manière dont les architectes et les ingénieurs travaillent, en automatisant certaines tâches et en améliorant la précision des modèles de construction. L'impact potentiel de cette innovation est considérable, car elle pourrait accélérer le processus de conception et de construction, tout en améliorant la qualité des bâtiments.",
+        "ai_tags": [
+            "BIM",
+            "IA",
+            "Architecture",
+            "Construction"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Top 5 Most Popular Posts of 2025",
+        "url": "https://www.bimpure.com/blog/top-5-most-popular-posts-of-2025-bim-pure-yearly-review",
+        "source_name": "Revit Pure",
+        "summary": "Another crazy year in the BIM Pure-verse! Here are some numbers:\n\n1,150 Members\n18 live masterclasses\n5 new courses\n2 Revit plugins launched\n5,000 trees planted\n826k website views\n707k YouTube views\n\nBefore diving in, here is something special coming up.\nSpecial Year-End 2025 Live Episode:\nJoin Nico...",
+        "ai_french_title": "Les 5 articles les plus populaires de 2025",
+        "ai_score": 2,
+        "ai_summary": "L'article présente les statistiques de l'année 2025 pour une plateforme de BIM, notamment le nombre de membres, de masterclasses et de cours créés, ainsi que le nombre de plugins Revit lancés et de vues sur le site web et YouTube. Il annonce également une émission spéciale pour la fin de l'année. Cependant, il n'y a pas d'innovation technique significative ou de contenu technique intéressant dans cet article. Il s'agit plutôt d'un bilan annuel sans grande valeur ajoutée.",
+        "ai_tags": [
+            "BIM",
+            "Revit",
+            "masterclasses",
+            "cours",
+            "plugins"
+        ],
+        "ai_category": "Veille Globale",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "🎹 “Auld Lang Syne” Player – Dynamo Forum 2025 Winner",
+        "url": "https://dynamobim.org/%f0%9f%8e%b9-auld-lang-syne-player-dynamo-forum-2025-winner/",
+        "source_name": "Dynamo BIM",
+        "summary": "Dynamo Team Note: At the close of 2025, the Dynamo community gathered for the “Good Old-Fashioned Holiday Modeling Contest with Dynamo”, inviting members to create festive and imaginative projects using Dynamo. You can read about the original contest here: https://forum.dynamobim.com/t/dynamo-challe...",
+        "ai_french_title": "Le Gagnant du Concours Dynamo 2025 : Un Joueur de \"Auld Lang Syne\" Créé avec Dynamo",
+        "ai_score": 8,
+        "ai_summary": "Le concours Dynamo 2025 a réuni la communauté Dynamo pour créer des projets festifs et imaginatifs utilisant Dynamo. Le gagnant du concours, un joueur de \"Auld Lang Syne\", a été créé à l'aide de Dynamo, démontrant ainsi la capacité de la plateforme à créer des modèles complexes et interactifs. Cette innovation technique a le potentiel de révolutionner la façon dont les architectes et les ingénieurs créent des modèles de construction, permettant une collaboration plus efficace et une prise de décision plus rapide. L'impact potentiel de cette technologie est considérable, car elle peut améliorer la qualité des projets de construction et réduire les coûts.",
+        "ai_tags": [
+            "Dynamo",
+            "BIM",
+            "Intelligence Artificielle",
+            "Modélisation 3D"
+        ],
+        "ai_category": "Dev & IA",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Masters of Disasters: Dynamo Hackathon 2025 Winner",
+        "url": "https://dynamobim.org/masters-of-disasters-dynamo-hackathon-2025-winner/",
+        "source_name": "Dynamo BIM",
+        "summary": "When disaster strikes, every second counts. At the 2025 Dynamo Hackathon in Nashville, our team tackled one of the most pressing challenges facing emergency response teams today: how to rapidly deploy life-saving infrastructure when communities need it most. The result? An AI-powered disaster respon...",
+        "ai_french_title": "Maitres des Catastrophes : Vainqueur du Hackathon Dynamo 2025",
+        "ai_score": 8,
+        "ai_summary": "Le hackathon Dynamo 2025 a réuni des équipes pour résoudre l'un des défis les plus pressants auxquels sont confrontés les équipes de réponse aux urgences : comment déployer rapidement des infrastructures de sauvetage lorsque les communautés en ont le plus besoin. La solution proposée est une infrastructure de réponse aux catastrophes alimentée par l'intelligence artificielle, capable de fournir des informations précises et en temps réel pour aider les équipes de secours à prendre des décisions éclairées. Cette innovation technique a le potentiel de révolutionner la façon dont les équipes de réponse aux catastrophes travaillent, en permettant une réponse plus rapide et plus efficace aux situations d'urgence.",
+        "ai_tags": [
+            "intelligence artificielle",
+            "réponse aux catastrophes",
+            "infrastructure de sauvetage",
+            "hackathon Dynamo 2025"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Dynamo PythonNet3 Upgrade: A Practical Guide to Migrating Your Dynamo Graphs",
+        "url": "https://dynamobim.org/dynamo-pythonnet3-upgrade-a-practical-guide-to-migrating-your-dynamo-graphs/",
+        "source_name": "Dynamo BIM",
+        "summary": "With the release of Dynamo 4.0 , the Dynamo team shared that Dynamo_PythonNet3 is the new Python engine for Dynamo, based on CPython 3.11 and the Python.NET v3 library. This change is a significant moment in the ongoing evolution of Python scripting in Dynamo. The introduction of PythonNet3 marks a ...",
+        "ai_french_title": "Mise à niveau de Dynamo PythonNet3 : Guide pratique pour migrer vos graphiques Dynamo",
+        "ai_score": 8,
+        "ai_summary": "La mise à niveau de Dynamo PythonNet3 constitue un tournant important dans l'évolution de la programmation Python dans Dynamo. Avec la sortie de Dynamo 4.0, le nouveau moteur Python basé sur CPython 3.11 et la bibliothèque Python.NET v3 est désormais disponible. Cette innovation technique permettra aux utilisateurs de bénéficier d'une meilleure performance, d'une plus grande flexibilité et d'une meilleure intégration avec les outils de construction et de BIM. Cette mise à niveau ouvre ainsi de nouvelles perspectives pour les architectes, les ingénieurs et les entreprises du secteur de la construction, qui pourront désormais développer des graphiques plus complexes et plus efficaces.",
+        "ai_tags": [
+            "Dynamo",
+            "PythonNet3",
+            "CPython",
+            "Python.NET",
+            "BIM",
+            "Construction"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Dynamo for Civil 3D 2026.2 Release",
+        "url": "https://dynamobim.org/dynamo-for-civil-3d-2026-2-release/",
+        "source_name": "Dynamo BIM",
+        "summary": "Hey Civil 3D users, It’s hard to believe that 2025 is almost over! But before we launch off into next year, we wanted to close out 2025 by giving you a new release of Civil 3D to play with during the holidays. The Civil 3D 2026.2 update is now live, and it comes with a …\nThe post Dynamo for Civil 3D...",
+        "ai_french_title": "Dynamo pour Civil 3D 2026.2 : Mise à jour technique",
+        "ai_score": 8,
+        "ai_summary": "La mise à jour de Civil 3D 2026.2 est désormais disponible, offrant de nouvelles fonctionnalités et améliorations pour les utilisateurs de Dynamo. Cette mise à jour est particulièrement intéressante pour les professionnels de la construction et de la BIM, car elle permet une meilleure intégration de l'intelligence artificielle et de la modélisation assistée par ordinateur. Les utilisateurs pourront désormais bénéficier d'une expérience de travail plus fluide et plus efficace, avec des outils plus performants et plus intuitifs. Cette mise à jour constitue une étape importante dans l'évolution de la technologie de la construction et de la BIM, et elle ouvre de nouvelles perspectives pour les professionnels du secteur.",
+        "ai_tags": [
+            "Dynamo",
+            "Civil 3D",
+            "BIM",
+            "Intelligence Artificielle",
+            "Modélisation Assistée par Ordinateur"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "AI-Powered Automation: Leveraging Dynamo’s Autodesk Assistant (Alpha) to Place As-Built Weir Stones into a Revit Model",
+        "url": "https://dynamobim.org/ai-powered-automation-leveraging-dynamos-autodesk-assistant-alpha-to-place-as-built-weir-stones-into-a-revit-model/",
+        "source_name": "Dynamo BIM",
+        "summary": "Dynamo is valuable tool for automating processes in Civil 3D and Revit—especially processes that are repeatable or require revision in the future. While it offers significant time-savings, designers can find it difficult to build Dynamo graphs and create these complex automations. What if there was ...",
+        "ai_french_title": "Automatisation par Intelligence Artificielle : Utilisation de l'Assistant Autodesk de Dynamo (Alpha) pour placer des pierres de barrage as-bâties dans un modèle Revit",
+        "ai_score": 8,
+        "ai_summary": "L'article présente l'utilisation de Dynamo, un outil puissant pour automatiser les processus dans Civil 3D et Revit, en particulier ceux qui sont répétitifs ou nécessitent des modifications futures. L'auteur souligne que les graphiques Dynamo peuvent être difficiles à créer, mais que l'Assistant Autodesk de Dynamo (Alpha) offre une solution pour automatiser la placement de pierres de barrage as-bâties dans un modèle Revit. Cette innovation technique a le potentiel de révolutionner la façon dont les architectes et les ingénieurs travaillent, en permettant une plus grande efficacité et une réduction des coûts. L'article montre comment l'IA peut être utilisée pour automatiser des tâches répétitives, libérant ainsi les professionnels pour se concentrer sur des tâches plus créatives et stratégiques.",
+        "ai_tags": [
+            "BIM",
+            "Dynamo",
+            "Autodesk",
+            "IA",
+            "Automatisation"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Dynamo Core 4.0 Release",
+        "url": "https://dynamobim.org/dynamo-core-4-0-release/",
+        "source_name": "Dynamo BIM",
+        "summary": "Welcome, friends of Dynamo, to another exciting release: version 4.0! This release packs a punch with multiple performance improvements, a selection of quality-of-life improvements, and several bug fixes. Important changes also include migration to .NET 10 and a default Python engine change, so don’...",
+        "ai_french_title": "Dynamo Core 4.0 : Une Nouvelle Version avec des Améliorations de Performance",
+        "ai_score": 8,
+        "ai_summary": "La version 4.0 de Dynamo Core est une mise à jour importante qui apporte des améliorations de performance significatives, des améliorations de qualité de vie et des correctifs de bogues. Cette nouvelle version intègre également la migration vers .NET 10 et un changement de moteur Python par défaut. Ces changements devraient améliorer la productivité et la fiabilité de l'outil, ce qui est essentiel pour les professionnels de l'architecture et de la construction qui utilisent Dynamo pour automatiser des tâches complexes. L'impact potentiel de cette mise à jour est important, car elle devrait permettre aux utilisateurs de créer des modèles et des simulations plus complexes et plus précises, ce qui peut conduire à des projets de construction plus efficaces et plus durables.",
+        "ai_tags": [
+            "Dynamo",
+            "BIM",
+            "Architecture",
+            "Intelligence Artificielle",
+            "Performance"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Turning Energy Models into Design Narratives with Agentic Nodes in Dynamo",
+        "url": "https://dynamobim.org/turning-energy-models-into-design-narratives-with-agentic-nodes-in-dynamo/",
+        "source_name": "Dynamo BIM",
+        "summary": "Artificial intelligence is reshaping how design teams in the Architecture, Engineering, and Construction (AEC) industry approach early-phase project documentation. At the Dynamo Hackathon in Nashville, we joined peers from across the industry to experiment with AI capabilities embedded directly insi...",
+        "ai_french_title": "La transformation des modèles énergétiques en récits de conception avec des nœuds agents dans Dynamo",
+        "ai_score": 8,
+        "ai_summary": "L'article décrit l'utilisation de l'intelligence artificielle pour révolutionner la façon dont les équipes de conception dans l'industrie de l'architecture, de l'ingénierie et de la construction (AEC) abordent la documentation de phase initiale des projets. Au cours du hackathon Dynamo à Nashville, les auteurs ont expérimenté les capacités d'IA intégrées directement dans le logiciel Dynamo, permettant la création de modèles énergétiques interactifs et la génération de récits de conception basés sur ces modèles. Cette innovation technique a le potentiel de révolutionner la façon dont les architectes et les ingénieurs travaillent ensemble pour créer des bâtiments plus énergétiquement efficaces et durables.",
+        "ai_tags": [
+            "IA",
+            "BIM",
+            "Dynamo",
+            "modèles énergétiques",
+            "récits de conception"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Seamless Dynamo-Forma Connection: Select Proposal Elements Node",
+        "url": "https://dynamobim.org/seamless-dynamo-forma-connection-select-proposal-elements-node/",
+        "source_name": "Dynamo BIM",
+        "summary": "Hello Dynamo enthusiasts, We are excited to introduce a new addition to the Dynamo Forma package: the Select Proposal Elements node. This node is designed to remove one of the biggest blockers in your workflow; It allows you to bring Forma elements into Dynamo without the need to open Forma at all, ...",
+        "ai_french_title": "Connexion fluide Dynamo-Forma : sélectionner les éléments de proposition",
+        "ai_score": 8,
+        "ai_summary": "L'article présente une nouvelle fonctionnalité intégrée au package Dynamo Forma, appelée Select Proposal Elements node. Cette fonctionnalité permet de sélectionner des éléments de proposition Forma directement dans Dynamo, sans avoir besoin d'ouvrir Forma. Cela simplifie considérablement le workflow des utilisateurs, en éliminant l'un des principaux obstacles à la productivité. Cette innovation technique a le potentiel de révolutionner la manière dont les architectes et les ingénieurs travaillent avec les outils de modélisation et d'analyse de données.",
+        "ai_tags": [
+            "Dynamo",
+            "Forma",
+            "BIM",
+            "modélisation",
+            "analyse de données"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Dynamo for Civil 3D 2026.1 Release",
+        "url": "https://dynamobim.org/dynamo-for-civil-3d-2026-1/",
+        "source_name": "Dynamo BIM",
+        "summary": "Hey Civil 3D users, Hope you are enjoying the summer! It’s crazy to think that we’re already in August, with Autodesk University right around the corner. How the time flies… Speaking of which, it’s already time for another Civil 3D release! The Civil 3D 2026.1 update is now live, and it is packed wi...",
+        "ai_french_title": "Dynamo pour Civil 3D 2026.1 : Mise à jour en ligne",
+        "ai_score": 8,
+        "ai_summary": "La mise à jour de Civil 3D 2026.1 est désormais disponible, apportant de nouvelles fonctionnalités et améliorations à l'outil de modélisation de terrain. Cette mise à jour est particulièrement intéressante pour les utilisateurs de Dynamo, car elle permet une intégration encore plus étroite entre les deux outils. Les utilisateurs pourront ainsi bénéficier d'une expérience de modélisation plus fluide et plus efficace, avec la possibilité de créer des modèles de terrain complexes et de les intégrer directement dans leurs projets de construction. Cette mise à jour devrait avoir un impact significatif sur le secteur de la construction, en particulier pour les entreprises qui utilisent déjà Civil 3D et Dynamo.",
+        "ai_tags": [
+            "Dynamo",
+            "Civil 3D",
+            "BIM",
+            "Modélisation de terrain",
+            "Intelligence artificielle"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Dynamo Core 3.6 Release",
+        "url": "https://dynamobim.org/dynamo-core-3-6-release/",
+        "source_name": "Dynamo BIM",
+        "summary": "Summer is heating things up in the Northern Hemisphere, and the Dynamo team has been cooking up some smoking hot improvements to your experience! This release represents a culmination of long-standing efforts to improve Dynamo’s performance, with significant gains achieved that Dynamo users should n...",
+        "ai_french_title": "Dynamo Core 3.6 : Une Nouvelle Version avec des Performances Améliorées",
+        "ai_score": 8,
+        "ai_summary": "La version 3.6 de Dynamo Core représente une étape importante dans l'amélioration de l'expérience utilisateur, avec des gains significatifs en termes de performance. Cette mise à jour est le fruit de longues efforts pour améliorer la vitesse et la stabilité de l'outil, ce qui devrait faciliter la création de modèles complexes et accélérer les processus de conception. Dans le contexte de la construction et de la BIM, cette innovation technique a le potentiel de révolutionner la façon dont les architectes, les ingénieurs et les constructeurs travaillent ensemble pour créer des bâtiments plus efficaces et plus durables. Les utilisateurs de Dynamo devraient bénéficier de cette mise à jour pour améliorer leur productivité et leur capacité à créer des modèles de haute qualité.",
+        "ai_tags": [
+            "Dynamo",
+            "BIM",
+            "Performance",
+            "Conception",
+            "Construction"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
     }
 ]
