@@ -3,10 +3,11 @@ Interface Utilisateur Streamlit pour la Veille BIM & IA.
 Architecture dynamique, Recherche Hybride, et Rapports On-Demand avec Sauvegarde.
 """
 import json
+import urllib.parse # NOUVEAU : Indispensable pour nettoyer proprement l'URL de l'e-mail
 from pathlib import Path
 from datetime import date
-import subprocess # Pour exécuter main.py en tant que processus externe
-import sys # Pour connaître le chemin de l'exécutable Python courant
+import subprocess
+import sys
 import streamlit as st
 import torch
 import torch.nn.functional as F
@@ -120,24 +121,14 @@ def main():
     st.title("🏗️ Tour de Contrôle : Veille BIM & IA")
     st.markdown("Interface 100% Autonome avec Recherche Hybride et Rapports à la demande.")
     
-    # --- INTERCEPTION DU DEEP LINK ---
-    query_params = st.query_params
-    deep_link_url = query_params.get("article_url", None)
-    
-    if deep_link_url:
-        st.success("🔗 Tu as suivi un lien depuis ton e-mail personnalisé ! Ton article est ouvert ci-dessous.")
-
     if "favorites" not in st.session_state:
         st.session_state.favorites = load_favorites()
         
-    # On charge les données en mémoire
     articles = load_data()
     encoder = load_local_ai()
     
     # =========================================================================
-    # 🎓 CORRECTION ARCHITECTURALE : LE MENU EST DESSINÉ EN PREMIER
-    # En dessinant la barre latérale AVANT le st.stop(), le bouton reste 
-    # toujours accessible, même au premier démarrage quand la base est vide !
+    # LE MENU LATÉRAL
     # =========================================================================
     with st.sidebar:
         st.header("🎛️ Filtres Intelligents")
@@ -158,7 +149,6 @@ def main():
         
         st.markdown("---")
        
-        # LE BOUTON DE DÉMARRAGE / SCAN MANUEL
         st.subheader("🚀 Scanner un nouveau thème")
         st.markdown("Un besoin urgent ou un premier démarrage ? Lance les radars.")
         theme_manuel = st.text_input("Thème (ex: Robotique Boston Dynamics)", placeholder="Scanner le web...")
@@ -167,11 +157,10 @@ def main():
             if theme_manuel:
                 with st.spinner(f"Scraping et Analyse Llama-3.1 en cours pour '{theme_manuel}' (≈ 30 à 60 sec)..."):
                     try:
-                        # Exécution de l'usine (main.py) en arrière-plan
                         subprocess.run([sys.executable, "main.py", "--theme", theme_manuel], check=True)
                         st.success(f"✅ Veille sur '{theme_manuel}' terminée et mails envoyés !")
-                        st.cache_data.clear() # On vide la mémoire pour que Streamlit lise les nouveaux fichiers
-                        st.rerun() # Rafraîchissement total de l'interface
+                        st.cache_data.clear()
+                        st.rerun()
                     except subprocess.CalledProcessError as e:
                         st.error("❌ Échec de la recherche : L'orchestrateur a renvoyé une erreur.")
             else:
@@ -180,28 +169,13 @@ def main():
         st.markdown("---")
         st.metric("Total des articles en base", len(articles))
 
-    # =========================================================================
-    # 🛡️ LE GARDE-FOU (Le point de blocage est désormais APRES le menu)
-    # =========================================================================
     if not articles:
-        # Si c'est vide, on affiche l'alerte, et on "tue" l'affichage du reste
-        # de la page (les onglets, les articles) car on ne peut rien afficher.
-        # Mais le menu sur le côté est déjà dessiné, donc l'utilisateur n'est pas bloqué !
         st.warning("⚠️ La base de données est vide. Utilise le menu de gauche pour lancer ton premier scan !")
         st.stop() 
 
-    # --- SI ON ARRIVE ICI, C'EST QUE LA BASE CONTIENT DES ARTICLES ---
-    categories_existantes = sorted(list(set(art.get("ai_category_clean", "Veille Globale 🌐") for art in articles)))
-        
-    # --- APPLICATION DES FILTRES ---
-    filtered_articles = [art for art in articles if art.get("ai_score", 0) >= min_score]
-    
-    if search_query:
-        filtered_articles = hybrid_search(search_query, filtered_articles, encoder)
-        st.success(f"🔍 {len(filtered_articles)} résultats trouvés pour '{search_query}'")
-
     # --- FONCTION DE RENDU D'UNE CARTE ---
-    def render_article_card(art, context_id=""):
+    # 🎓 MODIFIÉ : Ajout du paramètre 'force_open' pour le Deep Link
+    def render_article_card(art, context_id="", force_open=False):
         score = art.get('ai_score', 0)
         score_color = "🟢" if score >= 8 else ("🟡" if score >= 5 else "🔴")
         is_fav = art['url'] in st.session_state.favorites
@@ -216,9 +190,7 @@ def main():
         dl_key = f"dl_{context_id}_{art['url']}"
         report_state_key = f"report_{art['url']}"
         
-        force_expand = (deep_link_url == art['url'])
-        
-        with st.expander(f"[{score}/10] {score_color} {display_title} ({art['source_name']})", expanded=force_expand):
+        with st.expander(f"[{score}/10] {score_color} {display_title} ({art['source_name']})", expanded=force_open):
             col1, col2 = st.columns([5, 1])
             with col1:
                 if "match_type" in art:
@@ -283,6 +255,37 @@ def main():
                         st.session_state.favorites.add(art['url'])
                     save_favorites(st.session_state.favorites)
                     st.rerun()
+
+    # =========================================================================
+    # 🎓 LA SECTION VIP (Gestion du Deep Link par e-mail)
+    # Placée tout en haut, avant même les onglets !
+    # =========================================================================
+    query_params = st.query_params
+    deep_link_url = query_params.get("article_url", None)
+    
+    if deep_link_url:
+        # On décode l'URL proprement pour corriger les + et %2F générés par l'e-mail
+        decoded_url = urllib.parse.unquote_plus(deep_link_url)
+        
+        # On cherche l'article dans la base (On teste la version encodée ET décodée)
+        target_article = next((a for a in articles if a['url'] == deep_link_url or a['url'] == decoded_url), None)
+        
+        if target_article:
+            st.success("📩 Vous venez depuis un e-mail ! Voici l'article que vous avez demandé :")
+            st.markdown("### 🎯 Article à la loupe")
+            # force_open=True permet d'ouvrir l'accordéon directement sans clic
+            render_article_card(target_article, context_id="vip_deeplink", force_open=True)
+            st.markdown("---")
+        else:
+            st.error("❌ L'article demandé est introuvable. Il a peut-être été purgé de la base de données car il est trop ancien.")
+
+    # --- APPLICATION DES FILTRES POUR LE RESTE DE LA PAGE ---
+    categories_existantes = sorted(list(set(art.get("ai_category_clean", "Veille Globale 🌐") for art in articles)))
+    filtered_articles = [art for art in articles if art.get("ai_score", 0) >= min_score]
+    
+    if search_query:
+        filtered_articles = hybrid_search(search_query, filtered_articles, encoder)
+        st.success(f"🔍 {len(filtered_articles)} résultats trouvés pour '{search_query}'")
 
     # --- ORGANISATION TEMPORELLE ET ONGLETS PRINCIPAUX ---
     today_str = date.today().isoformat()
