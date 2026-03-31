@@ -5,6 +5,8 @@ Relie le Scraper (Fetcher), l'IA (Analyzer) et la Base de Données locale.
 import asyncio
 import json
 import urllib.parse
+import argparse # NOUVEAU : Pour capturer les arguments de la ligne de commande
+import sys # NOUVEAU : Utile pour la gestion des chemins
 from pathlib import Path
 from datetime import date, timedelta # AJOUT: timedelta pour calculer les dates de rétention
 from loguru import logger
@@ -12,20 +14,20 @@ from loguru import logger
 from core.logger import setup_logger
 from services.fetcher import BIMFetcher
 from services.analyzer import BIMAnalyzer
+from services.reporter import ReporterService # NOUVEAU: On importe notre service complet
 
 # Définition du chemin de nos bases de données locales
 DB_FILE = Path("data/articles_db.json")
 EMBEDDINGS_FILE = Path("data/embeddings_db.json")
 
-# 🎯 LE CŒUR DE LA VEILLE AUTONOME (Élargi pour l'IA Pure)
-MOTS_CLES_STRATEGIQUES = [
+# 🎯 LA BASE INCOMPRESSIBLE DE L'AGENCE
+# Ce sont les thèmes vitaux que tu veux TOUJOURS surveiller, 
+# même si aucun collègue ne les a explicitement demandés dans l'annuaire.
+MOTS_CLES_STRATEGIQUES_BASE = [
     # --- Veille BIM & Construction ---
-    "Jumeau Numérique BIM",
-    "OpenBIM IFC4",
+    "BIM",
     "Intelligence Artificielle Construction",
-    "Revit",
-    "pyrevit",
-    "IFC"
+    "Revit"
     
     # --- Veille IA & Dev Pure (NOUVEAU) ---
     "Large Language Models Open Source",
@@ -33,14 +35,27 @@ MOTS_CLES_STRATEGIQUES = [
     "Python Data Engineering"
 ]
 
-async def run_pipeline():
+async def run_pipeline(theme_cible: str = None):
     logger.info("🚀 Démarrage du Pipeline de Veille Agentique...")
     
     fetcher = BIMFetcher()
     analyzer = BIMAnalyzer()
     
     # --- INJECTION DYNAMIQUE DES RADARS GOOGLE NEWS ---
-    for mot in MOTS_CLES_STRATEGIQUES:
+    if theme_cible:
+        # Cas 1 : Lancé à la main depuis Streamlit sur un thème précis
+        mots_a_chercher = [theme_cible]
+    else:
+        # Cas 2 : Lancement automatique quotidien
+        # 💡 LA MAGIE EST ICI : On fusionne la base de l'agence avec les intérêts des collègues
+        interets_collegues = ReporterService.get_tous_les_mots_cles()
+        
+        # Le set() fusionne les deux listes et supprime les doublons éventuels
+        mots_a_chercher = list(set(MOTS_CLES_STRATEGIQUES_BASE + interets_collegues))
+        
+        logger.info(f"📡 Radars synchronisés avec l'annuaire ! {len(mots_a_chercher)} cibles : {mots_a_chercher}")
+    
+    for mot in mots_a_chercher:
         url_safe_mot = urllib.parse.quote(mot)
         radar_url = f"https://news.google.com/rss/search?q={url_safe_mot}&hl=fr&gl=FR&ceid=FR:fr"
         source_name = f"Google News 🕵️ ({mot})"
@@ -139,5 +154,20 @@ async def run_pipeline():
         
     logger.success(f"💾 {len(processed_articles)} nouveaux articles sauvegardés proprement.")
 
+    # 🎓 NOUVEAU : 📧 DISTRIBUTION DES EMAILS (LE MOTEUR DE ROUTAGE)
+    # On déclenche ton ReporterService uniquement sur les NOUVEAUX articles fraîchement analysés.
+    if processed_articles:
+        logger.info("📮 Lancement du ReporterService pour distribuer la veille aux collègues...")
+        # ⚠️ ATTENTION : Une fois déployé sur Streamlit Cloud, remplace cette URL par la tienne.
+        STREAMLIT_PUBLIC_URL = "https://vieille-techno-ebim.streamlit.app/" 
+        ReporterService.distribuer_veille(processed_articles, base_url=STREAMLIT_PUBLIC_URL)
+
 if __name__ == "__main__":
-    asyncio.run(run_pipeline())
+    # 🎓 NOUVEAU : L'analyseur d'arguments (CLI).
+    # Cela permet à Streamlit (qui est un autre script) de commander main.py en lui disant :
+    # "Hé, lance une veille juste pour 'Impression 3D' !" -> python main.py --theme "Impression 3D"
+    parser = argparse.ArgumentParser(description="Orchestrateur de Veille")
+    parser.add_argument("--theme", type=str, help="Forcer la recherche sur un thème précis", default=None)
+    args = parser.parse_args()
+    
+    asyncio.run(run_pipeline(theme_cible=args.theme))

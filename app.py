@@ -5,6 +5,8 @@ Architecture dynamique, Recherche Hybride, et Rapports On-Demand avec Sauvegarde
 import json
 from pathlib import Path
 from datetime import date
+import subprocess # NOUVEAU : Pour exécuter main.py en tant que processus externe
+import sys # NOUVEAU : Pour connaître le chemin de l'exécutable Python courant
 import streamlit as st
 import torch
 import torch.nn.functional as F
@@ -28,9 +30,12 @@ st.set_page_config(
 def clean_category(raw_cat):
     """Force les réponses du LLM dans 4 catégories strictes."""
     cat_upper = str(raw_cat).upper()
-    if "BIM PUR" in cat_upper: return "BIM Pur 🏗️"
-    if "DEV" in cat_upper or "IA" in cat_upper or "INTELLIGENCE" in cat_upper: return "Dev & IA 💻"
-    if "HYBRID" in cat_upper: return "Hybride ⚙️"
+    if "BIM PUR" in cat_upper: 
+        return "BIM Pur 🏗️"
+    if "DEV" in cat_upper or "IA" in cat_upper or "INTELLIGENCE" in cat_upper: 
+        return "Dev & IA 💻"
+    if "HYBRID" in cat_upper: 
+        return "Hybride ⚙️"
     return "Veille Globale 🌐"
 
 # ---------------------------------------------------------
@@ -115,6 +120,15 @@ def main():
     st.title("🏗️ Tour de Contrôle : Veille BIM & IA")
     st.markdown("Interface 100% Autonome avec Recherche Hybride et Rapports à la demande.")
     
+    # 🎓 NOUVEAU : INTERCEPTION DU DEEP LINK
+    # Ton code reporter.py génère des liens type : https://ton-app.com/?article_url=https://...
+    # On capture ce paramètre ici pour l'utiliser plus bas !
+    query_params = st.query_params
+    deep_link_url = query_params.get("article_url", None)
+    
+    if deep_link_url:
+        st.success("🔗 Tu as suivi un lien depuis ton e-mail personnalisé ! Ton article est ouvert ci-dessous.")
+
     if "favorites" not in st.session_state:
         st.session_state.favorites = load_favorites()
         
@@ -143,9 +157,35 @@ def main():
             placeholder="ex: BIM, Rénovation, IFC..."
         )
         
+        # 🎓 EXPLICATION : On explicite que cette barre cherche dans le passé.
+        st.caption("💡 Cherche instantanément parmi **tous les anciens articles** stockés, en croisant le texte et le sens mathématique (IA vectorielle).")
+        
+        st.markdown("---")
+       
+        # 🎓 NOUVEAU : LANCEMENT DE RECHERCHE À LA VOLÉE
+        st.subheader("🚀 Scanner un nouveau thème")
+        st.markdown("Un besoin urgent ? Lance les radars immédiatement.")
+        theme_manuel = st.text_input("Thème (ex: Robotique Boston Dynamics)", placeholder="Scanner le web...")
+
+        if st.button("Lancer l'Orchestrateur ⚙️"):
+            if theme_manuel:
+                # Explication architecturale : Streamlit gère mal l'asyncio natif dans ses boutons.
+                # On utilise donc un sous-processus isolé. Cela garde l'UI réactive (spinner) sans crasher.
+                with st.spinner(f"Scraping et Analyse Llama-3.1 en cours pour '{theme_manuel}' (≈ 30 à 60 sec)..."):
+                    try:
+                        # sys.executable garantit qu'on utilise bien le Python de notre environnement `uv`
+                        subprocess.run([sys.executable, "main.py", "--theme", theme_manuel], check=True)
+                        st.success(f"✅ Veille sur '{theme_manuel}' terminée et mails envoyés !")
+                        st.cache_data.clear() # On vide le cache mémoire de Streamlit
+                        st.rerun() # On force le rafraîchissement visuel pour afficher le nouvel article
+                    except subprocess.CalledProcessError as e:
+                        st.error("❌ Échec de la recherche : L'orchestrateur a renvoyé une erreur.")
+            else:
+                st.warning("Veuillez d'abord taper un thème.")
+
         st.markdown("---")
         st.metric("Total des articles en base", len(articles))
-
+        
     # --- APPLICATION DES FILTRES ---
     filtered_articles = [art for art in articles if art.get("ai_score", 0) >= min_score]
     
@@ -170,7 +210,11 @@ def main():
         dl_key = f"dl_{context_id}_{art['url']}"
         report_state_key = f"report_{art['url']}"
         
-        with st.expander(f"[{score}/10] {score_color} {display_title} ({art['source_name']})"):
+        # 🎓 NOUVEAU : Logique visuelle du Deep Link
+        # Si l'URL de l'article actuel est celle cliquée dans l'e-mail, on déplie l'accordéon par défaut !
+        force_expand = (deep_link_url == art['url'])
+        
+        with st.expander(f"[{score}/10] {score_color} {display_title} ({art['source_name']})", expanded=force_expand):
             col1, col2 = st.columns([5, 1])
             with col1:
                 if "match_type" in art:
