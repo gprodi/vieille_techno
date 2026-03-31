@@ -54,22 +54,26 @@ async def run_pipeline(theme_cible: str = None):
     
     # --- 2. DÉDUPLICATION (Basée sur l'URL) ---
     known_urls = set()
+    existing_articles = []
     if DB_FILE.exists():
         try:
             with open(DB_FILE, "r", encoding="utf-8") as f:
                 existing_articles = json.load(f)
                 known_urls = {art["url"] for art in existing_articles}
-                all_articles.extend(existing_articles)
             logger.info(f"📂 Base de données chargée : {len(known_urls)} articles connus.")
         except json.JSONDecodeError:
             logger.warning("⚠️ Fichier DB corrompu ou vide. Création d'une nouvelle base.")
 
-    # On isole les vrais nouveaux articles
+    # 🎓 LE CORRECTIF EST ICI : On isole les vrais nouveaux articles AVANT de mélanger avec les archives
     new_articles_to_process = [art for art in all_articles if art.url not in known_urls]
+    
+    # Maintenant, on peut fusionner les Objets (nouveaux) et les Dictionnaires (anciens) en toute sécurité
+    all_articles.extend(existing_articles)
     
     # Pour la déduplication de la liste complète (anciens + nouveaux non traités)
     unique_articles_dict = {}
     for art in all_articles:
+        # 🛡️ Protection hybride : on gère les deux syntaxes (Objet Pydantic OU Dictionnaire)
         url = art.url if hasattr(art, 'url') else art.get("url")
         if url not in unique_articles_dict:
             unique_articles_dict[url] = art
