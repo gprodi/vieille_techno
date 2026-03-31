@@ -4636,6 +4636,7 @@
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "openBIM Practitioner Certification enters full-scale implementation across Chapters",
         "url": "https://www.buildingsmart.org/openbim-practitioner-certification-enters-full-scale-implementation-across-chapters/",
         "source_name": "BuildingSMART (Officiel)",
@@ -4649,11 +4650,28 @@
             "buildingSMART",
             "construction",
             "BIM"
+=======
+        "title": "Archicad se dote d'un outil d'IA pour rendre les esquisses plus réalistes - Batiactu",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObWlQTGoteXE0b25FdFF1bWZvVFdqUjZQR2JTa1lweE5pTmp6OXByVVExNkRmZjZiWTUwcUM0MTNYZnhFTkhDaHlGZGxrQ1dzSUlUdGsyT1B2V3Y1UFlXU2dtbEtDSW0xbkw2ZWI1S3czMXh0c2sxbDlFSjFRekhFUGN6MVI2NFAzd1BWcnk4ZHB1ZzZYR2dOWk94QVl2QjdY?oc=5",
+        "source_name": "Google News 🕵️ (ArchiCAD)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxObWlQTGoteXE0b25FdFF1bWZvVFdqUjZQR2JTa1lweE5pTmp6OXByVVExNkRmZjZiWTUwcUM0MTNYZnhFTkhDaHlGZGxrQ1dzSUlUdGsyT1B2V3Y1UFlXU2dtbEtDSW0xbkw2ZWI1S3czMXh0c2sxbDlFSjFRekhFUGN6MVI2NFAzd1BWcnk4ZHB1ZzZYR2dOWk94QVl2QjdY?oc=5\" target=\"_blank\">Archicad se...",
+        "ai_french_title": "Archicad se dote d'un outil d'IA pour rendre les esquisses plus réalistes",
+        "ai_score": 8,
+        "ai_summary": "L'article rapporte que Graphisoft, le développeur d'Archicad, a intégré un outil d'intelligence artificielle (IA) dans son logiciel de conception assistée par ordinateur (CAO). Cette innovation permettra aux architectes de créer des esquisses plus réalistes et détaillées, en simulant les effets de la lumière et des matériaux. Cette technologie devrait révolutionner la manière dont les architectes travaillent, en leur permettant de communiquer plus efficacement leurs idées et de réduire les erreurs de conception. L'intégration de l'IA dans Archicad constitue un pas important vers l'automatisation des processus de conception et de construction, ce qui devrait améliorer la qualité et la rapidité des projets.",
+        "ai_tags": [
+            "Archicad",
+            "IA",
+            "BIM",
+            "conception assistée par ordinateur",
+            "lumière",
+            "matériaux"
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
         ],
         "ai_category": "BIM Pur 🏗️",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "Board of Directors Changes",
         "url": "https://www.buildingsmart.org/board-of-directors-changes/",
         "source_name": "BuildingSMART (Officiel)",
@@ -4753,12 +4771,31 @@
             "construction",
             "Takt",
             "BIM",
+=======
+        "title": "Maxon marque son entrée officielle sur le marché AEC avec sa solution Archviz en temps réel - Yahoo Finance France",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPU0VjR0lxNEcxMDlGbHVHZEl0UUlfV21JMmtCX25rcF9HX2M1LVk1UThBUjV2SGVQRVYtSkZsQjl4UWJqTzk3UkVSem5mdmpLWTc1U1M1YTl3bDdhaVl1VHp3WWYzY1l0Smc0eGJ2V1hYSUo3XzQzMW9JanlqcUNfUWhIa1otSWtyQ0dqUzA2VlBnaERBTVFmSURkY0VqOEgwcmxMNw?oc=5",
+        "source_name": "Google News 🕵️ (ArchiCAD)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPU0VjR0lxNEcxMDlGbHVHZEl0UUlfV21JMmtCX25rcF9HX2M1LVk1UThBUjV2SGVQRVYtSkZsQjl4UWJqTzk3UkVSem5mdmpLWTc1U1M1YTl3bDdhaVl1VHp3WWYzY1l0Smc0eGJ2V1hYSUo3XzQzMW9JanlqcUNfUWhIa1otSWtyQ0dqUzA2VlBnaERBTVFmSURkY0VqOEgwcmxMNw?oc=5\" target=\"_blank\">Maxon...",
+        "ai_french_title": "Maxon marque son entrée officielle sur le marché AEC avec sa solution Archviz en temps réel",
+        "ai_score": 8,
+        "ai_summary": "Maxon, une entreprise spécialisée dans les logiciels de modélisation 3D, a officiellement pénétré le marché de l'architecture, de l'ingénierie et de la construction (AEC) avec sa solution Archviz en temps réel. Cette innovation permet aux architectes et aux ingénieurs de créer des environnements virtuels immersifs et détaillés, facilitant ainsi la communication et la collaboration entre les équipes. L'impact potentiel de cette technologie est considérable, car elle peut accélérer le processus de conception et de construction, réduire les coûts et améliorer la qualité des bâtiments. La solution Archviz de Maxon pourrait également contribuer à l'émergence de nouvelles approches de conception et de construction, basées sur l'utilisation de la réalité virtuelle et de l'intelligence artificielle.",
+        "ai_tags": [
+            "Maxon",
+            "Archviz",
+            "temps réel",
+            "AEC",
+            "architecture",
+            "ingénierie",
+            "construction",
+            "réalité virtuelle",
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
             "intelligence artificielle"
         ],
         "ai_category": "Hybride ⚙️",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "Lenovo targets local AI with next-gen workstations",
         "url": "https://aecmag.com/workstations/lenovo-targets-ai-with-next-gen-workstations/",
         "source_name": "AEC Magazine",
@@ -4844,12 +4881,45 @@
             "Apple Vision Pro",
             "CloudXR",
             "réalité virtuelle",
+=======
+        "title": "« Un gain de temps » : l’intelligence artificielle, les architectes l’utilisent mais avec modération - Ouest-France",
+        "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPVHVkUTVmVHdvS1ZaSFlraXdTMHR4ZklFVksyMWdfb1RCSm4yenJLbW1Ud2FVeVR0YldLVkRPRVYwR3V2UXI2NUV5bF9rNndrMURsMjY0dWN6QlFzYnRGc0dFTVZOZzZOSWgxMUtZaUg2QzI2YkRFelNQUGJ2Z19xOVRaTHRuanBWaEd4VHVPZTh2T1Y4S2pDVkZaRUNueVJxUXYxemVGQXdiWGVjSTRDZjFHWHhYSng2Y2dUVS1iZE9mbHhnUGVFbFlob3hRRGZYLXdTWEMtU1g5cGIxeXFxNGVpTHpYbVk2UV9GOFNFMUtwTklkUzhVcHFicm5mZFJ6NGV5VTVTSXhhSG4wcVRVVWEwajdNN3RoM295Ng?oc=5",
+        "source_name": "Google News 🕵️ (ArchiCAD)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAJBVV95cUxPVHVkUTVmVHdvS1ZaSFlraXdTMHR4ZklFVksyMWdfb1RCSm4yenJLbW1Ud2FVeVR0YldLVkRPRVYwR3V2UXI2NUV5bF9rNndrMURsMjY0dWN6QlFzYnRGc0dFTVZOZzZOSWgxMUtZaUg2QzI2YkRFelNQUGJ2Z19xOVRaTHRuanBWaEd4VHVPZTh2T1Y4S2pDVkZaRUNueVJxUXYxemVGQXdiWGVjSTRDZjFHWHhYSng2Y2...",
+        "ai_french_title": "L'intelligence artificielle, les architectes l'utilisent mais avec modération",
+        "ai_score": 6,
+        "ai_summary": "L'article « Un gain de temps » : l'intelligence artificielle, les architectes l'utilisent mais avec modération, met en évidence l'utilisation croissante de l'intelligence artificielle (IA) dans le secteur de la construction. Les architectes utilisent l'IA pour automatiser certaines tâches, telles que la conception et la gestion de projet, mais avec prudence, car ils doivent s'assurer que les résultats sont fiables et respectent les normes de qualité. Cette utilisation de l'IA a le potentiel de réduire les délais de construction et d'améliorer l'efficacité, mais elle nécessite une formation et une supervision appropriées pour éviter les erreurs. Les professionnels du secteur de la construction doivent donc trouver un équilibre entre l'utilisation de l'IA et la nécessité de maintenir la qualité et la sécurité des bâtiments.",
+        "ai_tags": [
+            "intelligence artificielle",
+            "architecture",
+            "construction",
+            "BIM",
+            "automatisation"
+        ],
+        "ai_category": "Hybride ⚙️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Qu’apporte l’IA sur Archicad ? - Cahiers Techniques du Bâtiment",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQODRzblVSbTBteGhVVm9wS2hFbG13eGJxYkFPV0pfS0hQTTY3V25RZzZscG9JUVA1cmpXdkFOWGttejV2dXRyUjZlUjJvR01yeHd3bTdEVHRWNDE4cDVQYWhPZmt0cXlhc3I5Wm5obmNiOHkwMmNNUVBzMkd6V1FlclViN3pkdk56cEJCb1pn?oc=5",
+        "source_name": "Google News 🕵️ (ArchiCAD)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxQODRzblVSbTBteGhVVm9wS2hFbG13eGJxYkFPV0pfS0hQTTY3V25RZzZscG9JUVA1cmpXdkFOWGttejV2dXRyUjZlUjJvR01yeHd3bTdEVHRWNDE4cDVQYWhPZmt0cXlhc3I5Wm5obmNiOHkwMmNNUVBzMkd6V1FlclViN3pkdk56cEJCb1pn?oc=5\" target=\"_blank\">Qu’apporte l’IA sur Archicad ?</a>&...",
+        "ai_french_title": "Qu'apporte l'intelligence artificielle sur Archicad ?",
+        "ai_score": 8,
+        "ai_summary": "L'article explore les possibilités offertes par l'intelligence artificielle (IA) dans le logiciel de conception assistée par ordinateur (CAO) Archicad. Les auteurs décrivent comment l'IA peut automatiser certaines tâches, telles que la génération de plans et la gestion de la documentation, ce qui peut améliorer l'efficacité et la précision des processus de conception. Ils soulignent également l'importance de l'IA dans la prise de décision et la personnalisation des projets, permettant ainsi aux architectes de se concentrer sur la créativité et la qualité. Enfin, ils évoquent les défis et les opportunités liés à l'intégration de l'IA dans les processus de conception et de construction.",
+        "ai_tags": [
+            "Archicad",
+            "Intelligence Artificielle",
+            "CAO",
+            "Conception Assistée par Ordinateur",
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
             "BIM"
         ],
         "ai_category": "Hybride ⚙️",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "⚠️ Ingestion Service Incident",
         "url": "https://speckle.community/t/ingestion-service-incident/22037",
         "source_name": "Speckle (OpenBIM Community)",
@@ -4881,11 +4951,27 @@
             "IFC",
             "BIM",
             "modélisation"
+=======
+        "title": "La distribution d'Archicad retourne dans le giron de Graphisoft - Le Moniteur",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbVdEcEl4TENEUXRzbTNaWHpMcW5RdzUyQW0yem42M3Ffdi1XZlhLeDM1aTVNLTNPbXczMEVZd1ZHVDJ6YTlDZXhCcFpWbWdVQ2ItUXA5a2FZUkJFT2ZDTXkyQmFDMC14bGtrNlBjZUt5ZThLMTZCbTVNZXZudnpaR1NxeG5ZaUZOY0pha1BIaDE?oc=5",
+        "source_name": "Google News 🕵️ (ArchiCAD)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxPbVdEcEl4TENEUXRzbTNaWHpMcW5RdzUyQW0yem42M3Ffdi1XZlhLeDM1aTVNLTNPbXczMEVZd1ZHVDJ6YTlDZXhCcFpWbWdVQ2ItUXA5a2FZUkJFT2ZDTXkyQmFDMC14bGtrNlBjZUt5ZThLMTZCbTVNZXZudnpaR1NxeG5ZaUZOY0pha1BIaDE?oc=5\" target=\"_blank\">La distribution d'Archicad retou...",
+        "ai_french_title": "La distribution d'Archicad retourne dans le giron de Graphisoft",
+        "ai_score": 8,
+        "ai_summary": "L'article rapporte que la distribution d'Archicad, un logiciel de conception assistée par ordinateur (CAO) populaire dans l'industrie de la construction, revient sous le contrôle de Graphisoft, son créateur d'origine. Cette nouvelle est considérée comme une révolution technique majeure pour le secteur de la construction, car elle permettra à Graphisoft de mieux contrôler le développement et la distribution de son logiciel. Cela pourrait également entraîner des améliorations de la compatibilité et de l'intégration avec d'autres outils de BIM, ce qui est essentiel pour les architectes, les ingénieurs et les constructeurs qui travaillent ensemble sur des projets complexes. La prise de contrôle de Graphisoft sur la distribution d'Archicad devrait également permettre à l'entreprise de mieux répondre aux besoins des utilisateurs et de développer de nouvelles fonctionnalités pour répondre aux défis émergents de l'industrie de la construction.",
+        "ai_tags": [
+            "Archicad",
+            "Graphisoft",
+            "BIM",
+            "construction",
+            "logiciel de CAO"
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
         ],
         "ai_category": "BIM Pur 🏗️",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "Speckle connector and RealTime not working",
         "url": "https://speckle.community/t/speckle-connector-and-realtime-not-working/22018",
         "source_name": "Speckle (OpenBIM Community)",
@@ -4898,12 +4984,228 @@
             "Revit",
             "LCA",
             "BIM",
+=======
+        "title": "Devenir un expert de la data en 2026 : ce que l’IA a vraiment changé, et ce qui reste fondamental - blogdumoderateur.com",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOcEQya0ZEM3RmTXlyQWZuMTU1VFRsV1VaSlpDbHlzTUdLbWVfeDZUMW5MY3NxZEpxQmQ1OWowOG9vX05kMU9QcmRYTXFxRTI4MXFhZzZSYlRxNEZJdU1ZUVdiSjc0R08tbXFDV0E3Z192Umtkd2FDNVVpNkJJSnVGLXpxRTBNVWFPRUQtcVcxb3ZtNmlLWF9pdEZBdw?oc=5",
+        "source_name": "Google News 🕵️ (Python Data Engineering)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxOcEQya0ZEM3RmTXlyQWZuMTU1VFRsV1VaSlpDbHlzTUdLbWVfeDZUMW5MY3NxZEpxQmQ1OWowOG9vX05kMU9QcmRYTXFxRTI4MXFhZzZSYlRxNEZJdU1ZUVdiSjc0R08tbXFDV0E3Z192Umtkd2FDNVVpNkJJSnVGLXpxRTBNVWFPRUQtcVcxb3ZtNmlLWF9pdEZBdw?oc=5\" target=\"_blank\">Devenir un expert...",
+        "ai_french_title": "Devenir un expert de la data en 2026 : ce que l'IA a vraiment changé, et ce qui reste fondamental",
+        "ai_score": 8,
+        "ai_summary": "L'article explore les changements apportés par l'intelligence artificielle (IA) dans le domaine de la data en 2026. Il met en avant les nouvelles compétences requises pour devenir un expert de la data, telles que la compréhension des algorithmes et la capacité à analyser les données complexes. L'IA a révolutionné la façon dont les données sont collectées, traitées et interprétées, mais il reste encore des éléments fondamentaux qui ne peuvent pas être remplacés par la technologie. L'article souligne l'importance de trouver un équilibre entre l'utilisation de l'IA et la pensée critique pour prendre des décisions éclairées dans le secteur de la construction et de la BIM.",
+        "ai_tags": [
+            "data",
+            "intelligence artificielle",
+            "BIM",
+            "construction",
+            "expertise"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Sécurité de l'IA agentique : Nouveaux risques et contrôles dans le cadre de sécurité de l'IA Databricks (DASF v3.0) - Databricks",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaWFfbEZBckk4dV9vOS1UOXRBTV9jdm4xdG5uY2FUXzlydjlPbW4xaUw1VnZkRk1qWEFLYmVoT2MyR3ZPcXhSQ3JSbFZsT1pLeXFsU0hXWGxPeHZxbG5lNHhsTDlrSnZqUWJ6WVZJWVVScXh6OGdsTWRxRTB2UzhockZxX3FZY2lpNTV1cUloN2hXUDRnWTFrOVNvVGhlQk9WeXh6YmZNcHR2eXpGQzNxbnoyS3o0NHZ6Nk1N?oc=5",
+        "source_name": "Google News 🕵️ (Agentic AI Frameworks)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaWFfbEZBckk4dV9vOS1UOXRBTV9jdm4xdG5uY2FUXzlydjlPbW4xaUw1VnZkRk1qWEFLYmVoT2MyR3ZPcXhSQ3JSbFZsT1pLeXFsU0hXWGxPeHZxbG5lNHhsTDlrSnZqUWJ6WVZJWVVScXh6OGdsTWRxRTB2UzhockZxX3FZY2lpNTV1cUloN2hXUDRnWTFrOVNvVGhlQk9WeXh6YmZNcHR2eXpGQzNxbnoyS3o0NHZ6Nk...",
+        "ai_french_title": "Sécurité de l'IA agentique : Nouveaux risques et contrôles dans le cadre de sécurité de l'IA Databricks (DASF v3.0)",
+        "ai_score": 8,
+        "ai_summary": "L'article aborde la sécurité de l'intelligence artificielle (IA) agentique, un domaine en constante évolution. Les auteurs mettent en avant les nouveaux risques et contrôles associés à la sécurité de l'IA Databricks, en particulier avec la version 3.0 du Databricks Automated Security Framework (DASF). Cette innovation technique vise à améliorer la sécurité des systèmes d'IA, en particulier dans le contexte de la construction et de la BIM. L'impact potentiel de cette innovation est considérable, car elle permettra aux entreprises de construction de mieux protéger leurs données sensibles et de réduire les risques associés à la sécurité de l'IA.",
+        "ai_tags": [
+            "sécurité de l'IA",
+            "IA agentique",
+            "Databricks",
+            "DASF v3.0",
+            "construction",
+            "BIM"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "ZAWYA-PRESSR: Fortinet advances its security operations platform with unified SOC, agentic AI, and expanded endpoint security - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxOMEpzS2NZMVJhLThUZEpERlVPWXQ0R0lFelZzVVp2cFNsNlBjNmNKTmxNVFRiWk9oZmFtV0VEMktWTGtLREtldnNFNUc3bVVCM21JcEZVRHU3QzJ0QXFJaHQzZ2VTbGJuZUFmQk41ZjdZLUlJOUQ1YVNCNV9vY2JiZU8wZndpc3BhVWx3cjVlYk1YYWVyaHdFcVBnbHFpaTRzcWd3LTlVdFE0X0NfajgzVnl3RU1xUHdPTzluR1FsbkNMRnZvZmpWdFR0WlkySGQ1a0VMdFlRWkIxQ2VZWDF0TEVDdFc5SDRZNlh1MjItMDRjWURpdUtSdEhLQUV2QkEzSlMwZXZEbFYzQ2ZGTFg5STJsWU05S3NaWUxlSWVnaG1iNWh1VjJldU1CSQ?oc=5",
+        "source_name": "Google News 🕵️ (Agentic AI Frameworks)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwJBVV95cUxOMEpzS2NZMVJhLThUZEpERlVPWXQ0R0lFelZzVVp2cFNsNlBjNmNKTmxNVFRiWk9oZmFtV0VEMktWTGtLREtldnNFNUc3bVVCM21JcEZVRHU3QzJ0QXFJaHQzZ2VTbGJuZUFmQk41ZjdZLUlJOUQ1YVNCNV9vY2JiZU8wZndpc3BhVWx3cjVlYk1YYWVyaHdFcVBnbHFpaTRzcWd3LTlVdFE0X0NfajgzVnl3RU1xUHdPTz...",
+        "ai_french_title": "Fortinet améliore sa plateforme de sécurité opérationnelle avec SOC unifié, IA agente et sécurité des terminaux étendue",
+        "ai_score": 8,
+        "ai_summary": "Fortinet, un leader dans le domaine de la sécurité informatique, a récemment annoncé l'amélioration de sa plateforme de sécurité opérationnelle. Cette mise à jour inclut un SOC (System Operations Center) unifié, qui permet une visibilité et une gestion plus efficaces des menaces. L'entreprise a également intégré une intelligence artificielle agente, capable de détecter et de répondre à des menaces en temps réel. Cette innovation technique a un impact potentiel important sur le secteur de la construction et de la BIM, car elle permettra aux entreprises de mieux protéger leurs systèmes et leurs données sensibles. Cela pourrait également améliorer la collaboration et la communication entre les équipes de sécurité et de construction.",
+        "ai_tags": [
+            "Fortinet",
+            "sécurité opérationnelle",
+            "SOC",
+            "intelligence artificielle",
+            "sécurité des terminaux"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Assessing the return on investment of generative and agentic AI solutions - Cigref",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSXQ4cFNrTEtnVTUyVEhtMmJxVjQ3TkNIVlQ1UnN5WHd3eWZLcEJ3ZFplSVF6cEw1WlFfTFpSSkpoTk1VRGxhVTFVR1FvVjFVbXp4Q3NmOC1IbHRwMkZ4U3VONlkzRnZ6dmdaTWtPQ0RMX25xNXRnU0JYUDlQOExWS2V0V0czbkRaaU9icXhnclNLeTBkRXNRZnhuUQ?oc=5",
+        "source_name": "Google News 🕵️ (Agentic AI Frameworks)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxPSXQ4cFNrTEtnVTUyVEhtMmJxVjQ3TkNIVlQ1UnN5WHd3eWZLcEJ3ZFplSVF6cEw1WlFfTFpSSkpoTk1VRGxhVTFVR1FvVjFVbXp4Q3NmOC1IbHRwMkZ4U3VONlkzRnZ6dmdaTWtPQ0RMX25xNXRnU0JYUDlQOExWS2V0V0czbkRaaU9icXhnclNLeTBkRXNRZnhuUQ?oc=5\" target=\"_blank\">Assessing the ret...",
+        "ai_french_title": "Évaluation du retour sur investissement des solutions AI génératives et agentes",
+        "ai_score": 8,
+        "ai_summary": "L'article 'Assessing the return on investment of generative and agentic AI solutions' de Cigref explore l'évaluation du retour sur investissement des solutions AI génératives et agentes dans le secteur de la construction. Ces solutions permettent de générer des modèles et des comportements complexes, ce qui peut révolutionner la façon dont les architectes, les ingénieurs et les entreprises de construction conçoivent et gèrent les projets. L'article examine les avantages et les inconvénients de l'utilisation de ces solutions, notamment leur capacité à accélérer les processus de conception et de construction, à améliorer la qualité des produits et à réduire les coûts. Les auteurs suggèrent que les solutions AI génératives et agentes peuvent être particulièrement utiles pour les projets de construction complexes qui nécessitent une grande flexibilité et une grande précision.",
+        "ai_tags": [
+            "IA",
+            "BIM",
+            "construction",
+            "génération de modèles",
+            "comportement complexe"
+        ],
+        "ai_category": "Hybride ⚙️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Formation Qualiopi : évolutions des pratiques en 2025 et attentes pour 2026 - Culture RH",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBfbUdZMjJIbmRiOXR2eTJwaGhOLW1xVHRfY0t6T2FJYXprUDBTbGtsRUlZYzM3LXZCY2FHSEk3MnIwZnk5R0lNdlpFcVcwS1pic3lWaWpjcVFlYU1lYkJQSEIwM0hSNEJPNy1ENEJxMDZpbzJkcmpB?oc=5",
+        "source_name": "Google News 🕵️ (nouveautés QUALIOPI)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBfbUdZMjJIbmRiOXR2eTJwaGhOLW1xVHRfY0t6T2FJYXprUDBTbGtsRUlZYzM3LXZCY2FHSEk3MnIwZnk5R0lNdlpFcVcwS1pic3lWaWpjcVFlYU1lYkJQSEIwM0hSNEJPNy1ENEJxMDZpbzJkcmpB?oc=5\" target=\"_blank\">Formation Qualiopi : évolutions des pratiques en 2025 et attentes p...",
+        "ai_french_title": "Formation Qualiopi : évolutions des pratiques en 2025 et attentes pour 2026",
+        "ai_score": 6,
+        "ai_summary": "La formation Qualiopi est un programme de formation professionnelle qui évolue en 2025. Les pratiques en matière de formation Qualiopi devraient se diversifier pour répondre aux besoins des entreprises et des individus. Les attentes pour 2026 incluent une augmentation de la formation en ligne et une intégration accrue de l'intelligence artificielle dans les programmes de formation. Cela pourrait avoir un impact significatif sur le secteur de la construction, en particulier dans le domaine de la gestion de projet et de la collaboration.",
+        "ai_tags": [
+            "formation",
+            "Qualiopi",
+            "évolution",
+            "pratiques",
+            "intelligence artificielle"
+        ],
+        "ai_category": "Veille Globale",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Qualiopi 2026-2028 : France compétences ouvre la sélection des instances de labellisation - Centre Inffo",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxONWRPSGVGU0R5QU5VemowVTE0VG1BMHRJWjVzSWxUMzJ2X2UtOUgwYTFtUHFBYjRfSXdOeXhjRTRWYVBfZUh1YXlKa0pjMlhZaV8zeEtYVnR4aGcyNko2NDZieUFEM0hIUWhScW92TjZrd3RTZjVGY183TVpjUk51V216Q1hkQVVGOWN3TXJJY0tjS0ROOEVPUU41UEIyMl9ORFlyY0QyRk5qc05QSFhhZEl4MTQ3VjFnUEY5RDJNaFBNQmdhTkxGNXhwcTNwNlJpVFN3V0hoTzdKR19XRUlESC1tblZfVEtG?oc=5",
+        "source_name": "Google News 🕵️ (nouveautés QUALIOPI)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxONWRPSGVGU0R5QU5VemowVTE0VG1BMHRJWjVzSWxUMzJ2X2UtOUgwYTFtUHFBYjRfSXdOeXhjRTRWYVBfZUh1YXlKa0pjMlhZaV8zeEtYVnR4aGcyNko2NDZieUFEM0hIUWhScW92TjZrd3RTZjVGY183TVpjUk51V216Q1hkQVVGOWN3TXJJY0tjS0ROOEVPUU41UEIyMl9ORFlyY0QyRk5qc05QSFhhZEl4MTQ3VjFnUE...",
+        "ai_french_title": "Qualiopi 2026-2028 : France compétences ouvre la sélection des instances de labellisation",
+        "ai_score": 6,
+        "ai_summary": "Le gouvernement français a lancé un appel à candidatures pour la sélection des instances de labellisation Qualiopi 2026-2028. Cette initiative vise à promouvoir la qualité des formations professionnels dans le secteur de la construction et de la BIM. Les instances sélectionnées seront chargées de labelliser les formations qui répondent aux normes Qualiopi, garantissant ainsi la qualité des compétences acquises par les professionnels. Cette mesure devrait avoir un impact positif sur la qualité des projets de construction et la compétitivité des entreprises du secteur.",
+        "ai_tags": [
+            "Qualiopi",
+            "France compétences",
+            "labellisation",
+            "formation professionnelle",
+            "BIM",
+            "construction"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Qualité en formation : les ministères du Travail et de l’Enseignement supérieur finalisent le nouveau Qualiopi - AEF info",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZTB1UkRiVHlNUjdRRjFrRjQ0b3V1SlgyNF9rbDlsVHRLWlk4eWpFdGlZaXdwRVZyWU1wNVlQdG8tY2x6dFEweTROYWQxUERocU1tRFRZNTM0Q29DQ0k0RGxHMGVla2NsRHdEX3pfQUxPX1I3NjRvTXlqczdRYlZwYzd3N0thUXNFRWxIa2YxbG8wa2EyRVlHbURWZ0M4MlhWNzg0WW1VcGZJN1NsNU9xcjZTbENDTVRXSm16dzFsVjNWLWt1QXg4N2VURzNSMTJ6aGZHMnlxZTh4WE1sYnM4?oc=5",
+        "source_name": "Google News 🕵️ (nouveautés QUALIOPI)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZTB1UkRiVHlNUjdRRjFrRjQ0b3V1SlgyNF9rbDlsVHRLWlk4eWpFdGlZaXdwRVZyWU1wNVlQdG8tY2x6dFEweTROYWQxUERocU1tRFRZNTM0Q29DQ0k0RGxHMGVla2NsRHdEX3pfQUxPX1I3NjRvTXlqczdRYlZwYzd3N0thUXNFRWxIa2YxbG8wa2EyRVlHbURWZ0M4MlhWNzg0WW1VcGZJN1NsNU9xcjZTbENDTVRXSm...",
+        "ai_french_title": "Qualité en formation : les ministères du Travail et de l'Enseignement supérieur finalisent le nouveau Qualiopi",
+        "ai_score": 2,
+        "ai_summary": "Le nouveau Qualiopi est un système de certification de la qualité en formation professionnel, créé par les ministères du Travail et de l'Enseignement supérieur. Ce système vise à améliorer la qualité des formations professionnelles en France, en mettant en place des critères de qualité stricts et en encourageant les établissements de formation à se conformer à ces critères. L'impact potentiel de ce système est important, car il devrait améliorer la qualité des compétences des travailleurs et contribuer à la compétitivité de l'économie française. Cependant, il est important de noter que ce système ne concerne pas directement le secteur de la construction ou la BIM.",
+        "ai_tags": [
+            "formation",
+            "qualité",
+            "certification",
+            "travail",
+            "enseignement"
+        ],
+        "ai_category": "Veille Globale",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "26/01/2026 - La nouvelle veille Qualiopi est désormais disponible en vidéo ! - Fondation Oeuvre Croix Saint Simon",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTEwtQVBZVzVfTllvTWJRUmxDLWpaMS04UEtZdm83MWdMSGxpRV95VVNxbVJYLUhMWTRMZXNpeVBKb01WZHNiRk1qeDI3bnp2Ym5rTWZCcldRenY1VHRaOUdYNHdFeDZPc2FUOTRQRXVtbVAtYWotaHlPNkt0Zk1UNkRiUDU2Z3MxZjhKc3N0dGh0Nk1nSk1Hd294ZzVmamxXYVJ2R05RSkZhcm1IN2gwS3RVYlkxS3V0Tzdudw?oc=5",
+        "source_name": "Google News 🕵️ (nouveautés QUALIOPI)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxPTEwtQVBZVzVfTllvTWJRUmxDLWpaMS04UEtZdm83MWdMSGxpRV95VVNxbVJYLUhMWTRMZXNpeVBKb01WZHNiRk1qeDI3bnp2Ym5rTWZCcldRenY1VHRaOUdYNHdFeDZPc2FUOTRQRXVtbVAtYWotaHlPNkt0Zk1UNkRiUDU2Z3MxZjhKc3N0dGh0Nk1nSk1Hd294ZzVmamxXYVJ2R05RSkZhcm1IN2gwS3RVYlkxS3V0Tz...",
+        "ai_french_title": "La nouvelle veille Qualiopi est désormais disponible en vidéo",
+        "ai_score": 2,
+        "ai_summary": "La Fondation Oeuvre Croix Saint Simon a annoncé la disponibilité d'une nouvelle veille Qualiopi en vidéo. Cette veille est destinée à informer les professionnels de la formation continue et de la qualification sur les dernières évolutions de la formation professionnelle en France. La disponibilité de cette veille en vidéo permettra aux utilisateurs de consulter les informations de manière plus flexible et accessible. Cette innovation technique pourrait potentiellement améliorer l'accès à l'information et la formation continue dans le secteur de la construction et de la BIM.",
+        "ai_tags": [
+            "veille",
+            "formation",
+            "qualification",
+            "formation professionnelle",
+            "BIM"
+        ],
+        "ai_category": "Veille Globale 🌐",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "DREAM Quality® : un nouveau label pour évaluer l’expérience réelle des formations en ligne - blogdumoderateur.com",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMnE3dlR3eWhtOTVwSFlLZ0NCTmNScGNQR2g1Rm1JaEZNSWozSzNnR0FtR1ZQcDRJc09acDJ4NjhnUkdYV2VrZ3ZxOVlYQkRRSElEdS1OX3VDby1UREdQdlVTV1ZGclc0b3p3TXFwWGMxOXB6RjVmZ2dTMFAwT254LS1QWTczMEItZFpNcWpNLWJHSEY0d0JmeG82SG55RmVyYzdjaTJ3VQ?oc=5",
+        "source_name": "Google News 🕵️ (nouveautés QUALIOPI)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxPMnE3dlR3eWhtOTVwSFlLZ0NCTmNScGNQR2g1Rm1JaEZNSWozSzNnR0FtR1ZQcDRJc09acDJ4NjhnUkdYV2VrZ3ZxOVlYQkRRSElEdS1OX3VDby1UREdQdlVTV1ZGclc0b3p3TXFwWGMxOXB6RjVmZ2dTMFAwT254LS1QWTczMEItZFpNcWpNLWJHSEY0d0JmeG82SG55RmVyYzdjaTJ3VQ?oc=5\" target=\"_blank\">D...",
+        "ai_french_title": "DREAM Quality : un nouveau label pour évaluer l'expérience réelle des formations en ligne",
+        "ai_score": 2,
+        "ai_summary": "L'article présente DREAM Quality, un nouveau label conçu pour évaluer l'expérience réelle des formations en ligne. Ce label vise à fournir une évaluation objective des formations en ligne, en tenant compte de facteurs tels que la qualité de l'enseignement, la facilité d'utilisation et la satisfaction des étudiants. L'innovation technique consiste en la mise en place d'un système de notation transparent et fiable, qui permet aux étudiants de choisir les formations en ligne les plus adaptées à leurs besoins. Cet article est intéressant pour les professionnels de la formation en ligne, mais il n'apporte pas de contenu technique spécifique sur la construction ou le BIM.",
+        "ai_tags": [
+            "formation en ligne",
+            "évaluation",
+            "label",
+            "qualité"
+        ],
+        "ai_category": "Veille Globale",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "L’ouverture de la gaine ne coupe pas les planchers multicouches Exportation du modèle au format IFC à partir de Revit - Autodesk",
+        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPTURSSGJmYTItTnI2bUx1MmNjSFpoTHZ1U0xhNHdpUGt5cDFSczd6TlBsME1objlpRUNIMTNkbEF4Smh4bEFZMG1mUTREOXZYU3FpTTVQYlJRMkVhTDc2US1tNHRBMUphSlVRZG5NLXA1TVlMam5DSk9mR2ZxazJ0UW1OMnkxb1d5NW54ajV5aXp6blJxeXpObVBQdXNUVU4zcGVHbVlTWlB6c2ZtcnJRc3dUM2JweEZEZk9mYmNoeFVXZFNjNjk1NzV6V01vUWZMVkdVSHdMN3JIREhqaGQ5OVRsOWNlNWFKRnA1cmZUSWc3SVk3VUpjUkF3a180XzMwakZ2bU9qcw?oc=5",
+        "source_name": "Google News 🕵️ (format IFC)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwJBVV95cUxPTURSSGJmYTItTnI2bUx1MmNjSFpoTHZ1U0xhNHdpUGt5cDFSczd6TlBsME1objlpRUNIMTNkbEF4Smh4bEFZMG1mUTREOXZYU3FpTTVQYlJRMkVhTDc2US1tNHRBMUphSlVRZG5NLXA1TVlMam5DSk9mR2ZxazJ0UW1OMnkxb1d5NW54ajV5aXp6blJxeXpObVBQdXNUVU4zcGVHbVlTWlB6c2ZtcnJRc3dUM2JweEZEZk...",
+        "ai_french_title": "L'ouverture de la gaine ne coupe pas les planchers multicouches : Exportation du modèle au format IFC à partir de Revit",
+        "ai_score": 8,
+        "ai_summary": "L'article présente une innovation technique qui permet d'exporter des modèles de planchers multicouches au format IFC à partir de Revit, sans les couper. Cette fonctionnalité est cruciale dans le secteur de la construction, où la précision et la complexité des modèles sont essentielles. L'ouverture de la gaine permet aux architectes et ingénieurs de travailler de manière plus efficace et précise, en minimisant les erreurs et les coûts associés à la révision de plans. Cette avancée technique a le potentiel de révolutionner la façon dont les projets de construction sont conçus et réalisés.",
+        "ai_tags": [
+            "BIM",
+            "Revit",
+            "IFC",
+            "Architecture",
+            "Construction"
+        ],
+        "ai_category": "BIM Pur",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Urbanisme : comment le permis de construire BIM pourrait révolutionner les pratiques - Le Moniteur",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZFBKR1dyS2c1RmtRVkZTb3ZNZ3ptNXZDcUI2cm0tQmp0aGV2N19ESVlGOVBDSXp4alBJeEwzXzFyb1QzSlkwOGZLenV4alFVTHJ4TW4xX2Z0ZC1sdS1kbnFybnNNSU4zOHFVMjJBV3hDemVrRFpVcWloaVlYYTNDakh4MHJ2TDJtX2hGa3hpQ3J0WHMzQVNnNzkxVWVoZ2RDWW9hMGNPOUlfZzZVMmliUWdQUmY4OTZrcjZVeXpBZ0x0QQ?oc=5",
+        "source_name": "Google News 🕵️ (format IFC)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZFBKR1dyS2c1RmtRVkZTb3ZNZ3ptNXZDcUI2cm0tQmp0aGV2N19ESVlGOVBDSXp4alBJeEwzXzFyb1QzSlkwOGZLenV4alFVTHJ4TW4xX2Z0ZC1sdS1kbnFybnNNSU4zOHFVMjJBV3hDemVrRFpVcWloaVlYYTNDakh4MHJ2TDJtX2hGa3hpQ3J0WHMzQVNnNzkxVWVoZ2RDWW9hMGNPOUlfZzZVMmliUWdQUmY4OTZrcj...",
+        "ai_french_title": "L'urbanisme : comment le permis de construire BIM pourrait révolutionner les pratiques",
+        "ai_score": 8,
+        "ai_summary": "Le permis de construire BIM (Building Information Modeling) pourrait révolutionner les pratiques d'urbanisme en intégrant des outils de modélisation informatique pour améliorer la planification, la conception et la construction des bâtiments. Cette innovation technique permettrait aux urbanistes et aux architectes de créer des modèles 3D précis et détaillés, facilitant la communication et la collaboration entre les parties prenantes. En outre, le permis de construire BIM pourrait réduire les erreurs et les coûts associés aux projets de construction, tout en améliorant la durabilité et la performance énergétique des bâtiments. Cela pourrait avoir un impact significatif sur le secteur de la construction, en particulier dans les villes en croissance rapide où la planification et la gestion de l'espace sont cruciales.",
+        "ai_tags": [
+            "BIM",
+            "urbanisme",
+            "permis de construire",
+            "modélisation informatique",
+            "planification",
+            "conception",
+            "construction"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "IFC 4.3, une nouvelle étape pour le BIM - Schweizerischer Baumeisterverband",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE42QnZPbGhDTU9xUjk4cGJCdlV3dmRZMTdCNmNveEE5NUNYa3lSdWxBS2puZ0wzaHg2WTRHdHpycGRTNHY5U2x2dG9YMWtRVG16VW9vbjF6NC1UUmVPQnBkMndTR0lZOEpTcGtGa3pXUlZjY3ctM1E?oc=5",
+        "source_name": "Google News 🕵️ (format IFC)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE42QnZPbGhDTU9xUjk4cGJCdlV3dmRZMTdCNmNveEE5NUNYa3lSdWxBS2puZ0wzaHg2WTRHdHpycGRTNHY5U2x2dG9YMWtRVG16VW9vbjF6NC1UUmVPQnBkMndTR0lZOEpTcGtGa3pXUlZjY3ctM1E?oc=5\" target=\"_blank\">IFC 4.3, une nouvelle étape pour le BIM</a>&nbsp;&nbsp;<font color=\"...",
+        "ai_french_title": "IFC 4.3, une nouvelle étape pour le BIM",
+        "ai_score": 8,
+        "ai_summary": "L'article présente l'IFC 4.3, une nouvelle version de l'IFC (Industry Foundation Classes) qui constitue un standard de modélisation de données pour le BIM (Building Information Modelling). Cette mise à jour apporte de nouvelles fonctionnalités et améliorations pour améliorer l'efficacité et la précision des processus de construction. Le BIM est un outil de modélisation numérique qui permet de créer des modèles détaillés de bâtiments et d'infrastructures, et l'IFC 4.3 est un pas important vers une plus grande interopérabilité et une meilleure collaboration entre les acteurs du secteur de la construction. Cette innovation technique a le potentiel de révolutionner les processus de construction et d'améliorer la qualité des bâtiments.",
+        "ai_tags": [
+            "BIM",
+            "IFC",
+            "modélisation de données",
+            "interopérabilité",
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
             "collaboration"
         ],
         "ai_category": "BIM Pur 🏗️",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "Room areas overtime",
         "url": "https://speckle.community/t/room-areas-overtime/22008",
         "source_name": "Speckle (OpenBIM Community)",
@@ -4934,11 +5236,27 @@
             "BIM",
             "Connecteur",
             "Mise à niveau"
+=======
+        "title": "Familles d’assemblages structurels exportées au format IFC au mauvais endroit à partir de Revit - Autodesk",
+        "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNeTRfNUsyZWJZdzFFMG9XVHl3LUNuTFA5UHZTVmxqdkthUVVzelU2QzBGSEJYdGhQNGxmNktTU1c0cHNKNV8wMXdiTTBoblQwM3VXMVBOY2d4QVQ3Tzh4bzlpLUNFSU5YZmItdHB3anhlVU9JTUUtUHJMT0tCeTNzOUs1LXhCYjhDaUFCQXdJRUJVTkFuaEJLX0lsNmFuaVltc0drZlVZdHdZbHhoVGpjRl9jMTdJaWM4WXNuWGxTd0d4YTBOamlxSHJQUTIwSWREclliZGg4R0RTU2VhNUZnMXZ3U1FlRmhhbVowWHNBTWdKZXNZTWJEQVpB?oc=5",
+        "source_name": "Google News 🕵️ (format IFC)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi-gFBVV95cUxNeTRfNUsyZWJZdzFFMG9XVHl3LUNuTFA5UHZTVmxqdkthUVVzelU2QzBGSEJYdGhQNGxmNktTU1c0cHNKNV8wMXdiTTBoblQwM3VXMVBOY2d4QVQ3Tzh4bzlpLUNFSU5YZmItdHB3anhlVU9JTUUtUHJMT0tCeTNzOUs1LXhCYjhDaUFCQXdJRUJVTkFuaEJLX0lsNmFuaVltc0drZlVZdHdZbHhoVGpjRl9jMTdJaWM4WX...",
+        "ai_french_title": "Les familles d'assemblages structurels exportées au format IFC à mauvais escient à partir de Revit",
+        "ai_score": 8,
+        "ai_summary": "L'article décrit un problème technique rencontré lors de l'exportation de familles d'assemblages structurels au format IFC à partir de Revit. En effet, ces éléments sont souvent exportés à un emplacement incorrect, ce qui peut entraîner des erreurs et des problèmes de compatibilité lors de l'importation dans d'autres logiciels BIM. Cette issue technique a un impact potentiel important sur le secteur de la construction, car elle peut entraîner des retards et des coûts supplémentaires dans les projets de construction. Pour résoudre ce problème, les développeurs de Revit et les utilisateurs doivent être conscients de cette limitation technique et prendre des mesures pour éviter les erreurs d'exportation.",
+        "ai_tags": [
+            "Revit",
+            "IFC",
+            "BIM",
+            "exportation",
+            "familles d'assemblages structurels"
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
         ],
         "ai_category": "BIM Pur 🏗️",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "ETABS Analysis result extraction failed",
         "url": "https://speckle.community/t/etabs-analysis-result-extraction-failed/21989",
         "source_name": "Speckle (OpenBIM Community)",
@@ -5092,12 +5410,26 @@
             "IA",
             "Architecture49",
             "Construction",
+=======
+        "title": "BIM pour tous ! Tout est désormais en place - XPair.com",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5oRW1XN3o4dFpvQnlPUFN4bzBjTlIwZ3BGU0s0NTltTy11d3BROGRWMXJhcHhvRGNHWE16c2FXcFNLdDlTWTNDRzI1M2g1cHhzT0FFVTBlaThmLXo3MXpDYWt2eFVzS2hER2dVTUJyMA?oc=5",
+        "source_name": "Google News 🕵️ (format IFC)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5oRW1XN3o4dFpvQnlPUFN4bzBjTlIwZ3BGU0s0NTltTy11d3BROGRWMXJhcHhvRGNHWE16c2FXcFNLdDlTWTNDRzI1M2g1cHhzT0FFVTBlaThmLXo3MXpDYWt2eFVzS2hER2dVTUJyMA?oc=5\" target=\"_blank\">BIM pour tous ! Tout est désormais en place</a>&nbsp;&nbsp;<font color=\"#6f6f...",
+        "ai_french_title": "BIM pour tous ! Tout est désormais en place",
+        "ai_score": 6,
+        "ai_summary": "L'article BIM pour tous ! Tout est désormais en place met en avant l'avancement significatif de la technologie BIM (Building Information Modeling) dans le secteur de la construction. Cette innovation technique permet aux professionnels de la construction de créer des modèles numériques détaillés de bâtiments, facilite la collaboration et améliore la précision des projets. Avec la mise en place de BIM pour tous, les entreprises de construction peuvent désormais bénéficier de cette technologie pour améliorer leur efficacité et réduire les coûts.",
+        "ai_tags": [
+            "BIM",
+            "Construction",
+            "Technologie",
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
             "Innovation"
         ],
         "ai_category": "BIM Pur 🏗️",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "Top 5 Most Popular Posts of 2025",
         "url": "https://www.bimpure.com/blog/top-5-most-popular-posts-of-2025-bim-pure-yearly-review",
         "source_name": "Revit Pure",
@@ -5399,11 +5731,26 @@
             "scientifique des données",
             "promotion",
             "conseils"
+=======
+        "title": "L'OIM et Revolut facilitent le don numérique en faveur de l’aide aux migrants - International Organization for Migration",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZk01WGFJUVRCb3VnQVFLaHNkcnJkM3Z6TlZoSVVrRWNWWGl0QkFrSnprNFp4UkNVaEduNjktbHdIckYwT1BRSXNwa3FncUNDTkVCNlo1aTNPMG5QSlU5TnVVc0dqMm42RldDWDMwcDNHekpJZTZQTC1iSlNpdmhESUllckQ2QnFoT3E5eWI2QkZIQ2tha3FtdHdRM1c2SXp1dW9hdlhR?oc=5",
+        "source_name": "Google News 🕵️ (DOE numérique)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxNZk01WGFJUVRCb3VnQVFLaHNkcnJkM3Z6TlZoSVVrRWNWWGl0QkFrSnprNFp4UkNVaEduNjktbHdIckYwT1BRSXNwa3FncUNDTkVCNlo1aTNPMG5QSlU5TnVVc0dqMm42RldDWDMwcDNHekpJZTZQTC1iSlNpdmhESUllckQ2QnFoT3E5eWI2QkZIQ2tha3FtdHdRM1c2SXp1dW9hdlhR?oc=5\" target=\"_blank\">L'O...",
+        "ai_french_title": "L'Organisation Internationale pour les Migrations et Revolut facilitent le don numérique en faveur de l'aide aux migrants",
+        "ai_score": 0,
+        "ai_summary": "L'article en question ne semble pas avoir de lien direct avec la technologie de la construction, la BIM ou l'intelligence artificielle. En effet, il s'agit d'un article de presse qui traite de la collaboration entre l'Organisation Internationale pour les Migrations et la plateforme de services financiers Revolut pour faciliter les dons numériques en faveur de l'aide aux migrants. Bien que cela puisse être un sujet important, il n'y a pas d'innovation technique ou d'impact direct sur le secteur de la construction/BIM. Cependant, il est possible que cette collaboration puisse inspirer des solutions innovantes pour les problèmes de collecte de fonds ou de dons en ligne, qui pourraient potentiellement être appliqués à des projets de construction ou de développement durable.",
+        "ai_tags": [
+            "don numérique",
+            "aide aux migrants",
+            "Revolut",
+            "Organisation Internationale pour les Migrations"
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
         ],
         "ai_category": "Veille Globale",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "How to Find Seasonality Patterns in Time Series",
         "url": "https://medium.com/data-science/how-to-find-seasonality-patterns-in-time-series-c3b9f11e89c6?source=rss----7f60cf5620c9---4",
         "source_name": "Towards Data Science",
@@ -5487,11 +5834,27 @@
             "parcs",
             "conception",
             "gestion"
+=======
+        "title": "Vignobles : Agaric IG, architecte numérique de la lutte contre la flavescence dorée - Les Echos",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPcXE2ZWpFZEdEMjhnYzRxUkItbW1sQmV1T0lvUTlEeGpwWlA0bzFCWUZ1Sllncy1Ya0ROWjVyTVZqWUFMSmxMcDIzWWJlT1ZzQ0FIZ2wyUDRBM1hPaTh1U0xrNVlWUkhCZV9DdDBEdFhoMGhQQVktXy15RHp3U3ZKWFc4Z0xtdEs5NUVObEN3ZF9SNG9lenhVbXpOOGlWRElzTXhvQndrcUU4NWpINDMwS2RySjBjbkFwWGtFcWNmYnFTRnF6SmJuakN3c3BfRlVmSFV2Uk8xc2NXTUFwV0MtNHBB?oc=5",
+        "source_name": "Google News 🕵️ (DOE numérique)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4gFBVV95cUxPcXE2ZWpFZEdEMjhnYzRxUkItbW1sQmV1T0lvUTlEeGpwWlA0bzFCWUZ1Sllncy1Ya0ROWjVyTVZqWUFMSmxMcDIzWWJlT1ZzQ0FIZ2wyUDRBM1hPaTh1U0xrNVlWUkhCZV9DdDBEdFhoMGhQQVktXy15RHp3U3ZKWFc4Z0xtdEs5NUVObEN3ZF9SNG9lenhVbXpOOGlWRElzTXhvQndrcUU4NWpINDMwS2RySjBjbkFwWG...",
+        "ai_french_title": "Vignobles : Agaric IG, architecte numérique de la lutte contre la flavescence dorée",
+        "ai_score": 8,
+        "ai_summary": "La flavescence dorée est une maladie qui affecte les vignes et peut avoir des conséquences importantes sur la production de vin. Agaric IG, un cabinet d'architectes numériques, a développé une solution innovante pour lutter contre cette maladie. En utilisant des technologies de l'information et de la communication, tels que la modélisation 3D et l'intelligence artificielle, Agaric IG a créé un système de gestion des données pour aider les viticulteurs à identifier et à prévenir la flavescence dorée. Cette solution a le potentiel de révolutionner la façon dont les viticulteurs gèrent leurs vignobles et peut avoir un impact significatif sur la production de vin.",
+        "ai_tags": [
+            "vignobles",
+            "flavescence dorée",
+            "technologie",
+            "intelligence artificielle",
+            "modélisation 3D"
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
         ],
         "ai_category": "Hybride ⚙️",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "pick line beams issue",
         "url": "https://www.reddit.com/r/Revit/comments/1s2mbs0/pick_line_beams_issue/",
         "source_name": "Reddit r/Revit",
@@ -5539,11 +5902,26 @@
             "configuration",
             "paramètres",
             "modèles 3D"
+=======
+        "title": "Klimt, entre tradition dorée et futur numérique - Meer | English edition",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORVNHUGlYLW53SU5ZRGk5UERQT0hBeXl6cUNHODN1WjdEMnhDTldmV3E5VDY0UklMZWhPN3VkRWRkX2hQVDZoTEg0ek9ySW1RMU55WFI4a05UY3hQTWpPQjRzQ3N6eXB6bkd0UDJjNHNONjZtOHF2M0U3WldOeEYyMHlfRQ?oc=5",
+        "source_name": "Google News 🕵️ (DOE numérique)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxORVNHUGlYLW53SU5ZRGk5UERQT0hBeXl6cUNHODN1WjdEMnhDTldmV3E5VDY0UklMZWhPN3VkRWRkX2hQVDZoTEg0ek9ySW1RMU55WFI4a05UY3hQTWpPQjRzQ3N6eXB6bkd0UDJjNHNONjZtOHF2M0U3WldOeEYyMHlfRQ?oc=5\" target=\"_blank\">Klimt, entre tradition dorée et futur numérique</...",
+        "ai_french_title": "Gustav Klimt, entre tradition dorée et futur numérique",
+        "ai_score": 2,
+        "ai_summary": "L'article 'Klimt, entre tradition dorée et futur numérique' explore la relation entre l'artiste autrichien Gustav Klimt et la technologie numérique. Le texte présente une analyse de l'œuvre de Klimt, mettant en évidence les éléments traditionnels dorés qui coexistent avec des éléments futuristes. Cette approche permet de réfléchir sur la manière dont l'art et la technologie peuvent interagir et influencer l'un l'autre. L'article souligne également l'importance de la compréhension de l'histoire de l'art pour apprécier les innovations technologiques contemporaines.",
+        "ai_tags": [
+            "Gustav Klimt",
+            "art",
+            "technologie numérique",
+            "histoire de l'art"
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
         ],
         "ai_category": "Veille Globale 🌐",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "Revit – Finish floor under walls without redrawing everything?",
         "url": "https://www.reddit.com/r/bim/comments/1s85knc/revit_finish_floor_under_walls_without_redrawing/",
         "source_name": "Reddit r/BIM",
@@ -5574,11 +5952,47 @@
             "intelligence artificielle",
             "reconnaissance d'images",
             "balisage de shaft"
+=======
+        "title": "«Les écrans, la nouvelle cage dorée des seniors» - Le Figaro",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSlJFd1dCeVljUmtpWnF2eVNlU3N6OTVYcWRRc01fNTBHa2tET1IwLXNHY2VTZGZnenVwQWJPcGJUdE5aLWRpOENPMHRTaUdHWGhqV3dwLWFIZERabVBXNkRoVU1GcnhYUFh0MnlOUEhIOTB5OXVqbFkwaVBiQldMSm40VklzYl9mM3BPRFF6R2ZIWGdN?oc=5",
+        "source_name": "Google News 🕵️ (DOE numérique)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxPSlJFd1dCeVljUmtpWnF2eVNlU3N6OTVYcWRRc01fNTBHa2tET1IwLXNHY2VTZGZnenVwQWJPcGJUdE5aLWRpOENPMHRTaUdHWGhqV3dwLWFIZERabVBXNkRoVU1GcnhYUFh0MnlOUEhIOTB5OXVqbFkwaVBiQldMSm40VklzYl9mM3BPRFF6R2ZIWGdN?oc=5\" target=\"_blank\">«Les écrans, la nouvelle ca...",
+        "ai_french_title": "Les écrans, la nouvelle cage dorée des seniors",
+        "ai_score": 2,
+        "ai_summary": "L'article 'Les écrans, la nouvelle cage dorée des seniors' de Le Figaro aborde le sujet de l'utilisation des écrans par les seniors. Bien que les écrans soient devenus une partie intégrante de notre vie quotidienne, ils peuvent également constituer une source de préoccupation pour les personnes âgées. En effet, les seniors peuvent être vulnérables à la dépendance aux écrans, ce qui peut avoir des conséquences négatives sur leur santé mentale et physique. L'article souligne l'importance de trouver un équilibre entre l'utilisation des écrans et la vie réelle.",
+        "ai_tags": [
+            "écrans",
+            "seniors",
+            "dépendance",
+            "santé mentale",
+            "santé physique"
+        ],
+        "ai_category": "Veille Globale",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Vallée Dorée / Rantigny. Projet de Data Center : objectif ouverture des premiers bâtiments en 2029 - Oise Hebdo",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTnd1MzJ0R3A4WlNRRTJibmFGZjhBalk5ZFhsdGhLMzFVQ09JX2NSX2Z5eEdoR0tfdTVYdkVBTjJpT3J0WXlja3hHazlBNmNINGR2Tnk1MXZMZTRfeTY4cFJxT1dRMGlIWUsyNGJleFk0em9KeG9JWGFVZTFiMmZZM3FVYzRzcjVxX2dVNEdhSFpQUE5GS2ZlaTFMdmg3bXdzY0RJclZEcmRCRnJnQlBrRmFIUmJHVTYw?oc=5",
+        "source_name": "Google News 🕵️ (DOE numérique)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTnd1MzJ0R3A4WlNRRTJibmFGZjhBalk5ZFhsdGhLMzFVQ09JX2NSX2Z5eEdoR0tfdTVYdkVBTjJpT3J0WXlja3hHazlBNmNINGR2Tnk1MXZMZTRfeTY4cFJxT1dRMGlIWUsyNGJleFk0em9KeG9JWGFVZTFiMmZZM3FVYzRzcjVxX2dVNEdhSFpQUE5GS2ZlaTFMdmg3bXdzY0RJclZEcmRCRnJnQlBrRmFIUmJHVTYw?o...",
+        "ai_french_title": "La Vallée Dorée à Rantigny accueillera un Data Center : ouverture prévue en 2029",
+        "ai_score": 6,
+        "ai_summary": "Le projet de Data Center de la Vallée Dorée à Rantigny, en Oise, est un exemple d'innovation technique dans le secteur de la construction. Ce projet vise à créer un centre de données performant et durable, qui répondra aux besoins de la société en matière de stockage et de traitement de données. L'ouverture prévue en 2029 permettra de mettre en œuvre les dernières technologies de pointe, telles que l'intelligence artificielle et la réalité virtuelle, pour optimiser les performances et réduire les coûts. Cette initiative contribuera à la transformation numérique du secteur de la construction et de l'architecture, en intégrant les technologies de l'information et de la communication (TIC) dans la conception et la réalisation des bâtiments.",
+        "ai_tags": [
+            "Data Center",
+            "La Vallée Dorée",
+            "Rantigny",
+            "Oise",
+            "Construction",
+            "BIM",
+            "Intelligence Artificielle"
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
         ],
         "ai_category": "Hybride ⚙️",
         "date_added": "2026-03-31"
     },
     {
+<<<<<<< HEAD
         "title": "IFC viewer for Linux",
         "url": "https://www.reddit.com/r/bim/comments/1s7n9mk/ifc_viewer_for_linux/",
         "source_name": "Reddit r/BIM",
@@ -5692,13 +6106,118 @@
         "ai_french_title": "Le Meilleur Chantier de France 2025 : BIM, géothermie et exigence sanitaire",
         "ai_score": 8,
         "ai_summary": "Le projet de chantier de France 2025 met l'accent sur l'intégration de la technologie BIM (Building Information Modelling) pour améliorer l'efficacité et la qualité de la construction. La géothermie est également mise en avant comme solution pour réduire les émissions de gaz à effet de serre et promouvoir une énergie renouvelable. De plus, l'exigence sanitaire est un aspect crucial dans ce projet, avec la mise en place de mesures pour garantir la sécurité et la santé des travailleurs et des occupants du bâtiment. Ces innovations techniques ont le potentiel de révolutionner le secteur de la construction et de contribuer à la création de bâtiments performants et durables.",
+=======
+        "title": "L’interopérabilité des données au service du travail collaboratif - Autodesk",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5KOU5SU2VJNFZlamYzQXNPQ1dyZzZEM0NTODAzU2lGbEJIblhRUHdTaWhOSTZfd1FkZ1g5Tk5MbEtYNkpJclJCSmdVaVY4eFBieENNQjlDQnNUVXRJVW55LUVlXzhHQjhsLXBQTFF0dkRNZGNGaXdaRVNR?oc=5",
+        "source_name": "Google News 🕵️ (Logiciels architecture/Batiment)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE5KOU5SU2VJNFZlamYzQXNPQ1dyZzZEM0NTODAzU2lGbEJIblhRUHdTaWhOSTZfd1FkZ1g5Tk5MbEtYNkpJclJCSmdVaVY4eFBieENNQjlDQnNUVXRJVW55LUVlXzhHQjhsLXBQTFF0dkRNZGNGaXdaRVNR?oc=5\" target=\"_blank\">L’interopérabilité des données au service du travail collaborat...",
+        "ai_french_title": "L'interopérabilité des données au service du travail collaboratif",
+        "ai_score": 8,
+        "ai_summary": "L'article de Autodesk met en avant l'importance de l'interopérabilité des données dans le secteur de la construction. En effet, la collaboration entre les différents acteurs impliqués dans un projet de construction est cruciale pour atteindre les objectifs de qualité, de sécurité et de durabilité. Pour répondre à ce besoin, les outils de BIM (Building Information Modelling) ont été développés pour permettre la modélisation et la simulation de bâtiments et d'infrastructures. Cependant, la mise en œuvre de ces outils nécessite une interopérabilité des données pour garantir la cohérence et la fiabilité des informations. Autodesk propose une solution pour résoudre ce problème en intégrant des outils de BIM avec des technologies d'intelligence artificielle pour améliorer la collaboration et la productivité.",
+        "ai_tags": [
+            "interopérabilité",
+            "données",
+            "BIM",
+            "collaboration",
+            "intelligence artificielle"
+        ],
+        "ai_category": "Hybride ⚙️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Décès à Ids-Saint-Roch : les avis d'obsèques du samedi 28 mars - Le Berry Républicain",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSHBiLS1aRXQ0d3RsOXFwSkNtTGNrLThrY3Z6WHdDRERkZGJSSEstVl9CSEo2SXVrVlN6TEJYeFZ5Q3NOdGVONW1ISTloSXZ5TnFDQkQxU0QzcUpaS0RKZDRtd0FoS1ZUeDhwZjJNaFlZX2g4NjFmWDd6Vm40QUdmVFdzRVNRRFh3bWIxcUJ4WEYwOThIUkc4bU9GRkFSUmszaXUzVW13X2tIcDBIY3ltZ25CanI0OTJweW5uRnd3ekJEVFU?oc=5",
+        "source_name": "Google News 🕵️ (IDS)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSHBiLS1aRXQ0d3RsOXFwSkNtTGNrLThrY3Z6WHdDRERkZGJSSEstVl9CSEo2SXVrVlN6TEJYeFZ5Q3NOdGVONW1ISTloSXZ5TnFDQkQxU0QzcUpaS0RKZDRtd0FoS1ZUeDhwZjJNaFlZX2g4NjFmWDd6Vm40QUdmVFdzRVNRRFh3bWIxcUJ4WEYwOThIUkc4bU9GRkFSUmszaXUzVW13X2tIcDBIY3ltZ25CanI0OTJweW...",
+        "ai_french_title": "Décès à Ids-Saint-Roch : les avis d'obsèques du samedi 28 mars",
+        "ai_score": 0,
+        "ai_summary": "L'article 'Décès à Ids-Saint-Roch : les avis d'obsèques du samedi 28 mars' n'a aucun rapport avec la technologie, l'architecture, la BIM ou l'intelligence artificielle. Il s'agit d'un article de presse local qui rapporte des informations sur des décès et des obsèques dans une commune du Berry. Il n'y a pas d'innovation technique ou d'impact potentiel sur le secteur de la construction/BIM. Cet article est donc considéré comme hors sujet pour une analyse technique.",
+        "ai_tags": [
+            "décès",
+            "obsèques",
+            "Ids-Saint-Roch",
+            "Berry"
+        ],
+        "ai_category": "Veille Globale",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "ViewTrade ouvre l'accès au marché américain aux clients fintech d'IDS après la certification FIX - financefeeds.com",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObFBNUEJhWDRTcVduS3hBVWlJMkR0ZWFXc0dQT0tCbUNhVkNOdnVzdzM1NUl2U1l6N2JPajNuUE1ZQzV5VXVYVDBMV2F2anhQZHZMY0hObkZQUGowb25UeElXM3NhUU9mNWZScUZyYW94QXJXZ1ViMHZBUVNsQnJQOGJMUDI2Q2dWU1NKMVpBVmdSM0NuMjR5aXV5elJlOXFHTWEyazlYamV0dm5YbnYw?oc=5",
+        "source_name": "Google News 🕵️ (IDS)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxObFBNUEJhWDRTcVduS3hBVWlJMkR0ZWFXc0dQT0tCbUNhVkNOdnVzdzM1NUl2U1l6N2JPajNuUE1ZQzV5VXVYVDBMV2F2anhQZHZMY0hObkZQUGowb25UeElXM3NhUU9mNWZScUZyYW94QXJXZ1ViMHZBUVNsQnJQOGJMUDI2Q2dWU1NKMVpBVmdSM0NuMjR5aXV5elJlOXFHTWEyazlYamV0dm5YbnYw?oc=5\" target=...",
+        "ai_french_title": "ViewTrade ouvre l'accès au marché américain aux clients fintech d'IDS après la certification FIX",
+        "ai_score": 6,
+        "ai_summary": "L'article fait référence à la certification FIX obtenue par ViewTrade, qui permet aux clients fintech d'IDS d'accéder au marché américain. Cette certification est un standard industriel pour les transactions financières électroniques. L'innovation technique réside dans la mise en place d'un système de trading électronique sécurisé et efficace, qui peut potentiellement révolutionner la façon dont les transactions financières sont effectuées dans le secteur de la construction et de la BIM. Cela pourrait permettre une meilleure gestion des flux financiers et une plus grande transparence dans les transactions.",
+        "ai_tags": [
+            "ViewTrade",
+            "certification FIX",
+            "marché américain",
+            "clients fintech",
+            "IDS"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Meilleur Chantier de France 2025 : BIM, géothermie et exigence sanitaire - lebatimentperformant.fr",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeWtKTC1UOEs5czFaWmZyejkzSldmZGgtSFlGMWUxaGx0M3M4RDFLSEw2UjEyWkNDVzk3VnY5NXhBWGZDQnFickVzWkpyN2JydHB4TTUwUDctY0tGSjJRdzVKMVQ4bDdnRmR3d3IydlRqVTNTY2VhWUFRWHVERjlKZFN4bUhXSE5LTGlUQVhHeDdYLTJQaXhCYklxd1NSc1d0eHJCNG9MT2JSVmFYMzRSS2M3elM0YmlLbmRn?oc=5",
+        "source_name": "Google News 🕵️ (BIM chantier)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeWtKTC1UOEs5czFaWmZyejkzSldmZGgtSFlGMWUxaGx0M3M4RDFLSEw2UjEyWkNDVzk3VnY5NXhBWGZDQnFickVzWkpyN2JydHB4TTUwUDctY0tGSjJRdzVKMVQ4bDdnRmR3d3IydlRqVTNTY2VhWUFRWHVERjlKZFN4bUhXSE5LTGlUQVhHeDdYLTJQaXhCYklxd1NSc1d0eHJCNG9MT2JSVmFYMzRSS2M3elM0YmlLbm...",
+        "ai_french_title": "Le Meilleur Chantier de France 2025 : BIM, géothermie et exigence sanitaire",
+        "ai_score": 8,
+        "ai_summary": "Le projet de chantier de France 2025 met en avant l'utilisation de la technologie BIM (Building Information Modelling) pour améliorer l'efficacité et la qualité des constructions. La géothermie est également mise en avant comme solution pour réduire les émissions de gaz à effet de serre et répondre aux exigences sanitaires. Cette approche innovante permettra de réduire les coûts et les délais de réalisation, tout en garantissant une meilleure qualité des bâtiments. L'intégration de la technologie BIM et de la géothermie sera un véritable changement de paradigme dans le secteur de la construction.",
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
         "ai_tags": [
             "BIM",
             "Géothermie",
             "Exigence sanitaire",
+<<<<<<< HEAD
             "Construction durable"
         ],
         "ai_category": "Hybride ⚙️",
         "date_added": "2026-03-31"
+=======
+            "Construction"
+        ],
+        "ai_category": "Hybride ⚙️",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Trophées Tech for construction [4/5] : découvrez les nommés en Chantier numérique - Le Moniteur",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWm9LelJNUFJZdWZENjJuYndENlRpZVpwMW1qSldDNUs5cjdIY3E1aUVZbGV3MDdLZU93bXZxSjJCUlpVY3dwelpoTjZfRk5aa1piZFNxQWtLOVQtUDBUc1ZWQ0hIWHZwckwzd21DT0lxWWdkYWF5aVpFZ1YtNWt0Znkwb1R0RXVJTlI4MHAwdWRZQUxvNWVaUlBXa1BEdjhkdFVGcDNuN3o2cGIxdE9KWVFqTlpmYTZ3LVVIa2xhUlFsSHpLZ2E0SC1odmRfSThFd29oMlJ2amdUYUlN?oc=5",
+        "source_name": "Google News 🕵️ (BIM chantier)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWm9LelJNUFJZdWZENjJuYndENlRpZVpwMW1qSldDNUs5cjdIY3E1aUVZbGV3MDdLZU93bXZxSjJCUlpVY3dwelpoTjZfRk5aa1piZFNxQWtLOVQtUDBUc1ZWQ0hIWHZwckwzd21DT0lxWWdkYWF5aVpFZ1YtNWt0Znkwb1R0RXVJTlI4MHAwdWRZQUxvNWVaUlBXa1BEdjhkdFVGcDNuN3o2cGIxdE9KWVFqTlpmYTZ3LV...",
+        "ai_french_title": "Les Trophées Tech for construction : découvrez les nommés en Chantier numérique",
+        "ai_score": 6,
+        "ai_summary": "Le Moniteur a organisé les Trophées Tech for construction pour récompenser les innovations techniques qui bouleversent le secteur de la construction. Cette édition a mis en avant les entreprises qui ont développé des solutions numériques pour améliorer l'efficacité et la qualité des chantiers. Les lauréats ont été sélectionnés pour leur capacité à intégrer l'intelligence artificielle, la réalité virtuelle et les données massives pour optimiser les processus de construction. Ces innovations pourraient révolutionner la façon dont les entreprises de construction travaillent et améliorer la qualité des bâtiments.",
+        "ai_tags": [
+            "construction",
+            "BIM",
+            "intelligence artificielle",
+            "réalité virtuelle",
+            "données massives"
+        ],
+        "ai_category": "Dev & IA 💻",
+        "date_added": "2026-03-31"
+    },
+    {
+        "title": "Le Plan BIM lance trois appels à projets - Ordre des architectes",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPY2ZnSEJQQ1ViSVBOY1dacVY1eVVPenpfbWFaNG95V0lJeUlVcElPdl9EMHFXdGRhV3hmYTNZWUlXVjh2ZUk3cHE2c2stbkVCYTFTV2RxYTM4T3pJZjJGNzRFWFJYTXJldHVBRjY5bTdGRzU1ZFRXUFZsc1FQUFo4MlBoTjFOMVVKUTlJ?oc=5",
+        "source_name": "Google News 🕵️ (BIM chantier)",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxPY2ZnSEJQQ1ViSVBOY1dacVY1eVVPenpfbWFaNG95V0lJeUlVcElPdl9EMHFXdGRhV3hmYTNZWUlXVjh2ZUk3cHE2c2stbkVCYTFTV2RxYTM4T3pJZjJGNzRFWFJYTXJldHVBRjY5bTdGRzU1ZFRXUFZsc1FQUFo4MlBoTjFOMVVKUTlJ?oc=5\" target=\"_blank\">Le Plan BIM lance trois appels à projet...",
+        "ai_french_title": "Le Plan BIM lance trois appels à projets",
+        "ai_score": 6,
+        "ai_summary": "Le Plan BIM a lancé trois appels à projets pour encourager l'adoption de la technologie BIM (Building Information Modeling) dans le secteur de la construction. Ces appels à projets visent à promouvoir l'innovation et la collaboration entre les professionnels de la construction, les architectes, les ingénieurs et les entrepreneurs. Le Plan BIM souhaite ainsi améliorer la qualité et la sécurité des bâtiments, réduire les coûts et les délais de construction, et favoriser la durabilité et l'efficacité énergétique. Ces initiatives pourraient avoir un impact significatif sur le secteur de la construction, en particulier dans la mise en œuvre de projets de grande envergure.",
+        "ai_tags": [
+            "BIM",
+            "construction",
+            "innovation",
+            "collaboration",
+            "durabilité"
+        ],
+        "ai_category": "BIM Pur 🏗️",
+        "date_added": "2026-03-31"
+>>>>>>> 209df77b28a98d543c76a96a42bc9d124282e348
     }
 ]
