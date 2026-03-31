@@ -12,10 +12,10 @@ import os
 
 # 🎓 L'ANNUAIRE DE L'AGENCE
 ANNUAIRE_COLLEGUES = {
-    # "mdeboeuf@ebim-ing.fr": ["Revit", "format IFC", "IDS", "Powerbi & Autodesk", "Logiciels architecture/Batiment"],
-    # "aplassard@ebim-ing.fr": ["format IFC", "Jumeau Numérique", "projets d'Hypervision pour les aéroports", "Coût du BIM", "nouveautés QUALIOPI"],
-    # "crottiers@ebim-ing.fr": ["IDS", "Revit", "ArchiCAD", "DOE numérique", "BIM chantier"],
-    "gprodilailo@ebim-ing.fr": ["Revit", "format IFC", "IDS", "Powerbi & Autodesk", "Logiciels architecture/Batiment"]
+    "mdeboeuf@ebim-ing.fr": ["Revit", "format IFC", "IDS", "Powerbi & Autodesk", "Logiciels architecture/Batiment"],
+    "aplassard@ebim-ing.fr": ["format IFC", "Jumeau Numérique", "projets d'Hypervision pour les aéroports", "Coût du BIM", "nouveautés QUALIOPI"],
+    "crottiers@ebim-ing.fr": ["IDS", "Revit", "ArchiCAD", "DOE numérique", "BIM chantier"],
+    "gprodilailo@ebim-ing.fr": ["Revit", "AI agentique", "SQL", "Powerbi", "BIM et AI", "nouveautés IA", "IA et construction"]
 }
 
 class ReporterService:
