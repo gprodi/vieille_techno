@@ -1,0 +1,48 @@
+name: 🚀 Routine Veille Matinale
+
+# Quand ce robot doit-il s'exécuter ?
+on:
+  schedule:
+    # Syntaxe CRON : 0 4 * * 1-5 signifie "À 04:00 UTC du lundi au vendredi"
+    # Puisque tu es à La Réunion (UTC+4), 04:00 UTC correspond exactement à 08:00 heure locale !
+    - cron: '0 4 * * 1-5'
+  
+  # Ce bouton permet de lancer le script manuellement depuis l'interface GitHub si besoin
+  workflow_dispatch:
+
+# Que doit faire le robot ?
+jobs:
+  execution_veille:
+    runs-on: ubuntu-latest # On utilise un serveur Linux basique
+
+    steps:
+      # Étape 1 : On télécharge ton code depuis GitHub sur le serveur
+      - name: 📥 Récupération du code
+        uses: actions/checkout@v4
+
+      # Étape 2 : On installe 'uv' (ton gestionnaire de paquets super rapide)
+      - name: ⚡ Installation de uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "latest"
+
+      # Étape 3 : On prépare Python 3.12
+      - name: 🐍 Installation de Python
+        run: uv python install 3.12
+
+      # Étape 4 : Lancement de l'orchestrateur avec tes clés secrètes
+      - name: ⚙️ Exécution de l'usine (Scraping + IA + Emails)
+        env:
+          # On injecte les secrets que tu configureras dans GitHub
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_EMAIL: ${{ secrets.SMTP_EMAIL }} # Si tu utilises cette variable
+        run: |
+          uv run main.py
+
+      # Étape 5 : Sauvegarde des nouveaux articles sur ton GitHub
+      - name: 💾 Sauvegarde de la base de données
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Veille auto: Mise à jour quotidienne de la base de données"
+          file_pattern: "data/*.json"
