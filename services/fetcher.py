@@ -27,28 +27,33 @@ class BIMFetcher:
         self.rss_sources = {
             # --- LES FONDATIONS BIM & OPENBIM (IFC, IDS) ---
             "BuildingSMART (Officiel)": "https://www.buildingsmart.org/feed/",
+            "BuildingSMART IDS GitHub": "https://github.com/buildingSMART/IDS",
+            "Plannerly" : "https://plannerly.com/ids-buildingsmart-creation/feed/",
             "AEC Business": "https://aec-business.com/feed/",
             "AEC Magazine": "https://aecmag.com/feed/", 
-            "BIM 42": "https://bim42.com/feed/", # Note: Retournera 526 tant que le proprio n'a pas réparé son serveur
-            "Speckle (OpenBIM Community)": "https://speckle.community/latest.rss",
+            "DIBS 42": "https://www.dibs42.com/blogs/feed/", # Note: Retournera 526 tant que le proprio n'a pas réparé son serveur
+            "Speckle (OpenBIM Community)": "https://speckle.systems/blog/feed.xml",
             "BibLus (ACCA)": "https://biblus.accasoftware.com/en/feed/",
             
             # --- EXPERTISE REVIT, AUTODESK & POWERBI ---
-            "The Building Coder": "https://thebuildingcoder.typepad.com/blog/atom.xml",
+            "The Building Coder": "https://blog.autodesk.io/category/thebuildingcoder/feed/",
             "Revit Pure": "https://revitpure.com/blog?format=rss",
-            "Autodesk Platform Services": "https://aps.autodesk.com/blog/rss", # 404 FIX: Retrait du .xml
+            "Autodesk Platform Services": "https://aps.autodesk.com/blog/", # 404 FIX: Retrait du .xml
             "Dynamo BIM": "https://dynamobim.org/feed/", 
+            "Allplan Blog": "https://www.allplan.com/blog/category/bim/",
             
             # --- EXPERTISE ARCHICAD & CONCURRENTS ---
             "Graphisoft Insights": "https://graphisoft.com/feed",
             
             # --- VEILLE FRANCOPHONE (Chantier, DOE, Normes) ---
-            "Hexabim": "https://www.hexabim.com/feed", # 404 FIX: Modification du endpoint RSS
-            "Construction21": "https://www.construction21.org/france/feed", # 404 FIX: Retour au format /feed standard
+            "Hexabim": "https://www.hexabim.com/", # 404 FIX: Modification du endpoint RSS
+            "Construction21": "https://www.construction21.org/france/", # 404 FIX: Retour au format /feed standard
             "BIM&CO Blog": "https://www.bimandco.com/blog/fr/feed/",
             
             # --- JUMEAU NUMÉRIQUE & SMART BUILDING ---
-            "Smart Buildings Magazine": "https://smartbuildingsmagazine.com/feed", # 404 FIX: Utilisation de /feed
+            "Smart Buildings Magazine": "https://smartbuildingsmagazine.com/", # 404 FIX: Utilisation de /feed
+            "Hypervision.fr": "https://www.hyper-vision.fr/blog?format=rss",
+            "SpinalCom": "https://www.spinalcom.com/blog/feed/",
             
             # --- INTELLIGENCE ARTIFICIELLE & DATA ---
             "Hugging Face Blog": "https://huggingface.co/blog/feed.xml",
@@ -58,7 +63,14 @@ class BIMFetcher:
             # --- VEILLE COMMUNAUTAIRE ---
             "Reddit r/Revit": "https://www.reddit.com/r/Revit/.rss",
             "Reddit r/BIM": "https://www.reddit.com/r/BIM/.rss",
-            "Reddit r/MachineLearning": "https://www.reddit.com/r/MachineLearning/.rss"
+            "Reddit r/MachineLearning": "https://www.reddit.com/r/MachineLearning/.rss",
+            
+            # --- APPELS D'OFFRES
+            "Portail des Marchés Publics": "https://marches-publics.departement974.fr/rss",
+            "Officiel de La Réunion":"https://www.officiel-demat.re/",
+            "France Marchés":"https://www.francemarches.com/appels-offre/reunion/",
+            "PLACE (Marchés Publics de l'État)":"https://www.marches-publics.gouv.fr/"
+            
         }
 
     async def _fetch_single_rss(self, client: httpx.AsyncClient, source_name: str, feed_url: str) -> List[ArticleBIM]:
