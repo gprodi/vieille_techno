@@ -5,7 +5,7 @@ on:
   schedule:
     # Syntaxe CRON : 0 4 * * 1-5 signifie "À 04:00 UTC du lundi au vendredi"
     # Puisque tu es à La Réunion (UTC+4), 04:00 UTC correspond exactement à 08:00 heure locale !
-    - cron: '40 9 * * 1-5'
+    - cron: '02 06 * * *'
   
   # Ce bouton permet de lancer le script manuellement depuis l'interface GitHub si besoin
   workflow_dispatch:
