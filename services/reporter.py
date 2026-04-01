@@ -15,6 +15,7 @@ ANNUAIRE_COLLEGUES = {
     "mdeboeuf@ebim-ing.fr": ["Revit", "format IFC", "IDS", "Powerbi & Autodesk", "Logiciels architecture/Batiment"],
     "aplassard@ebim-ing.fr": ["format IFC", "Jumeau Numérique", "projets d'Hypervision pour les aéroports", "Coût du BIM", "nouveautés QUALIOPI"],
     "crottiers@ebim-ing.fr": ["IDS", "Revit", "ArchiCAD", "DOE numérique", "BIM chantier"],
+    "nroyer@ebim-ing.fr": ["QUALIOPI", "Appels d’offres Réunion", "Appels d’offres Mayotte", "KAIROS France TRAVAIL"],
     "gprodilailo@ebim-ing.fr": ["Revit", "AI agentique", "SQL", "Powerbi", "BIM et AI", "nouveautés IA", "IA et construction"]
 }
 
