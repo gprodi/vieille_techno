@@ -60,11 +60,6 @@ class BIMFetcher:
             "NVIDIA AI Blog": "https://blogs.nvidia.com/feed/",
             "Towards Data Science": "https://medium.com/feed/towards-data-science",
             
-            # --- VEILLE COMMUNAUTAIRE ---
-            "Reddit r/Revit": "https://www.reddit.com/r/Revit/.rss",
-            "Reddit r/BIM": "https://www.reddit.com/r/BIM/.rss",
-            "Reddit r/MachineLearning": "https://www.reddit.com/r/MachineLearning/.rss",
-            
             # --- APPELS D'OFFRES
             "Portail des Marchés Publics": "https://marches-publics.departement974.fr/rss",
             "Officiel de La Réunion":"https://www.officiel-demat.re/",
