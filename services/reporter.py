@@ -59,9 +59,23 @@ class ReporterService:
                     if score < 7:
                         continue
                         
-                    # 3. Vérification de la pertinence textuelle
-                    texte_a_fouiller = (art.get('title', '') + " " + art.get('ai_summary', '') + " " + art.get('summary', '')).lower()
-                    if mot_cle.lower() in texte_a_fouiller:
+                    # 3. Vérification de la pertinence textuelle (NOUVELLE VERSION INTELLIGENTE)
+                    # On inclut maintenant les tags générés par l'IA dans la zone de fouille
+                    tags_ia = " ".join(art.get('ai_tags', []))
+                    texte_a_fouiller = (art.get('title', '') + " " + art.get('ai_summary', '') + " " + art.get('summary', '') + " " + tags_ia).lower()
+                    
+                    # On nettoie le mot-clé de l'agence (on enlève les &, les / et on le coupe en mots)
+                    mot_cle_propre = mot_cle.lower().replace('&', ' ').replace('/', ' ').replace('’', ' ').replace("'", ' ')
+                    # On ne garde que les mots de plus de 2 lettres (pour ignorer les "et", "de", "ou")
+                    mots_exiges = [m for m in mot_cle_propre.split() if len(m) > 2]
+                    
+                    # On vérifie si TOUS les mots exigés sont présents quelque part dans le texte
+                    # Ex: Pour "Powerbi & Autodesk", il cherchera si "powerbi" ET "autodesk" sont présents, peu importe l'ordre.
+                    if mots_exiges and all(mot in texte_a_fouiller for mot in mots_exiges):
+                        candidats_pour_ce_theme.append(art)
+                    # Si c'est un mot-clé très court (ex: "IA" ou "SQL"), on fait une recherche exacte entourée d'espaces
+                    # pour éviter que "SQL" ne valide un mot comme "puiSQU'iL"
+                    elif len(mot_cle.strip()) <= 3 and f" {mot_cle.lower()} " in f" {texte_a_fouiller} ":
                         candidats_pour_ce_theme.append(art)
                 
                 # 4. On trie les candidats du meilleur score au moins bon
