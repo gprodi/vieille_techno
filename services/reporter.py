@@ -9,15 +9,20 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from loguru import logger
 import os
+import json
 
-# 🎓 L'ANNUAIRE DE L'AGENCE
-ANNUAIRE_COLLEGUES = {
-    "mdeboeuf@ebim-ing.fr": ["Revit", "format IFC", "IDS", "Powerbi & Autodesk", "Logiciels architecture/Batiment"],
-    "aplassard@ebim-ing.fr": ["format IFC", "Jumeau Numérique", "projets d'Hypervision pour les aéroports", "Coût du BIM", "nouveautés QUALIOPI"],
-    "crottiers@ebim-ing.fr": ["IDS", "Revit", "ArchiCAD", "DOE numérique", "BIM chantier"],
-    "nroyer@ebim-ing.fr": ["QUALIOPI", "Appels d’offres Réunion", "Appels d’offres Mayotte", "KAIROS France TRAVAIL"],
-    "gprodilailo@ebim-ing.fr": ["Revit", "AI agentique", "SQL", "Powerbi", "BIM et AI", "nouveautés IA", "IA et construction"]
-}
+# 🎓 CHARGEMENT DYNAMIQUE DE L'ANNUAIRE
+def charger_annuaire() -> Dict[str, List[str]]:
+    chemin_fichier = "annuaire.json"
+    if not os.path.exists(chemin_fichier):
+        logger.error(f"Fichier de configuration '{chemin_fichier}' introuvable. Veuillez le créer.")
+        return {} # Ou lever une exception : raise FileNotFoundError(...)
+    
+    with open(chemin_fichier, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+# L'annuaire est maintenant chargé en mémoire depuis un fichier externe sécurisé
+ANNUAIRE_COLLEGUES = charger_annuaire()
 
 class ReporterService:
 

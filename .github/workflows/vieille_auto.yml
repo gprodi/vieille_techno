@@ -35,6 +35,15 @@ jobs:
       - name: 🐍 Installation de Python
         run: uv python install 3.12
 
+      # 🚨 NOUVELLE ÉTAPE : Reconstitution de l'annuaire depuis le secret
+      - name: 📇 Création du fichier annuaire.json
+        env:
+          # On charge le secret dans une variable d'environnement du serveur
+          SECRET_ANNUAIRE: ${{ secrets.ANNUAIRE_JSON_SECRET }}
+        run: |
+          # On écrit le contenu de cette variable dans le fichier cible
+          echo "$SECRET_ANNUAIRE" > annuaire.json      
+
       # Étape 4 : Lancement de l'orchestrateur avec tes clés secrètes
       - name: ⚙️ Exécution de l'usine (Scraping + IA + Emails)
         env:
