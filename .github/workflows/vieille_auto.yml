@@ -4,13 +4,17 @@ name: 🚀 Routine Veille Matinale
 on:
   schedule:
     # Syntaxe CRON : 22 02 * * 1-5 signifie "À 02:22 UTC du lundi au vendredi"
-    # Puisque tu es à La Réunion (UTC+4), 04:00 UTC correspond exactement à 06:22 heure locale !
+    # Puisque tu es à La Réunion (UTC+4), 02:22 UTC correspond exactement à 06:22 heure locale !
     - cron: '22 02 * * 1-5'
 
   # Ce bouton permet de lancer le script manuellement depuis l'interface GitHub si besoin
   workflow_dispatch:
 
-# 🛡️ NOUVEAU : LE BADGE DE SÉCURITÉ
+# Force l'utilisation de Node.js 24 pour éviter les avertissements de dépréciation
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+# 🛡️ LE BADGE DE SÉCURITÉ
 # On donne explicitement au robot le droit de "commit" et "push" sur ce dépôt.
 permissions:
   contents: write
@@ -35,7 +39,17 @@ jobs:
       - name: 🐍 Installation de Python
         run: uv python install 3.12
 
-      # 🚨 NOUVELLE ÉTAPE : Reconstitution de l'annuaire depuis le secret
+      # Étape 4 : 🧠 Mise en cache du modèle Hugging Face (Évite l'erreur HTTP 429)
+      - name: 💾 Cache du modèle d'embedding
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          # Le cache se base sur tes fichiers de dépendances pour se rafraîchir si tu ajoutes des paquets
+          key: ${{ runner.os }}-hf-models-${{ hashFiles('**/pyproject.toml', '**/requirements.txt', '**/uv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-hf-models-
+
+      # Étape 5 : Reconstitution de l'annuaire depuis le secret
       - name: 📇 Création du fichier annuaire.json
         env:
           # On charge le secret dans une variable d'environnement du serveur
@@ -44,17 +58,17 @@ jobs:
           # On écrit le contenu de cette variable dans le fichier cible
           echo "$SECRET_ANNUAIRE" > annuaire.json      
 
-      # Étape 4 : Lancement de l'orchestrateur avec tes clés secrètes
+      # Étape 6 : Lancement de l'orchestrateur avec tes clés secrètes
       - name: ⚙️ Exécution de l'usine (Scraping + IA + Emails)
         env:
           # On injecte les secrets que tu configureras dans GitHub
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          SMTP_EMAIL: ${{ secrets.SMTP_EMAIL }} # Si tu utilises cette variable
+          SMTP_EMAIL: ${{ secrets.SMTP_EMAIL }}
         run: |
           uv run main.py
 
-      # Étape 5 : Sauvegarde des nouveaux articles sur ton GitHub
+      # Étape 7 : Sauvegarde des nouveaux articles sur ton GitHub
       - name: 💾 Sauvegarde de la base de données
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
