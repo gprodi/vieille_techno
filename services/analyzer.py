@@ -75,32 +75,58 @@ class BIMAnalyzer:
         
         RÉPONDS UNIQUEMENT AU FORMAT JSON STRICT avec les clés:"french_title","score", "summary", "tags", "category".
         """
+        max_retries = 5
+        base_delay = 3  # Délai initial de 3 secondes
         
-        try:
-            # Appel à Llama 3.1 8B (Modèle rapide, idéal pour le tri massif)
-            response = await self.groq_client.chat.completions.create(
-                messages=[{"role": "user", "content": prompt}],
-                model="llama-3.1-8b-instant",
-                response_format={"type": "json_object"}, 
-                temperature=0.2 # Température basse pour éviter les hallucinations
-            )
+        for attempt in range(max_retries): 
+            try:
+                # Appel à Llama 3.1 8B (Modèle rapide, idéal pour le tri massif)
+                response = await self.groq_client.chat.completions.create(
+                    messages=[{"role": "user", "content": prompt}],
+                    model="llama-3.1-8b-instant",
+                    response_format={"type": "json_object"}, 
+                    temperature=0.2 # Température basse pour éviter les hallucinations
+                )
             
-            raw_json = response.choices[0].message.content
-            parsed_data = json.loads(raw_json)
-            
-            # Validation rigoureuse via Pydantic
-            validated_data = AIAnalysisResult(**parsed_data)
-            return validated_data.model_dump()
-            
-        except Exception as e:
-            logger.error(f"❌ Erreur Groq pour l'article '{title[:20]}...': {e}")
-            # Mode dégradé : Si l'IA plante, on renvoie une valeur par défaut pour ne pas crasher le script
-            return {
-                "score": 0, 
-                "summary": "Erreur d'analyse IA.", 
-                "tags": [], 
-                "category": "Veille Globale 🌐"
-            }
+                raw_json = response.choices[0].message.content
+                parsed_data = json.loads(raw_json)
+                
+                # Validation rigoureuse via Pydantic
+                validated_data = AIAnalysisResult(**parsed_data)
+                return validated_data.model_dump()
+                
+            except GroqError as e:
+                # Interception explicite des erreurs Groq (notamment 429 Rate Limit)
+                status_code = getattr(e, "status_code", None)
+                
+                if status_code == 429:
+                    # Calcul du délai exponentiel : 3s, 6s, 12s, 24s...
+                    delay = base_delay * (2 ** attempt)
+                    logger.warning(
+                        f"⏳ [Rate Limit 429] Groq est saturé pour '{title[:20]}...'. "
+                        f"Tentative {attempt + 1}/{max_retries} : Pause de {delay}s avant de réessayer."
+                    )
+                    await asyncio.sleep(delay)
+                    continue  # On passe à l'itération suivante pour réessayer
+                else:
+                    # Si c'est une autre erreur Groq (ex: 401, 500), on ne réessaie pas
+                    logger.error(f"❌ Erreur Groq critique ({status_code}) pour '{title[:20]}...': {e}")
+                    break
+                    
+            except Exception as e:
+                # Capturer les erreurs de parsing JSON ou de validation Pydantic
+                logger.error(f"❌ Erreur inattendue lors du traitement de l'article '{title[:20]}...': {e}")
+                break
+
+        # Mode dégradé : Si l'IA plante définitivement ou épuise ses tentatives
+        logger.error(f"❌ Impossible d'analyser l'article '{title[:20]}...' après {max_retries} tentatives.")
+        return {
+            "french_title": title,
+            "score": 0, 
+            "summary": "Erreur d'analyse IA ou Rate-Limit dépassé définitivement.", 
+            "tags": [], 
+            "category": "Veille Globale 🌐"
+        }
 
     def vectorize_local(self, text: str) -> List[float]:
         """
