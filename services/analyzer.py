@@ -7,6 +7,7 @@ import json
 import asyncio
 import torch
 from groq import AsyncGroq
+from groq import GroqError
 from sentence_transformers import SentenceTransformer
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any
