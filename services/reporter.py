@@ -128,7 +128,7 @@ class ReporterService:
                 
                 lignes.append(f"<p style='font-size: 13px;'>👉 <a href='{lien_vers_app}' style='color: #27ae60; font-weight: bold; text-decoration: none;'>Ouvrir l'analyse détaillée</a> | 🔗 <a href='{url_source}' style='color: #7f8c8d; text-decoration: none;'>Article original</a></p>")
                 
-        lignes.append("<br><hr style='border: 1px solid #eee;'><p style='font-size: 12px; color: #999;'>🤖 Généré automatiquement par l'Orchestrateur Llama-3.1 de l'agence.</p>")
+        lignes.append("<br><hr style='border: 1px solid #eee;'><p style='font-size: 12px; color: #999;'>🤖 Généré automatiquement par l'Orchestrateur gpt-oss-20b de l'agence.</p>")
         lignes.append("</div>")
         return "".join(lignes)
 
