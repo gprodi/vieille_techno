@@ -208,7 +208,7 @@ def main():
                 )
             else:
                 if st.button("🧠 Générer un rapport détaillé", key=btn_deep_key):
-                    with st.spinner("Llama-3.1 rédige le rapport détaillé (environ 5-10 sec)..."):
+                    with st.spinner("openai/gpt-oss-20b rédige le rapport détaillé (environ 5-10 sec)..."):
                         try:
                             client = Groq(api_key=settings.groq_api_key)
                             prompt = f"""
@@ -224,7 +224,7 @@ def main():
                             """
                             response = client.chat.completions.create(
                                 messages=[{"role": "user", "content": prompt}],
-                                model="llama-3.1-8b-instant",
+                                model="openai/gpt-oss-20b",
                                 temperature=0.3
                             )
                             st.session_state[report_state_key] = response.choices[0].message.content
