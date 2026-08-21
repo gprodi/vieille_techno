@@ -147,7 +147,7 @@ def main():
 
         if st.button("Lancer l'Orchestrateur ⚙️"):
             if theme_manuel:
-                with st.spinner(f"Scraping et Analyse Llama-3.1 en cours pour '{theme_manuel}' (≈ 30 à 60 sec)..."):
+                with st.spinner(f"Scraping et Analyse gpt-oss-20b en cours pour '{theme_manuel}' (≈ 30 à 60 sec)..."):
                     try:
                         subprocess.run([sys.executable, "main.py", "--theme", theme_manuel], check=True)
                         st.success(f"✅ Veille sur '{theme_manuel}' terminée et mails envoyés !")
