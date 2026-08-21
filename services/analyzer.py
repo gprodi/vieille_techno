@@ -1,6 +1,6 @@
 """
 Moteur d'Intelligence Artificielle Hybride.
-- Analyse Sémantique (Cloud) : Groq (Llama-3.1)
+- Analyse Sémantique (Cloud) : Groq (openai/gpt-oss-20b)
 - Vectorisation (Local) : PyTorch (CPU/CUDA)
 """
 import json
@@ -80,10 +80,10 @@ class BIMAnalyzer:
         
         for attempt in range(max_retries): 
             try:
-                # Appel à Llama 3.1 8B (Modèle rapide, idéal pour le tri massif)
+                # Appel à openai/gpt-oss-20b (Modèle rapide, idéal pour le tri massif)
                 response = await self.groq_client.chat.completions.create(
                     messages=[{"role": "user", "content": prompt}],
-                    model="llama-3.1-8b-instant",
+                    model="openai/gpt-oss-20b",
                     response_format={"type": "json_object"}, 
                     temperature=0.2 # Température basse pour éviter les hallucinations
                 )
@@ -139,7 +139,7 @@ class BIMAnalyzer:
     async def process_article(self, article: dict) -> dict:
         """
         Chef d'orchestre pour un article : 
-        1. Compréhension Cloud (Llama 3.1)
+        1. Compréhension Cloud (openai/gpt-oss-20b)
         2. Mathématisation Locale (PyTorch)
         """
         # Phase 1 : Extraction du sens (Cloud)
